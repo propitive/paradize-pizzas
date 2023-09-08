@@ -5,3 +5,13 @@ import pizzaSign from "../images/featured/pizzaSign.jpg";
 import salad from "../images/featured/salad.jpg";
 import snackBar from "../images/featured/snackBar.PNG";
 import tioSebasCooking from "../images/featured/tioSebasCooking.jpg";
+
+export const featuredPhotos = [
+  jalapenoPizza,
+  jalapenoPoppers,
+  pizzaAtNight,
+  pizzaSign,
+  salad,
+  snackBar,
+  tioSebasCooking,
+];
