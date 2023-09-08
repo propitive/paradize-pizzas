@@ -15,3 +15,13 @@ export const featuredPhotos = [
   snackBar,
   tioSebasCooking,
 ];
+
+export const explorePhotos = [
+  { image: jalapenoPizza, title: "jalapenoPizza" },
+  { image: jalapenoPoppers, title: "jalapenoPoppers" },
+  { image: pizzaAtNight, title: "pizzaAtNight" },
+  { image: pizzaSign, title: "pizzaSign" },
+  { image: salad, title: "salad" },
+  { image: snackBar, title: "snackBar" },
+  { image: tioSebasCooking, title: "tioSebasCooking" },
+];

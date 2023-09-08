@@ -1,0 +1,16 @@
+.explore {
+  height: 1000px;
+}
+
+.explore__item {
+  height: 100px;
+  width: 100px;
+}
+
+.explore__image {
+  height: 100px;
+  width: 100px;
+}
+
+.explore__title {
+}
