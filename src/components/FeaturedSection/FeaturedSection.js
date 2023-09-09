@@ -16,6 +16,7 @@ function FeaturedSection() {
         ref={carousel}
         className="carousel"
         whileTap={{ cursor: "grabbing" }}
+        style={{ flexFlow: "row", overflowX: "scroll" }}
       >
         <motion.div
           drag="x"

@@ -1,16 +1,31 @@
 .explore {
-  height: 1000px;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
 }
 
 .explore__item {
-  height: 100px;
-  width: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .explore__image {
-  height: 100px;
   width: 100px;
+  height: 100px;
+  border-radius: 50%;
 }
 
 .explore__title {
+  margin: 10px 0 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  border-bottom: 3px solid transparent;
+  transition: color 0.2s ease-out;
 }

@@ -1,8 +1,13 @@
 .carousel {
   cursor: grab;
   overflow: hidden;
+  border-bottom: solid rgb(181, 143, 94);
   /* background: rgb(181, 143, 94); */
   /* margin: 50px 100px 50px; */
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
 }
 
 .carousel__container {
