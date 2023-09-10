@@ -1,7 +1,8 @@
 .carousel {
   cursor: grab;
   overflow: hidden;
-  border-bottom: solid rgb(181, 143, 94);
+  /* border-bottom: solid rgb(181, 143, 94); */
+  border-bottom: solid #1f1717;
   /* background: rgb(181, 143, 94); */
   /* margin: 50px 100px 50px; */
 }
@@ -12,6 +13,7 @@
 
 .carousel__container {
   padding: 50px 400px 50px;
+  background-color: #f5f0f0;
   /* background: #1f1717; */
 }
 

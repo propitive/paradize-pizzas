@@ -1,5 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+
 .explore {
-  height: 300px;
+  background-color: #f5f0f0;
+  padding: 0 0 100px;
+}
+
+.explore__header {
+  font-family: "Roboto Condensed", sans-serif, Arial;
+  margin: 0 0 50px;
+  text-align: center;
+  letter-spacing: -1px;
+  font-size: 40px;
+}
+
+.explore__items {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -12,15 +26,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  letter-spacing: 1px;
 }
 
 .explore__image {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .explore__title {
+  font-family: "Roboto Condensed", sans-serif, Arial;
   margin: 10px 0 0;
   padding: 0;
   font-weight: 700;
@@ -28,4 +45,5 @@
   line-height: 22px;
   border-bottom: 3px solid transparent;
   transition: color 0.2s ease-out;
+  cursor: pointer;
 }
