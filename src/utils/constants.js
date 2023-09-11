@@ -17,11 +17,8 @@ export const featuredPhotos = [
 ];
 
 export const explorePhotos = [
-  { image: jalapenoPizza, title: "jalapenoPizza" },
-  { image: jalapenoPoppers, title: "jalapenoPoppers" },
-  { image: pizzaAtNight, title: "pizzaAtNight" },
-  { image: pizzaSign, title: "pizzaSign" },
-  { image: salad, title: "salad" },
-  { image: snackBar, title: "snackBar" },
-  { image: tioSebasCooking, title: "tioSebasCooking" },
+  { image: jalapenoPizza, title: "Brick Oven Pizzas" },
+  { image: jalapenoPoppers, title: "Appetizers" },
+  { image: pizzaAtNight, title: "Salads" },
+  { image: pizzaSign, title: "Desserts" },
 ];

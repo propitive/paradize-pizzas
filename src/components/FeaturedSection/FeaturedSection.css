@@ -12,8 +12,10 @@
 }
 
 .carousel__container {
-  padding: 50px 400px 50px;
+  /* padding: 50px 300px 50px; */
+  max-width: calc(100% - 400px);
   background-color: #f5f0f0;
+  margin: 80px auto 80px;
   /* background: #1f1717; */
 }
 
