@@ -6,6 +6,7 @@
 }
 
 .explore__header {
+  color: #1f1717;
   font-family: "Roboto Condensed", sans-serif, Arial;
   margin: 0 0 50px;
   text-align: center;
@@ -29,11 +30,23 @@
   letter-spacing: 1px;
 }
 
+.explore__image-wrapper {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
 .explore__image {
   width: 150px;
   height: 150px;
   border-radius: 50%;
   cursor: pointer;
+  transition: transform 0.2s ease-in;
+}
+
+.explore__image:hover {
+  transform: scale(1.1);
 }
 
 .explore__title {

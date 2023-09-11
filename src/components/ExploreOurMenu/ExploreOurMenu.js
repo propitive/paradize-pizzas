@@ -9,7 +9,9 @@ function ExploreOurMenu() {
         {explorePhotos.map((item, i) => {
           return (
             <div className="explore__item" key={i}>
-              <img className="explore__image" src={item.image} />
+              <div className="explore__image-wrapper">
+                <img className="explore__image" src={item.image} />
+              </div>
               <h2 className="explore__title"> {item.title} </h2>
             </div>
           );
