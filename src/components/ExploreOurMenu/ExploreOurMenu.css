@@ -28,6 +28,11 @@
   justify-content: center;
   align-items: center;
   letter-spacing: 1px;
+  color: rgb(181, 143, 94);
+}
+
+.explore__image-wrapper:hover ~ .explore__title {
+  border-bottom: 3px solid rgb(181, 143, 94);
 }
 
 .explore__image-wrapper {
@@ -50,7 +55,6 @@
 }
 
 .explore__title {
-  font-family: "Roboto Condensed", sans-serif, Arial;
   margin: 10px 0 0;
   padding: 0;
   font-weight: 700;
@@ -59,4 +63,26 @@
   border-bottom: 3px solid transparent;
   transition: color 0.2s ease-out;
   cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+  color: black;
+}
+
+/* .explore__title::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  margin: auto;
+  display: block;
+  transition: all 0.2s ease;
+} */
+
+.explore__title:hover {
+  border-bottom: 3px solid rgb(181, 143, 94);
 }
