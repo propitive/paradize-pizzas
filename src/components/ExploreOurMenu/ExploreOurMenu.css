@@ -33,6 +33,7 @@
 
 .explore__image-wrapper:hover ~ .explore__title {
   border-bottom: 3px solid rgb(181, 143, 94);
+  transform: translate(0, -15px);
 }
 
 /* .explore__image-wrapper:hover + .explore__title::after {
@@ -44,6 +45,11 @@
   height: 200px;
   overflow: hidden;
   border-radius: 50%;
+  transition: transform 0.2s ease-in;
+}
+
+.explore__image-wrapper:hover {
+  transform: translate(0, -15px);
 }
 
 .explore__image {
@@ -65,7 +71,7 @@
   font-size: 16px;
   line-height: 22px;
   border-bottom: 3px solid transparent;
-  transition: color 0.2s ease-out;
+  transition: transform 0.2s ease-in;
   cursor: pointer;
   position: relative;
   text-decoration: none;
