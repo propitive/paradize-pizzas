@@ -11,27 +11,46 @@ function FeaturedSection() {
   }, []);
 
   return (
-    <div className="carousel__container">
-      <motion.div
-        ref={carousel}
-        className="carousel"
-        whileTap={{ cursor: "grabbing" }}
-        style={{ flexFlow: "row", overflowX: "scroll" }}
-      >
+    <div className="featured">
+      <div className="featured__carousel__container">
         <motion.div
-          drag="x"
-          dragConstraints={{ right: 0, left: -width }}
-          className="carousel__inner"
+          ref={carousel}
+          className="featured__carousel"
+          whileTap={{ cursor: "grabbing" }}
+          style={{ flexFlow: "row", overflowX: "scroll" }}
         >
-          {featuredPhotos.map((image, i) => {
-            return (
-              <motion.div className="carousel__image-div" key={i}>
-                <img className="carousel__image" src={image} alt="" />
-              </motion.div>
-            );
-          })}
+          <motion.div
+            drag="x"
+            dragConstraints={{ right: 0, left: -width }}
+            className="featured__carousel__inner"
+          >
+            {featuredPhotos.map((image, i) => {
+              return (
+                <motion.div className="featured__carousel__image-div" key={i}>
+                  <img
+                    className="featured__carousel__image"
+                    src={image}
+                    alt=""
+                  />
+                </motion.div>
+              );
+            })}
+          </motion.div>
         </motion.div>
-      </motion.div>
+      </div>
+      <div className="featured__text">
+        <h3 className="featured__header">
+          Reshaping the way we think think about fire wood pizzas
+        </h3>
+        <p className="featured__paragraph">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur.
+        </p>
+      </div>
     </div>
   );
 }
