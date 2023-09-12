@@ -1,0 +1,20 @@
+.footer {
+  max-width: calc(100% - 400px);
+  border-top: 1px solid #1f1717;
+  border-bottom: 1px solid #1f1717;
+  margin: 0 auto 50px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  display: flex;
+  flex-direction: row;
+}
+
+.footer__facebook {
+  width: 40px;
+  height: 40px;
+}
+
+.footer__email {
+  width: 40px;
+  height: 40px;
+}

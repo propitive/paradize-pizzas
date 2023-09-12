@@ -1,7 +1,8 @@
+import FeaturedSection from "../FeaturedSection/FeaturedSection";
+import Footer from "../Footer/Footer";
+import ExploreOurMenu from "../ExploreOurMenu/ExploreOurMenu";
 import Header from "../Header/Header";
 import VideoBackground from "../VideoBackground/VideoBackground";
-import FeaturedSection from "../FeaturedSection/FeaturedSection";
-import ExploreOurMenu from "../ExploreOurMenu/ExploreOurMenu";
 
 function Main() {
   return (
@@ -10,6 +11,7 @@ function Main() {
       <VideoBackground />
       <FeaturedSection />
       <ExploreOurMenu />
+      <Footer />
     </>
   );
 }

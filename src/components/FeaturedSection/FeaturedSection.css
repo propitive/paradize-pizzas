@@ -1,10 +1,7 @@
 .carousel {
   cursor: grab;
   overflow: hidden;
-  /* border-bottom: solid rgb(181, 143, 94); */
   border-bottom: solid #1f1717;
-  /* background: rgb(181, 143, 94); */
-  /* margin: 50px 100px 50px; */
 }
 
 .carousel::-webkit-scrollbar {
@@ -12,11 +9,9 @@
 }
 
 .carousel__container {
-  /* padding: 50px 300px 50px; */
   max-width: calc(100% - 400px);
   background-color: #f5f0f0;
   margin: 80px auto 80px;
-  /* background: #1f1717; */
 }
 
 .carousel__inner {
@@ -24,8 +19,6 @@
 }
 
 .carousel__image-div {
-  /* min-height: 40rem;
-  min-width: 30rem; */
   height: 500px;
   min-width: 400px;
   padding: 40px;
@@ -34,8 +27,6 @@
 .carousel__image {
   width: 100%;
   height: 100%;
-  /* height: 350px;
-  width: 350px; */
   border-radius: 2rem;
   pointer-events: none;
 }
