@@ -8,7 +8,12 @@ function Header() {
         <img className="header__logo" src={logo} />
       </Link>
       <ul className="header__list">
-        <li className="header__list-item">MENU</li>
+        <Link
+          to="/menu/pizza"
+          style={{ textDecoration: "none", alignSelf: "center" }}
+        >
+          <li className="header__list-item">MENU</li>
+        </Link>
         <li className="header__list-item">ABOUT</li>
         <li className="header__list-item">CONTACT US</li>
         <li className="header__list-item">GALLERY</li>

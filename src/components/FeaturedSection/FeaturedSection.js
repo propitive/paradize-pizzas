@@ -40,7 +40,7 @@ function FeaturedSection() {
       </div>
       <div className="featured__text">
         <h3 className="featured__header">
-          Changing the way we think about fire wood pizzas
+          Changing the way we think about brick oven pizzas
         </h3>
         <p className="featured__paragraph">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

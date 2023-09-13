@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap");
+
+.menu-pizza {
+  height: auto;
+}
+
+.menu-pizza__title {
+  margin: 50px auto 50px 375px;
+  font-family: "Playfair Display", serif, arial;
+  font-size: 50px;
+  color: #1f1717;
+}
+
+.menu-pizza__subtitle {
+  margin: 0 auto 30px 375px;
+  color: #1f1717;
+}
+
+.menu-pizza__button {
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  /* padding-block: 0.5rem;
+  padding-inline: 1.25rem; */
+  background: rgb(181, 143, 94);
+  border-radius: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffff;
+  gap: 10px;
+  font-weight: bold;
+  border: 3px solid #ffffff4d;
+  outline: none;
+  overflow: hidden;
+  font-size: 15px;
+  width: 146px;
+  height: 41px;
+  padding: 0;
+  align-self: center;
+  cursor: pointer;
+  width: 170px;
+  margin: 0 auto 30px 375px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-pizza__button:hover {
+  transform: scale(1.05);
+  border-color: #fff9;
+}
+
+.menu-pizza__button:hover .icon {
+  transform: translate(4px);
+}
+
+.menu-pizza__button:hover::before {
+  animation: shine 1.5s ease-out infinite;
+}
+
+.menu-pizza__button::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  background-image: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 30%,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0) 70%
+  );
+  top: 0;
+  left: -100px;
+  opacity: 0.6;
+}
+
+@keyframes shine {
+  0% {
+    left: -100px;
+  }
+
+  60% {
+    left: 100%;
+  }
+
+  to {
+    left: 100%;
+  }
+}
+
+.menu-pizza__ul {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 0 375px;
+  padding: 0;
+}
+
+.menu-pizza__li {
+  height: 143px;
+  width: 670px;
+  padding: 10px 0 10px;
+  display: flex;
+  flex-direction: row;
+  border-bottom: #1f1717 1px solid;
+  cursor: default;
+}
+
+.menu-pizza__li:hover {
+  background-color: rgba(255, 255, 255, 0.685);
+}
+
+.menu-pizza__image {
+  height: 130px;
+  width: 268px;
+  border-radius: 5%;
+  margin: 0 15px 0 0;
+}
+
+.menu-pizza__text {
+  width: 386px;
+  padding: 0 20px 0 0;
+  color: #1f1717;
+}
+
+.menu-pizza__popular {
+  color: rgb(226, 18, 22);
+  width: fit-content;
+  height: 18px;
+  padding: 1px 3px;
+  border-color: rgb(226, 18, 22);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+.menu-pizza__name {
+  margin: 0;
+  color: #1f1717;
+}
+
+.menu-pizza__description {
+  margin: 0;
+  line-height: 1.5;
+  color: #1f1717;
+}

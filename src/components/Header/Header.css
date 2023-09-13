@@ -30,6 +30,7 @@
 .header__list-item {
   cursor: pointer;
   transition: color 0.15s ease-in;
+  color: white;
 }
 
 .header__list-item:hover {
