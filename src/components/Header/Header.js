@@ -12,6 +12,7 @@ function Header() {
 
   return (
     <>
+      {console.log(isDropdown)}
       <header className="header">
         <Link to="/" style={{ textDecoration: "none", alignSelf: "center" }}>
           <img className="header__logo" src={logo} />
