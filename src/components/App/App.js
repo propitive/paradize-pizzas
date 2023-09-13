@@ -3,17 +3,21 @@ import MenuPizza from "../MenuPizza/MenuPizza";
 
 import "./App.css";
 import Main from "../Main/Main";
+import ScrollToTop from "../ScrollToTop/ScrollToTop";
 
 function App() {
   return (
-    <Switch>
-      <Route path="/menu/pizza">
-        <MenuPizza />
-      </Route>
-      <Route path="/">
-        <Main />
-      </Route>
-    </Switch>
+    <>
+      <ScrollToTop />
+      <Switch>
+        <Route path="/menu/pizza">
+          <MenuPizza />
+        </Route>
+        <Route path="/">
+          <Main />
+        </Route>
+      </Switch>
+    </>
   );
 }
 

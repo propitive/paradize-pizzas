@@ -17,10 +17,10 @@ export const featuredPhotos = [
 ];
 
 export const explorePhotos = [
-  { image: jalapenoPizza, title: "Brick Oven Pizzas" },
-  { image: jalapenoPoppers, title: "Appetizers" },
-  { image: pizzaAtNight, title: "Salads" },
-  { image: pizzaSign, title: "Desserts" },
+  { image: jalapenoPizza, title: "Brick Oven Pizzas", path: "/menu/pizza" },
+  { image: jalapenoPoppers, title: "Appetizers", path: "/menu/appetizer" },
+  { image: pizzaAtNight, title: "Salads", path: "/menu/salad" },
+  { image: pizzaSign, title: "Desserts", path: "/menu/dessert" },
 ];
 
 export const menuOfPizzas = [
