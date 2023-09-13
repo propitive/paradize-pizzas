@@ -50,8 +50,6 @@ function FeaturedSection() {
           reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
           pariatur.
         </p>
-        {/* <button className="featured__button">BOOK ONLINE</button> */}
-
         <button className="featured__button">
           BOOK ONLINE
           <svg fill="currentColor" viewBox="0 0 24 24" class="icon">

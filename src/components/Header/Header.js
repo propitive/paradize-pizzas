@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../images/paradizePizzasLogo.svg";
-import { menuNavItems } from "../../utils/constants";
 import Dropdown from "../Dropdown/Dropdown";
 
 function Header() {
@@ -30,7 +29,6 @@ function Header() {
           <li className="header__list-item">CONTACT US</li>
           <li className="header__list-item">GALLERY</li>
         </ul>
-        {/* <button className="header__button">BOOK ONLINE</button> */}
         <Link to="/" style={{ textDecoration: "none", alignSelf: "center" }}>
           <button className="header__button">
             BOOK ONLINE

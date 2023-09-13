@@ -36,10 +36,6 @@
   transform: translate(0, -15px);
 }
 
-/* .explore__image-wrapper:hover + .explore__title::after {
-  transition: all 0.5s ease;
-} */
-
 .explore__image-wrapper {
   width: 200px;
   height: 200px;
@@ -83,18 +79,3 @@
   border-bottom: 3px solid rgb(181, 143, 94);
   transition: all 0.5s ease;
 }
-
-/* .explore__title:after {
-  content: "";
-  display: block;
-  margin: auto;
-  height: 3px;
-  width: 0px;
-  background: transparent;
-  transition: width 0.5s ease, background-color 0.5s ease;
-}
-
-.explore__title:hover:after {
-  width: 100%;
-  background: blue;
-} */
