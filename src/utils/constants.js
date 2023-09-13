@@ -91,3 +91,30 @@ export const menuOfPizzas = [
     isPopular: false,
   },
 ];
+
+export const menuNavItems = [
+  {
+    id: 1,
+    title: "Pizza",
+    path: "/menu/pizza",
+    className: "nav-item",
+  },
+  {
+    id: 2,
+    title: "Appetizers",
+    path: "/menu/appetizer",
+    className: "nav-item",
+  },
+  {
+    id: 3,
+    title: "Salads",
+    path: "/menu/salad",
+    className: "nav-item",
+  },
+  {
+    id: 4,
+    title: "Desserts",
+    path: "/menu/dessert",
+    className: "nav-item",
+  },
+];
