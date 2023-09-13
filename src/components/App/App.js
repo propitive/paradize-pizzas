@@ -9,6 +9,7 @@ function App() {
       <Route path="/">
         <Main />
       </Route>
+      <Route path="/menu/pizza"></Route>
     </Switch>
   );
 }
