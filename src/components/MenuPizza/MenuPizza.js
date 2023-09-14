@@ -1,5 +1,6 @@
 import Header from "../Header/Header";
 import { menuOfPizzas } from "../../utils/constants";
+import Footer from "../Footer/Footer";
 
 function MenuPizza() {
   return (
@@ -40,6 +41,7 @@ function MenuPizza() {
           })}
         </ul>
       </div>
+      <Footer />
     </>
   );
 }
