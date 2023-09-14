@@ -29,9 +29,17 @@ function Header({ handleVisibleReset }) {
             MENU
             {isDropdown && <Dropdown />}
           </li>
-          <li className="header__list-item" onClick={() => handleVisibleReset}>
-            ABOUT
-          </li>
+          <Link
+            to="/about"
+            style={{ textDecoration: "none", alignSelf: "center" }}
+          >
+            <li
+              className="header__list-item"
+              onClick={() => handleVisibleReset}
+            >
+              ABOUT
+            </li>
+          </Link>
           <li className="header__list-item" onClick={() => handleVisibleReset}>
             CONTACT US
           </li>

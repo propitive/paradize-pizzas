@@ -1,0 +1,25 @@
+.about {
+  display: flex;
+  flex-direction: row;
+}
+
+.about__image {
+  width: 50%;
+  margin: 0 0 50px;
+  height: 900px;
+}
+
+.about__text {
+  width: 50%;
+}
+
+.about__title {
+  margin: 100px auto 0;
+  text-align: center;
+}
+
+.about__paragraph {
+  text-align: center;
+  margin: 20px auto 0;
+  max-width: calc(100% - 100px);
+}

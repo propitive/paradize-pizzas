@@ -8,6 +8,7 @@ import MenuAppetizer from "../MenuAppetizer/MenuAppetizer";
 import { useEffect, useState } from "react";
 import MenuSalad from "../MenuSalad/MenuSalad";
 import MenuDessert from "../MenuDessert/MenuDessert";
+import About from "../About/About";
 
 function App() {
   const [visible, setVisible] = useState(6);
@@ -43,6 +44,9 @@ function App() {
         </Route>
         <Route path="/menu/dessert">
           <MenuDessert />
+        </Route>
+        <Route path="/about">
+          <About />
         </Route>
         <Route path="/">
           <Main />
