@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Header from "../Header/Header";
 import { menuOfPizzas } from "../../utils/constants";
 import Footer from "../Footer/Footer";
+import MenuItem from "../MenuItem/MenuItem";
 
 function MenuPizza({ handleShowMoreItems, handleVisibleReset, visible }) {
   useEffect(() => {
@@ -29,16 +30,14 @@ function MenuPizza({ handleShowMoreItems, handleVisibleReset, visible }) {
         <ul className="menu-pizza__ul">
           {menuOfPizzas.slice(0, visible).map((pizza, i) => {
             return (
-              <li className="menu-pizza__li" key={i}>
-                <img className="menu-pizza__image" src={pizza.image} />
-                <div className="menu-pizza__text">
-                  {pizza.isPopular === true ? (
-                    <button className="menu-pizza__popular">POPULAR</button>
-                  ) : undefined}
-                  <h3 className="menu-pizza__name">{pizza.name}</h3>
-                  <p className="menu-pizza__description">{pizza.description}</p>
-                </div>
-              </li>
+              <MenuItem
+                liClassName=""
+                key={pizza.id}
+                image={pizza.image}
+                isPopular={pizza.isPopular}
+                name={pizza.name}
+                description={pizza.description}
+              />
             );
           })}
         </ul>

@@ -1,0 +1,49 @@
+.menu-item__li {
+  max-width: 850px;
+  height: 160px;
+  padding: 10px 0 10px;
+  display: flex;
+  flex-direction: row;
+  border-bottom: #1f1717 1px solid;
+  cursor: default;
+}
+
+.menu-item__li:hover {
+  background-color: rgba(255, 255, 255, 0.685);
+}
+
+.menu-item__image {
+  height: 130px;
+  width: 268px;
+  border-radius: 5%;
+  margin: 0 15px 0 0;
+}
+
+.menu-item__text {
+  width: 386px;
+  padding: 0 20px 0 0;
+  color: #1f1717;
+}
+
+.menu-item__popular {
+  color: rgb(226, 18, 22);
+  width: fit-content;
+  height: 18px;
+  padding: 1px 3px;
+  border-color: rgb(226, 18, 22);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+.menu-item__name {
+  margin: 0;
+  color: #1f1717;
+}
+
+.menu-item__description {
+  margin: 0;
+  line-height: 1.5;
+  color: #1f1717;
+}

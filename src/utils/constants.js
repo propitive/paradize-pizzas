@@ -25,6 +25,7 @@ export const explorePhotos = [
 
 export const menuOfPizzas = [
   {
+    id: 1,
     image: jalapenoPizza,
     name: "Ricotta + Bacon",
     description:
@@ -32,6 +33,7 @@ export const menuOfPizzas = [
     isPopular: false,
   },
   {
+    id: 2,
     image: jalapenoPizza,
     name: "Pesto",
     description:
@@ -39,12 +41,14 @@ export const menuOfPizzas = [
     isPopular: false,
   },
   {
+    id: 3,
     image: jalapenoPizza,
     name: "Margherita",
     description: "Tomato sauce, fresh mozzarella, tomato, and basil.",
     isPopular: false,
   },
   {
+    id: 4,
     image: jalapenoPizza,
     name: "Meat Lovers",
     description:
@@ -52,6 +56,7 @@ export const menuOfPizzas = [
     isPopular: true,
   },
   {
+    id: 5,
     image: jalapenoPizza,
     name: "Veggie",
     description:
@@ -59,12 +64,14 @@ export const menuOfPizzas = [
     isPopular: false,
   },
   {
+    id: 6,
     image: jalapenoPizza,
     name: "Pepperoni",
     description: "Fresh mozzarella, pepperoni, and tomato sauce.",
     isPopular: true,
   },
   {
+    id: 7,
     image: jalapenoPizza,
     name: "Pepperoni + Mushrooms",
     description:
@@ -72,12 +79,14 @@ export const menuOfPizzas = [
     isPopular: false,
   },
   {
+    id: 8,
     image: jalapenoPizza,
     name: "Pepperoni + Jalapenos",
     description: "Fresh mozzarella, pepperoni, and jalapenos.",
     isPopular: false,
   },
   {
+    id: 9,
     image: jalapenoPizza,
     name: "Chef's Special",
     description:
@@ -85,6 +94,7 @@ export const menuOfPizzas = [
     isPopular: false,
   },
   {
+    id: 10,
     image: jalapenoPizza,
     name: "Classic Cheese",
     description: "Fresh mozzarella, tomato sauce, and parmesan cheese.",
