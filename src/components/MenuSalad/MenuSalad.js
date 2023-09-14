@@ -1,10 +1,10 @@
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
-import { menuOfAppetizers } from "../../utils/constants";
 import MenuItem from "../MenuItem/MenuItem";
 import BookOnlineButton from "../BookOnlineButton/BookOnlineButton";
+import { menuOfSalads } from "../../utils/constants";
 
-function MenuAppetizer() {
+function MenuSalad() {
   return (
     <>
       <Header />
@@ -15,15 +15,15 @@ function MenuAppetizer() {
         </h2>
         <BookOnlineButton className="menu-item__button" />
         <ul className="menu-item__ul">
-          {menuOfAppetizers.map((appetizer) => {
+          {menuOfSalads.map((salad) => {
             return (
               <MenuItem
                 liClassName=""
-                key={appetizer.id}
-                image={appetizer.image}
-                isPopular={appetizer.isPopular}
-                name={appetizer.name}
-                description={appetizer.description}
+                key={salad.id}
+                image={salad.image}
+                isPopular={salad.isPopular}
+                name={salad.name}
+                description={salad.description}
               />
             );
           })}
@@ -34,4 +34,4 @@ function MenuAppetizer() {
   );
 }
 
-export default MenuAppetizer;
+export default MenuSalad;

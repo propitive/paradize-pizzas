@@ -104,6 +104,7 @@ export const menuOfPizzas = [
 
 export const menuOfAppetizers = [
   {
+    id: 1,
     image: jalapenoPizza,
     name: "Sausage Lolipop",
     description:
@@ -111,6 +112,7 @@ export const menuOfAppetizers = [
     isPopular: false,
   },
   {
+    id: 2,
     image: jalapenoPizza,
     name: "Chicken Bacon Wrap",
     description:
@@ -118,17 +120,57 @@ export const menuOfAppetizers = [
     isPopular: false,
   },
   {
+    id: 3,
     image: jalapenoPizza,
     name: "Tomato Bruschetta",
     description: "Tomato sauce, fresh mozzarella, tomato, and basil.",
     isPopular: false,
   },
   {
+    id: 4,
     image: jalapenoPizza,
     name: "Mushroom Cristinis",
     description:
       "Smoked bacon, sausage, pepperoni, tomato sauce, and fresh mozzarella.",
     isPopular: true,
+  },
+];
+
+export const menuOfSalads = [
+  {
+    id: 1,
+    image: jalapenoPizza,
+    name: "Ceaser Salad",
+    description:
+      "Ricotta cheese, garlic, bacon, fresh mozzarella, and white truffle oil.",
+    isPopular: false,
+  },
+  {
+    id: 2,
+    image: jalapenoPizza,
+    name: "House Salad",
+    description:
+      "Pest sauce, fresh mozzarella, caramelized onions, and blue cheese.",
+    isPopular: false,
+  },
+];
+
+export const menuOfDesserts = [
+  {
+    id: 1,
+    image: jalapenoPizza,
+    name: "Nutella + Marshmallow Cream Pizza",
+    description:
+      "Ricotta cheese, garlic, bacon, fresh mozzarella, and white truffle oil.",
+    isPopular: false,
+  },
+  {
+    id: 2,
+    image: jalapenoPizza,
+    name: "Peach Pizza",
+    description:
+      "Pest sauce, fresh mozzarella, caramelized onions, and blue cheese.",
+    isPopular: false,
   },
 ];
 

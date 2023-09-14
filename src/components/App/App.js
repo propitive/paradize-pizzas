@@ -6,6 +6,8 @@ import Main from "../Main/Main";
 import ScrollToTop from "../ScrollToTop/ScrollToTop";
 import MenuAppetizer from "../MenuAppetizer/MenuAppetizer";
 import { useEffect, useState } from "react";
+import MenuSalad from "../MenuSalad/MenuSalad";
+import MenuDessert from "../MenuDessert/MenuDessert";
 
 function App() {
   const [visible, setVisible] = useState(6);
@@ -35,6 +37,12 @@ function App() {
         </Route>
         <Route path="/menu/appetizer">
           <MenuAppetizer />
+        </Route>
+        <Route path="/menu/salad">
+          <MenuSalad />
+        </Route>
+        <Route path="/menu/dessert">
+          <MenuDessert />
         </Route>
         <Route path="/">
           <Main />
