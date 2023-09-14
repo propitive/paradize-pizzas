@@ -10,20 +10,19 @@ function MenuPizza({ handleShowMoreItems, handleVisibleReset, visible }) {
 
   return (
     <>
-      {console.log(visible)}
       <Header />
       <div className="menu-pizza">
         <h1 className="menu-pizza__title">Oven Baked Pizzas</h1>
         <h2 className="menu-pizza__subtitle">
-          “Keep your friends close and your pizza closer.” – Anonymous
+          Keep your friends close and your pizza closer.
         </h2>
         <button className="menu-pizza__button">
           BOOK ONLINE
-          <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
+          <svg fill="currentColor" viewBox="0 0 24 24" className="icon">
             <path
-              clip-rule="evenodd"
+              clipRule="evenodd"
               d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
-              fill-rule="evenodd"
+              fillRule="evenodd"
             ></path>
           </svg>
         </button>
@@ -44,12 +43,12 @@ function MenuPizza({ handleShowMoreItems, handleVisibleReset, visible }) {
           })}
         </ul>
         {visible === 6 ? (
-          <h3
+          <button
             className="menu-pizza__show-more"
             onClick={() => handleShowMoreItems(menuOfPizzas)}
           >
-            Show more
-          </h3>
+            Show More
+          </button>
         ) : undefined}
         <p className="menu-pizza__advisory">
           *Gluten-free, rice flower, or cauliflower dough are available upon
