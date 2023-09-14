@@ -92,6 +92,36 @@ export const menuOfPizzas = [
   },
 ];
 
+export const menuOfAppetizers = [
+  {
+    image: jalapenoPizza,
+    name: "Sausage Lolipop",
+    description:
+      "Ricotta cheese, garlic, bacon, fresh mozzarella, and white truffle oil.",
+    isPopular: false,
+  },
+  {
+    image: jalapenoPizza,
+    name: "Chicken Bacon Wrap",
+    description:
+      "Pest sauce, fresh mozzarella, caramelized onions, and blue cheese.",
+    isPopular: false,
+  },
+  {
+    image: jalapenoPizza,
+    name: "Tomato Bruschetta",
+    description: "Tomato sauce, fresh mozzarella, tomato, and basil.",
+    isPopular: false,
+  },
+  {
+    image: jalapenoPizza,
+    name: "Mushroom Cristinis",
+    description:
+      "Smoked bacon, sausage, pepperoni, tomato sauce, and fresh mozzarella.",
+    isPopular: true,
+  },
+];
+
 export const menuNavItems = [
   {
     id: 1,

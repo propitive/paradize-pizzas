@@ -1,10 +1,16 @@
+import { useEffect, useState } from "react";
 import Header from "../Header/Header";
 import { menuOfPizzas } from "../../utils/constants";
 import Footer from "../Footer/Footer";
 
-function MenuPizza() {
+function MenuPizza({ handleShowMoreItems, handleVisibleReset, visible }) {
+  useEffect(() => {
+    handleVisibleReset();
+  }, []);
+
   return (
     <>
+      {console.log(visible)}
       <Header />
       <div className="menu-pizza">
         <h1 className="menu-pizza__title">Oven Baked Pizzas</h1>
@@ -22,12 +28,9 @@ function MenuPizza() {
           </svg>
         </button>
         <ul className="menu-pizza__ul">
-          {menuOfPizzas.map((pizza) => {
-            {
-              console.log(pizza);
-            }
+          {menuOfPizzas.slice(0, visible).map((pizza, i) => {
             return (
-              <li className="menu-pizza__li">
+              <li className="menu-pizza__li" key={i}>
                 <img className="menu-pizza__image" src={pizza.image} />
                 <div className="menu-pizza__text">
                   {pizza.isPopular === true ? (
@@ -40,6 +43,18 @@ function MenuPizza() {
             );
           })}
         </ul>
+        {visible === 6 ? (
+          <h3
+            className="menu-pizza__show-more"
+            onClick={() => handleShowMoreItems(menuOfPizzas)}
+          >
+            Show more
+          </h3>
+        ) : undefined}
+        <p className="menu-pizza__advisory">
+          *Gluten-free, rice flower, or cauliflower dough are available upon
+          request*
+        </p>
       </div>
       <Footer />
     </>

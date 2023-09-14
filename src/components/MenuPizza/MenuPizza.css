@@ -147,3 +147,14 @@
   line-height: 1.5;
   color: #1f1717;
 }
+
+.menu-pizza__show-more {
+  margin: 10px auto 20px 375px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.menu-pizza__advisory {
+  margin: 10px auto 80px 375px;
+  padding: 0;
+}

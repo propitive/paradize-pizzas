@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import logo from "../../images/paradizePizzasLogo.svg";
 import Dropdown from "../Dropdown/Dropdown";
 
-function Header() {
+function Header({ handleVisibleReset }) {
   const [isDropdown, setIsDropdown] = useState(false);
   const liMenuClassName = isDropdown
     ? "header__list-item-menu-hovered"
@@ -11,10 +11,13 @@ function Header() {
 
   return (
     <>
-      {console.log(isDropdown)}
       <header className="header">
         <Link to="/" style={{ textDecoration: "none", alignSelf: "center" }}>
-          <img className="header__logo" src={logo} />
+          <img
+            className="header__logo"
+            src={logo}
+            onClick={() => handleVisibleReset}
+          />
         </Link>
         <ul className="header__list">
           <li
@@ -25,12 +28,18 @@ function Header() {
             MENU
             {isDropdown && <Dropdown />}
           </li>
-          <li className="header__list-item">ABOUT</li>
-          <li className="header__list-item">CONTACT US</li>
-          <li className="header__list-item">GALLERY</li>
+          <li className="header__list-item" onClick={() => handleVisibleReset}>
+            ABOUT
+          </li>
+          <li className="header__list-item" onClick={() => handleVisibleReset}>
+            CONTACT US
+          </li>
+          <li className="header__list-item" onClick={() => handleVisibleReset}>
+            GALLERY
+          </li>
         </ul>
         <Link to="/" style={{ textDecoration: "none", alignSelf: "center" }}>
-          <button className="header__button">
+          <button className="header__button" onClick={() => handleVisibleReset}>
             BOOK ONLINE
             <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
               <path
