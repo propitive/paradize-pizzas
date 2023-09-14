@@ -9,9 +9,9 @@ function MenuSalad() {
     <>
       <Header />
       <div className="menu-item">
-        <h1 className="menu-item__title">Oven Baked Pizzas</h1>
+        <h1 className="menu-item__title">Salads</h1>
         <h2 className="menu-item__subtitle">
-          Keep your friends close and your pizza closer.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </h2>
         <BookOnlineButton className="menu-item__button" />
         <ul className="menu-item__ul">

@@ -9,6 +9,8 @@ function MenuPizza({ handleShowMoreItems, handleVisibleReset, visible }) {
   useEffect(() => {
     handleVisibleReset();
   }, []);
+  const advisoryClassName =
+    visible === 6 ? "menu-item__advisory" : "menu-item__advisory-show-more";
 
   return (
     <>
@@ -16,7 +18,7 @@ function MenuPizza({ handleShowMoreItems, handleVisibleReset, visible }) {
       <div className="menu-item">
         <h1 className="menu-item__title">Oven Baked Pizzas</h1>
         <h2 className="menu-item__subtitle">
-          Keep your friends close and your pizza closer.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </h2>
         <BookOnlineButton className="menu-item__button" />
         <ul className="menu-item__ul">
@@ -41,7 +43,7 @@ function MenuPizza({ handleShowMoreItems, handleVisibleReset, visible }) {
             Show More
           </button>
         ) : undefined}
-        <p className="menu-item__advisory">
+        <p className={advisoryClassName}>
           *Gluten-free, rice flower, or cauliflower dough are available upon
           request*
         </p>
