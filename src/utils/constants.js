@@ -6,6 +6,7 @@ import salad from "../images/featured/salad.jpg";
 import snackBar from "../images/featured/snackBar.PNG";
 import tioSebasCooking from "../images/featured/tioSebasCooking.jpg";
 
+//////////////// PHOTOS ////////////////
 export const featuredPhotos = [
   jalapenoPizza,
   jalapenoPoppers,
@@ -23,6 +24,7 @@ export const explorePhotos = [
   { image: pizzaSign, title: "Desserts", path: "/menu/dessert" },
 ];
 
+//////////////// MENUS ////////////////
 export const menuOfPizzas = [
   {
     id: 1,
@@ -31,6 +33,7 @@ export const menuOfPizzas = [
     description:
       "Ricotta cheese, garlic, bacon, fresh mozzarella, and white truffle oil.",
     isPopular: false,
+    isSpecialRequest: false,
   },
   {
     id: 2,
@@ -39,6 +42,7 @@ export const menuOfPizzas = [
     description:
       "Pest sauce, fresh mozzarella, caramelized onions, and blue cheese.",
     isPopular: false,
+    isSpecialRequest: false,
   },
   {
     id: 3,
@@ -46,6 +50,7 @@ export const menuOfPizzas = [
     name: "Margherita",
     description: "Tomato sauce, fresh mozzarella, tomato, and basil.",
     isPopular: false,
+    isSpecialRequest: false,
   },
   {
     id: 4,
@@ -54,6 +59,7 @@ export const menuOfPizzas = [
     description:
       "Smoked bacon, sausage, pepperoni, tomato sauce, and fresh mozzarella.",
     isPopular: true,
+    isSpecialRequest: false,
   },
   {
     id: 5,
@@ -62,6 +68,7 @@ export const menuOfPizzas = [
     description:
       "Tomato sauce, tomatoes, sauteed mushroom, caramelized onions, and arugula.",
     isPopular: false,
+    isSpecialRequest: false,
   },
   {
     id: 6,
@@ -69,6 +76,7 @@ export const menuOfPizzas = [
     name: "Pepperoni",
     description: "Fresh mozzarella, pepperoni, and tomato sauce.",
     isPopular: true,
+    isSpecialRequest: false,
   },
   {
     id: 7,
@@ -77,6 +85,7 @@ export const menuOfPizzas = [
     description:
       "Fresh mozzarella, pepperoni, sauteed mushrooms, and tomato sauce.",
     isPopular: false,
+    isSpecialRequest: false,
   },
   {
     id: 8,
@@ -84,6 +93,7 @@ export const menuOfPizzas = [
     name: "Pepperoni + Jalapenos",
     description: "Fresh mozzarella, pepperoni, and jalapenos.",
     isPopular: false,
+    isSpecialRequest: false,
   },
   {
     id: 9,
@@ -92,6 +102,7 @@ export const menuOfPizzas = [
     description:
       "Tomato sauce, fresh mozzarella, sauteed mushrooms, goat cheese, pepperoni, jalapenos bacon, and caramelized onions.",
     isPopular: false,
+    isSpecialRequest: false,
   },
   {
     id: 10,
@@ -99,6 +110,7 @@ export const menuOfPizzas = [
     name: "Classic Cheese",
     description: "Fresh mozzarella, tomato sauce, and parmesan cheese.",
     isPopular: false,
+    isSpecialRequest: false,
   },
 ];
 
@@ -110,6 +122,7 @@ export const menuOfAppetizers = [
     description:
       "Ricotta cheese, garlic, bacon, fresh mozzarella, and white truffle oil.",
     isPopular: false,
+    isSpecialRequest: false,
   },
   {
     id: 2,
@@ -118,6 +131,7 @@ export const menuOfAppetizers = [
     description:
       "Pest sauce, fresh mozzarella, caramelized onions, and blue cheese.",
     isPopular: false,
+    isSpecialRequest: false,
   },
   {
     id: 3,
@@ -125,6 +139,7 @@ export const menuOfAppetizers = [
     name: "Tomato Bruschetta",
     description: "Tomato sauce, fresh mozzarella, tomato, and basil.",
     isPopular: false,
+    isSpecialRequest: false,
   },
   {
     id: 4,
@@ -133,6 +148,7 @@ export const menuOfAppetizers = [
     description:
       "Smoked bacon, sausage, pepperoni, tomato sauce, and fresh mozzarella.",
     isPopular: true,
+    isSpecialRequest: false,
   },
 ];
 
@@ -144,6 +160,7 @@ export const menuOfSalads = [
     description:
       "Ricotta cheese, garlic, bacon, fresh mozzarella, and white truffle oil.",
     isPopular: false,
+    isSpecialRequest: false,
   },
   {
     id: 2,
@@ -152,6 +169,7 @@ export const menuOfSalads = [
     description:
       "Pest sauce, fresh mozzarella, caramelized onions, and blue cheese.",
     isPopular: false,
+    isSpecialRequest: false,
   },
 ];
 
@@ -163,6 +181,7 @@ export const menuOfDesserts = [
     description:
       "Ricotta cheese, garlic, bacon, fresh mozzarella, and white truffle oil.",
     isPopular: false,
+    isSpecialRequest: false,
   },
   {
     id: 2,
@@ -171,9 +190,50 @@ export const menuOfDesserts = [
     description:
       "Pest sauce, fresh mozzarella, caramelized onions, and blue cheese.",
     isPopular: false,
+    isSpecialRequest: false,
   },
 ];
 
+export const menuOfPastas = [
+  {
+    id: 1,
+    image: jalapenoPizza,
+    name: "Chicken Alfredo",
+    description:
+      "Ricotta cheese, garlic, bacon, fresh mozzarella, and white truffle oil.",
+    isPopular: false,
+    isSpecialRequest: false,
+  },
+  {
+    id: 2,
+    image: jalapenoPizza,
+    name: "Shrimp Alfredo",
+    description:
+      "Pest sauce, fresh mozzarella, caramelized onions, and blue cheese.",
+    isPopular: false,
+    isSpecialRequest: false,
+  },
+  {
+    id: 3,
+    image: jalapenoPizza,
+    name: "Roasted Chicken Penne",
+    description:
+      "Pest sauce, fresh mozzarella, caramelized onions, and blue cheese.",
+    isPopular: false,
+    isSpecialRequest: false,
+  },
+  {
+    id: 4,
+    image: jalapenoPizza,
+    name: "Red Sauce Meatballs",
+    description:
+      "Pest sauce, fresh mozzarella, caramelized onions, and blue cheese.",
+    isPopular: false,
+    isSpecialRequest: false,
+  },
+];
+
+//////////////// NAV BAR ////////////////
 export const menuNavItems = [
   {
     id: 1,
@@ -197,6 +257,12 @@ export const menuNavItems = [
     id: 4,
     title: "Desserts",
     path: "/menu/dessert",
+    className: "nav-item",
+  },
+  {
+    id: 5,
+    title: "Pastas",
+    path: "/menu/pasta",
     className: "nav-item",
   },
 ];

@@ -9,6 +9,7 @@ import { useEffect, useState } from "react";
 import MenuSalad from "../MenuSalad/MenuSalad";
 import MenuDessert from "../MenuDessert/MenuDessert";
 import About from "../About/About";
+import MenuPasta from "../MenuPasta/MenuPasta";
 
 function App() {
   const [visible, setVisible] = useState(6);
@@ -44,6 +45,9 @@ function App() {
         </Route>
         <Route path="/menu/dessert">
           <MenuDessert />
+        </Route>
+        <Route path="/menu/pasta">
+          <MenuPasta />
         </Route>
         <Route path="/about">
           <About />
