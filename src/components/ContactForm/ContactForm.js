@@ -1,16 +1,27 @@
 import { useState } from "react";
 import Header from "../Header/Header";
 import { menuOfPizzas } from "../../utils/constants";
+import { SingleSelect } from "../SingleSelect/SingleSelect.tsx";
+
+const options = [
+  { label: "First", value: 1 },
+  { label: "Second", value: 2 },
+  { label: "Third", value: 3 },
+  { label: "Fourth", value: 4 },
+  { label: "Fifth", value: 5 },
+];
 
 function ContactForm() {
-  const [pizzaValue, setPizzaValue] = useState("");
-  const onPizzaChange = (event) => {
-    // console.log(event.target.value);
-    setPizzaValue(event.target.value);
-  };
-  const onPizzaSearch = (searchTerm) => {
-    setPizzaValue(searchTerm);
-  };
+  const [value, setValue] = useState(options[0]);
+
+  //   const [pizzaValue, setPizzaValue] = useState("");
+  //   const onPizzaChange = (event) => {
+  //     // console.log(event.target.value);
+  //     setPizzaValue(event.target.value);
+  //   };
+  //   const onPizzaSearch = (searchTerm) => {
+  //     setPizzaValue(searchTerm);
+  //   };
 
   return (
     <>
@@ -32,7 +43,7 @@ function ContactForm() {
           <input className="form__input" required />
           <span className="form__input-span">Location</span>
         </div>
-        <div className="form__input-box">
+        {/* <div className="form__input-box">
           <input
             className="form__input"
             value={pizzaValue}
@@ -66,7 +77,18 @@ function ContactForm() {
                 </div>
               ))}
           </div>
-        </div>
+        </div> */}
+        {/* <Combobox
+          hideCaret
+          hideEmptyPopup
+          data={["Red", "Yellow", "Blue", "Orange"]}
+          placeholder="Search for a color"
+        /> */}
+        <SingleSelect
+          options={options}
+          value={value}
+          onChange={(o) => setValue(o)}
+        />
         <button className="form__submit" type="submit"></button>
       </form>
     </>

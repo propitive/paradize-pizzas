@@ -1,6 +1,7 @@
 @import url("/src/components/About/About.css");
 @import url("/src/components/App/App.css");
 @import url("/src/components/BookOnlineButton/BookOnlineButton.css");
+@import url("/src/components/SingleSelect/SingleSelect.css");
 @import url("/src/components/ContactForm/ContactForm.css");
 @import url("/src/components/Dropdown/Dropdown.css");
 @import url("/src/components/ExploreOurMenu/ExploreOurMenu.css");
