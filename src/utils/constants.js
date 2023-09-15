@@ -46,7 +46,7 @@ export const menuOfPizzas = [
     isSpecialRequest: false,
   },
   {
-    id: 11,
+    id: 15,
     image: jalapenoPizza,
     name: "BBQ Chicken",
     description: "Fresh mozzarella, tomato sauce, and parmesan cheese.",
@@ -130,7 +130,7 @@ export const menuOfPizzas = [
     isSpecialRequest: false,
   },
   {
-    id: 11,
+    id: 16,
     image: jalapenoPizza,
     name: "Hawaiian",
     description: "Fresh mozzarella, tomato sauce, and parmesan cheese.",

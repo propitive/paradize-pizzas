@@ -10,6 +10,7 @@ import MenuSalad from "../MenuSalad/MenuSalad";
 import MenuDessert from "../MenuDessert/MenuDessert";
 import About from "../About/About";
 import MenuPasta from "../MenuPasta/MenuPasta";
+import ContactForm from "../ContactForm/ContactForm";
 
 function App() {
   const [visible, setVisible] = useState(6);
@@ -51,6 +52,9 @@ function App() {
         </Route>
         <Route path="/about">
           <About />
+        </Route>
+        <Route path="/contact-form">
+          <ContactForm />
         </Route>
         <Route path="/">
           <Main />

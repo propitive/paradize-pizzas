@@ -47,7 +47,10 @@ function Header({ handleVisibleReset }) {
             GALLERY
           </li>
         </ul>
-        <Link to="/" style={{ textDecoration: "none", alignSelf: "center" }}>
+        <Link
+          to="/contact-form"
+          style={{ textDecoration: "none", alignSelf: "center" }}
+        >
           <BookOnlineButton className="header__button" />
         </Link>
       </header>
