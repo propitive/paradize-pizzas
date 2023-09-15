@@ -22,6 +22,7 @@ export const explorePhotos = [
   { image: jalapenoPoppers, title: "Appetizers", path: "/menu/appetizer" },
   { image: pizzaAtNight, title: "Salads", path: "/menu/salad" },
   { image: pizzaSign, title: "Desserts", path: "/menu/dessert" },
+  { image: snackBar, title: "Pastas", path: "/menu/pasta" },
 ];
 
 //////////////// MENUS ////////////////
