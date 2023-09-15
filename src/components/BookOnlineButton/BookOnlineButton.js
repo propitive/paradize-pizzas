@@ -1,7 +1,7 @@
 function BookOnlineButton({ className }) {
   return (
     <button className={"book-online-button " + className}>
-      BOOK ONLINE
+      GET A QUOTE
       <svg
         fill="currentColor"
         viewBox="0 0 24 24"

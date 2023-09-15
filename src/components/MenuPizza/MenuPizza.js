@@ -29,6 +29,7 @@ function MenuPizza({ handleShowMoreItems, handleVisibleReset, visible }) {
                 key={pizza.id}
                 image={pizza.image}
                 isPopular={pizza.isPopular}
+                isSpecialRequest={pizza.isSpecialRequest}
                 name={pizza.name}
                 description={pizza.description}
               />

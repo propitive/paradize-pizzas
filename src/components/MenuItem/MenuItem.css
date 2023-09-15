@@ -52,12 +52,19 @@
   color: #1f1717;
 }
 
+.menu-item__buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
 .menu-item__popular {
-  color: rgb(226, 18, 22);
+  color: white;
+  background-color: rgb(181, 143, 94);
   width: fit-content;
   height: 18px;
   padding: 1px 3px;
-  border-color: rgb(226, 18, 22);
+  border-color: rgb(181, 143, 94);
   border-style: solid;
   border-width: 1px;
   border-radius: 3px;
