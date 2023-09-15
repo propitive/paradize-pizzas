@@ -10,7 +10,7 @@ import MenuSalad from "../MenuSalad/MenuSalad";
 import MenuDessert from "../MenuDessert/MenuDessert";
 import About from "../About/About";
 import MenuPasta from "../MenuPasta/MenuPasta";
-import ContactForm from "../ContactForm/ContactForm";
+import ContactForm from "../ContactForm/ContactForm.tsx";
 
 function App() {
   const [visible, setVisible] = useState(6);

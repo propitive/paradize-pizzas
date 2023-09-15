@@ -1,7 +1,6 @@
 @import url("/src/components/About/About.css");
 @import url("/src/components/App/App.css");
 @import url("/src/components/BookOnlineButton/BookOnlineButton.css");
-@import url("/src/components/SingleSelect/SingleSelect.css");
 @import url("/src/components/ContactForm/ContactForm.css");
 @import url("/src/components/Dropdown/Dropdown.css");
 @import url("/src/components/ExploreOurMenu/ExploreOurMenu.css");
@@ -10,6 +9,7 @@
 @import url("/src/components/Header/Header.css");
 @import url("/src/components/MenuItem/MenuItem.css");
 @import url("/src/components/MenuPizza/MenuPizza.css");
+@import url("/src/components/MultipleSelect/MultipleSelect.css");
 @import url("/src/components/VideoBackground/VideoBackground.css");
 
 body {
