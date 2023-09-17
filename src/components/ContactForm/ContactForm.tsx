@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useState } from "react";
 import Header from "../Header/Header";
 import { menuOfPizzas } from "../../utils/constants";
+import Footer from "../Footer/Footer";
 import iconPhone from "../../images/icons/iconPhone.png";
 import { SelectOption } from "../MultipleSelect/MultipleSelect";
 import MultipleSelect from "../MultipleSelect/MultipleSelect.tsx";
@@ -47,19 +48,76 @@ function ContactForm({ handleVisibleReset }) {
           <input className="form__input" required />
           <span className="form__input-span">Location</span>
         </div>
-        <MultipleSelect
-          multiple
-          options={options}
-          value={value1}
-          onChange={(o) => setValue1(o)}
-        />
-        <MultipleSelect
-          options={options}
-          value={value2}
-          onChange={(o) => setValue2(o)}
-        />
-        <button className="form__submit" type="submit"></button>
+        <div>
+          <h3 className="form__input-label">Oven Baked Pizzas</h3>
+          <MultipleSelect
+            multiple
+            options={options}
+            value={value1}
+            onChange={(o) => setValue1(o)}
+          />
+        </div>
+        <div>
+          <h3 className="form__input-label">Pastas</h3>
+          <MultipleSelect
+            multiple
+            options={options}
+            value={value1}
+            onChange={(o) => setValue1(o)}
+          />
+        </div>
+        <div>
+          <h3 className="form__input-label">Desserts</h3>
+          <MultipleSelect
+            multiple
+            options={options}
+            value={value1}
+            onChange={(o) => setValue1(o)}
+          />
+        </div>
+        <div>
+          <h3 className="form__input-label">Appetizers</h3>
+          <MultipleSelect
+            multiple
+            options={options}
+            value={value1}
+            onChange={(o) => setValue1(o)}
+          />
+        </div>
+        <div>
+          <h3 className="form__input-label">Salads</h3>
+          <MultipleSelect
+            multiple
+            options={options}
+            value={value1}
+            onChange={(o) => setValue1(o)}
+          />
+        </div>
+        <div>
+          <h3 className="form__input-label">
+            Will you want a charcuterie board?
+          </h3>
+          <MultipleSelect
+            options={options}
+            value={value2}
+            onChange={(o) => setValue2(o)}
+          />
+        </div>
+        <div>
+          <h3 className="form__input-label">Will you want a glazing table?</h3>
+          <MultipleSelect
+            options={options}
+            value={value2}
+            onChange={(o) => setValue2(o)}
+          />
+        </div>
+        <button className="btn-17">
+          <span className="text-container">
+            <span className="text">Submit</span>
+          </span>
+        </button>
       </form>
+      <Footer />
     </>
   );
 }
