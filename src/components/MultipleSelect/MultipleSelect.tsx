@@ -111,6 +111,7 @@ function MultipleSelect({ multiple, value, onChange, options }: SelectProps) {
         className="multiple-select__clear-button"
         onClick={(e) => {
           e.stopPropagation();
+          e.preventDefault();
           clearOptions();
         }}
       >
