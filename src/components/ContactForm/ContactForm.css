@@ -1,5 +1,6 @@
 .contact-form__header {
-  margin: 0;
+  font-size: 70px;
+  margin: 10px 0 40px;
   padding: 0;
   text-align: center;
 }
@@ -7,6 +8,7 @@
 .contact-form__number-container {
   display: flex;
   justify-content: center;
+  margin: 0 0 70px;
 }
 
 .contact-form__number-image {
@@ -23,10 +25,11 @@
 
 .contact-form__seperator-container {
   position: relative;
+  margin: 0 0 70px;
 }
 
 .contact-form__seperator {
-  margin: 70px auto 70px;
+  margin: 0 auto 70px;
 }
 
 .contact-form__seperator-text {
@@ -46,11 +49,17 @@
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
-  margin: 0 auto 80px;
+  margin: 0 auto 60px;
   padding: 0;
   box-sizing: border-box;
   gap: 30px;
   max-width: 600px;
+}
+
+.form__header {
+  margin: 0;
+  text-align: center;
+  font-size: 50px;
 }
 
 .form__input-box {
@@ -94,21 +103,6 @@
   border-right: 1px solid black;
   letter-spacing: 0.2em;
 }
-
-/* .form__input-box .form__input:valid ~ .form__input-span,
-.form__input-box .form__input:focus ~ .form__input-span {
-  color: black;
-  transform: translateX(10px) translateY(-7px);
-  font-size: 0.65em;
-  padding: 0 10px;
-  background-color: transparent;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
-  letter-spacing: 0.2em;
-  background-color: green;
-  color: red;
-  border-radius: 2px;
-} */
 
 .form__input-box .form__input:valid,
 .form__input-box .form__input:focus {
@@ -199,6 +193,7 @@
   padding: 1.2rem 3rem;
   position: relative;
   text-transform: uppercase;
+  margin: 20px 0 0;
 }
 
 .form__button .form__button-original {

@@ -22,15 +22,7 @@ function ContactForm({ handleVisibleReset }) {
   return (
     <>
       <Header handleVisibleReset={handleVisibleReset} />
-      <h1 className="contact-form__header">Contact us</h1>
-      <div className="contact-form__number-container">
-        <img className="contact-form__number-image" src={iconPhone} />
-        <h2 className="contact-form__number">(469) 605-8089</h2>
-      </div>
-      <div className="contact-form__seperator-container">
-        <hr className="contact-form__seperator" />
-        <h2 className="contact-form__seperator-text">OR</h2>
-      </div>
+      <h1 className="contact-form__header">Contact Us</h1>
       <form className="form">
         <div className="form__input-box">
           <input className="form__input" required />
@@ -123,6 +115,14 @@ function ContactForm({ handleVisibleReset }) {
           </div>
         </button>
       </form>
+      <div className="contact-form__seperator-container">
+        <hr className="contact-form__seperator" />
+        <h2 className="contact-form__seperator-text">OR</h2>
+      </div>
+      <div className="contact-form__number-container">
+        <img className="contact-form__number-image" src={iconPhone} />
+        <h2 className="contact-form__number">(469) 605-8089</h2>
+      </div>
       <Footer />
     </>
   );
