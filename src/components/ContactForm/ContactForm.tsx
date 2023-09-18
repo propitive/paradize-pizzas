@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { FormEvent } from "react";
 import { useState } from "react";
 import Header from "../Header/Header";
 import { menuOfPizzas } from "../../utils/constants";
@@ -6,6 +6,10 @@ import Footer from "../Footer/Footer";
 import iconPhone from "../../images/icons/iconPhone.png";
 import { SelectOption } from "../MultipleSelect/MultipleSelect";
 import MultipleSelect from "../MultipleSelect/MultipleSelect.tsx";
+import { useMultistepForm } from "../MultistepForm/MultistepForm.ts";
+import AddOnsForm from "../AddOnsForm/AddOnsForm.tsx";
+import FoodForm from "../FoodForm/FoodForm.tsx";
+import PersonalInfoForm from "../PersonalInfoForm/PersonalInfoForm.tsx";
 
 const options = [
   { label: "First", value: 1 },
@@ -63,7 +67,36 @@ const dichotomousOptions = [
   { label: "No", value: 1 },
 ];
 
+type FormData = {
+  ovenBakedPizzas: string;
+  appetizers: string;
+  salads: string;
+  dessert: string;
+  pasta: string;
+  charcuterie: string;
+  glazing: string;
+  fullName: string;
+  email: string;
+  expectedAttendance: string;
+  location: string;
+};
+
+const INITIAL_DATA: FormData = {
+  ovenBakedPizzas: "",
+  appetizers: "",
+  salads: "",
+  dessert: "",
+  pasta: "",
+  charcuterie: "",
+  glazing: "",
+  fullName: "",
+  email: "",
+  expectedAttendance: "",
+  location: "",
+};
+
 function ContactForm({ handleVisibleReset }) {
+  const [data, setData] = useState(INITIAL_DATA);
   const [pizzaValue, setPizzaValue] = useState<SelectOption[]>([]);
   const [appetizerValue, setAppetizerValue] = useState<SelectOption[]>([]);
   const [saladValue, setSaladValue] = useState<SelectOption[]>([]);
@@ -74,17 +107,29 @@ function ContactForm({ handleVisibleReset }) {
   >();
   const [glazingValue, setGlazingValue] = useState<SelectOption | undefined>();
 
+  const { steps, currentStepIndex, step, isFirstStep, isLastStep, back, next } =
+    useMultistepForm([
+      <FoodForm {...data} />,
+      <AddOnsForm {...data} />,
+      <PersonalInfoForm {...data} />,
+    ]);
+
+  function onSubmit(e: FormEvent) {
+    e.preventDefault();
+    next();
+  }
+
   return (
     <>
       <Header handleVisibleReset={handleVisibleReset} />
       <h1 className="contact-form__header">Contact Us</h1>
       <form className="form">
         <div className="form__input-box">
-          <input className="form__input" required />
+          <input className="form__input" type="text" required />
           <span className="form__input-span">Full Name</span>
         </div>
         <div className="form__input-box">
-          <input className="form__input" required />
+          <input className="form__input" type="email" required />
           <span className="form__input-span">Email</span>
         </div>
         <div className="form__input-box">
@@ -105,7 +150,7 @@ function ContactForm({ handleVisibleReset }) {
           />
         </div>
         <div>
-          <h3 className="form__input-label">Pastas</h3>
+          <h3 className="form__input-label">Appetizers</h3>
           <MultipleSelect
             multiple
             options={appetizerOptions}
@@ -114,7 +159,7 @@ function ContactForm({ handleVisibleReset }) {
           />
         </div>
         <div>
-          <h3 className="form__input-label">Desserts</h3>
+          <h3 className="form__input-label">Salads</h3>
           <MultipleSelect
             multiple
             options={saladOptions}
@@ -123,7 +168,7 @@ function ContactForm({ handleVisibleReset }) {
           />
         </div>
         <div>
-          <h3 className="form__input-label">Appetizers</h3>
+          <h3 className="form__input-label">Desserts</h3>
           <MultipleSelect
             multiple
             options={dessertOptions}
@@ -132,7 +177,7 @@ function ContactForm({ handleVisibleReset }) {
           />
         </div>
         <div>
-          <h3 className="form__input-label">Salads</h3>
+          <h3 className="form__input-label">Pastas</h3>
           <MultipleSelect
             multiple
             options={pastaOptions}
@@ -170,6 +215,39 @@ function ContactForm({ handleVisibleReset }) {
           </div>
         </button>
       </form>
+      <div
+        style={{
+          position: "relative",
+          background: "white",
+          border: "1px solid black",
+          padding: "1rem",
+          margin: "1rem",
+          borderRadius: ".5rem",
+          fontFamily: "Arial",
+        }}
+      >
+        <form onSubmit={onSubmit}>
+          <div style={{ position: "absolute", top: ".5rem", right: ".5rem" }}>
+            {currentStepIndex + 1} / {steps.length}
+          </div>
+          {step}
+          <div
+            style={{
+              marginTop: "1rem",
+              display: "flex",
+              gap: ".5rem",
+              justifyContent: "flex-end",
+            }}
+          >
+            {!isFirstStep && (
+              <button type="button" onClick={back}>
+                Back
+              </button>
+            )}
+            <button type="button">{isLastStep ? "Finish" : "Next"}</button>
+          </div>
+        </form>
+      </div>
       <div className="contact-form__seperator-container">
         <hr className="contact-form__seperator" />
         <h2 className="contact-form__seperator-text">OR</h2>
