@@ -51,7 +51,7 @@ function MultipleSelect({ multiple, value, onChange, options }: SelectProps) {
 
   useEffect(() => {
     const handler = (e: KeyboardEvent) => {
-      if (e.target != containerRef.current) return;
+      if (e.target !== containerRef.current) return;
       switch (e.code) {
         case "Enter":
         case "Space":
