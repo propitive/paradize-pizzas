@@ -145,17 +145,17 @@
   background: transparent;
 }
 
-.btn-17,
-.btn-17 *,
-.btn-17 :after,
-.btn-17 :before,
-.btn-17:after,
-.btn-17:before {
+.form__button,
+.form__button *,
+.form__button :after,
+.form__button :before,
+.form__button:after,
+.form__button:before {
   border: 0 solid;
   box-sizing: border-box;
 }
 
-.btn-17 {
+.form__button {
   -webkit-tap-highlight-color: transparent;
   -webkit-appearance: button;
   background-color: #000;
@@ -166,122 +166,90 @@
     Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
     Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
   font-size: 100%;
-  font-weight: 900;
   line-height: 1.5;
   margin: 0;
   -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
   padding: 0;
-  text-transform: uppercase;
 }
 
-.btn-17:disabled {
+.form__button:disabled {
   cursor: default;
 }
 
-.btn-17:-moz-focusring {
+.form__button:-moz-focusring {
   outline: auto;
 }
 
-.btn-17 svg {
+.form__button svg {
   display: block;
   vertical-align: middle;
 }
 
-.btn-17 [hidden] {
+.form__button [hidden] {
   display: none;
 }
 
-.btn-17 {
-  border-radius: 99rem;
-  border-width: 2px;
-  padding: 0.8rem 3rem;
-  z-index: 0;
-}
-
-.btn-17,
-.btn-17 .text-container {
+.form__button {
+  border: 1px solid;
+  border-radius: 999px;
+  box-sizing: border-box;
+  display: block;
+  font-weight: 900;
   overflow: hidden;
+  padding: 1.2rem 3rem;
   position: relative;
+  text-transform: uppercase;
 }
 
-.btn-17 .text-container {
-  display: block;
-  mix-blend-mode: difference;
-}
-
-.btn-17 .text {
-  display: block;
-  position: relative;
-}
-
-.btn-17:hover .text {
-  -webkit-animation: move-up-alternate 0.3s forwards;
-  animation: move-up-alternate 0.3s forwards;
-}
-
-@-webkit-keyframes move-up-alternate {
-  0% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(80%);
-  }
-
-  51% {
-    transform: translateY(-80%);
-  }
-
-  to {
-    transform: translateY(0);
-  }
-}
-
-@keyframes move-up-alternate {
-  0% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(80%);
-  }
-
-  51% {
-    transform: translateY(-80%);
-  }
-
-  to {
-    transform: translateY(0);
-  }
-}
-
-.btn-17:after,
-.btn-17:before {
-  --skew: 0.2;
-  background: #fff;
-  content: "";
-  display: block;
-  height: 102%;
-  left: calc(-50% - 50% * var(--skew));
-  pointer-events: none;
+.form__button .form__button-original {
+  background: rgb(181, 143, 94);
+  color: #000;
+  display: grid;
+  inset: 0;
+  place-content: center;
   position: absolute;
-  top: -104%;
-  transform: skew(calc(150deg * var(--skew))) translateY(var(--progress, 0));
-  transition: transform 0.2s ease;
-  width: 100%;
+  transition: transform 0.2s cubic-bezier(0.87, 0, 0.13, 1);
 }
 
-.btn-17:after {
-  --progress: 0%;
-  left: calc(50% + 50% * var(--skew));
-  top: 102%;
-  z-index: -1;
+.form__button:hover .form__button-original {
+  transform: translateY(100%);
 }
 
-.btn-17:hover:before {
-  --progress: 100%;
+.form__button .form__button-letters {
+  display: inline-flex;
 }
 
-.btn-17:hover:after {
-  --progress: -102%;
+.form__button span {
+  opacity: 0;
+  transform: translateY(-15px);
+  transition: transform 0.2s cubic-bezier(0.87, 0, 0.13, 1), opacity 0.2s;
+}
+
+.form__button span:nth-child(2n) {
+  transform: translateY(15px);
+}
+
+.form__button:hover span {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.form__button:hover span:nth-child(2) {
+  transition-delay: 0.1s;
+}
+
+.form__button:hover span:nth-child(3) {
+  transition-delay: 0.2s;
+}
+
+.form__button:hover span:nth-child(4) {
+  transition-delay: 0.3s;
+}
+
+.form__button:hover span:nth-child(5) {
+  transition-delay: 0.4s;
+}
+
+.form__button:hover span:nth-child(6) {
+  transition-delay: 0.5s;
 }

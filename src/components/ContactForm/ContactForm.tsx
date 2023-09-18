@@ -111,10 +111,16 @@ function ContactForm({ handleVisibleReset }) {
             onChange={(o) => setValue2(o)}
           />
         </div>
-        <button className="btn-17">
-          <span className="text-container">
-            <span className="text">Submit</span>
-          </span>
+        <button className="form__button">
+          <div className="form__button-original">Submit</div>
+          <div className="form__button-letters">
+            <span>S</span>
+            <span>U</span>
+            <span>B</span>
+            <span>M</span>
+            <span>I</span>
+            <span>T</span>
+          </div>
         </button>
       </form>
       <Footer />
