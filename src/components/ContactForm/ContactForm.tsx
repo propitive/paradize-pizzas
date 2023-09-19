@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import {
@@ -25,25 +26,63 @@ function ContactForm({ handleVisibleReset }) {
   >();
   const [glazingValue, setGlazingValue] = useState<SelectOption | undefined>();
 
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_ygalzf6",
+        "template_suuq3lm",
+        form.current,
+        "jGNwN29o5MpAtqpNz"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  };
+
   return (
     <>
       <Header handleVisibleReset={handleVisibleReset} />
       <h1 className="contact-form__header">Contact Us</h1>
-      <form className="form">
+      <form className="form" ref={form} onSubmit={sendEmail}>
         <div className="form__input-box">
-          <input className="form__input" type="text" required />
+          <input
+            className="form__input"
+            name="user-name"
+            type="text"
+            required
+          />
           <span className="form__input-span">Full Name</span>
         </div>
         <div className="form__input-box">
-          <input className="form__input" type="email" required />
+          <input
+            className="form__input"
+            name="user-email"
+            type="email"
+            required
+          />
           <span className="form__input-span">Email</span>
         </div>
         <div className="form__input-box">
-          <input className="form__input" type="number" min="25" required />
+          <input
+            className="form__input"
+            name="attendance"
+            type="number"
+            min="25"
+            required
+          />
           <span className="form__input-span">Expected Attendance</span>
         </div>
         <div className="form__input-box">
-          <input className="form__input" required />
+          <input className="form__input" name="location" required />
           <span className="form__input-span">Location</span>
         </div>
         <div>
@@ -53,6 +92,7 @@ function ContactForm({ handleVisibleReset }) {
             options={pizzaOptions}
             value={pizzaValue}
             onChange={(o) => setPizzaValue(o)}
+            name="pizzas"
           />
         </div>
         <div>
@@ -62,6 +102,7 @@ function ContactForm({ handleVisibleReset }) {
             options={appetizerOptions}
             value={appetizerValue}
             onChange={(o) => setAppetizerValue(o)}
+            name="appetizers"
           />
         </div>
         <div>
@@ -71,6 +112,7 @@ function ContactForm({ handleVisibleReset }) {
             options={saladOptions}
             value={saladValue}
             onChange={(o) => setSaladValue(o)}
+            name="salads"
           />
         </div>
         <div>
@@ -80,6 +122,7 @@ function ContactForm({ handleVisibleReset }) {
             options={dessertOptions}
             value={dessertValue}
             onChange={(o) => setDessertValue(o)}
+            name="desserts"
           />
         </div>
         <div>
@@ -89,6 +132,7 @@ function ContactForm({ handleVisibleReset }) {
             options={pastaOptions}
             value={pastaValue}
             onChange={(o) => setPastaValue(o)}
+            name="pastas"
           />
         </div>
         <div>
@@ -99,6 +143,7 @@ function ContactForm({ handleVisibleReset }) {
             options={dichotomousOptions}
             value={charcuterieValue}
             onChange={(o) => setCharcuterieValue(o)}
+            name="charcuterie"
           />
         </div>
         <div>
@@ -107,6 +152,7 @@ function ContactForm({ handleVisibleReset }) {
             options={dichotomousOptions}
             value={glazingValue}
             onChange={(o) => setGlazingValue(o)}
+            name="glazing"
           />
         </div>
         <button className="form__button">

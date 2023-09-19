@@ -20,9 +20,16 @@ type SingleSelectProps = {
 
 type SelectProps = {
   options: SelectOption[];
+  name: string;
 } & (SingleSelectProps | MultipleSelectProps);
 
-function MultipleSelect({ multiple, value, onChange, options }: SelectProps) {
+function MultipleSelect({
+  multiple,
+  value,
+  onChange,
+  options,
+  name,
+}: SelectProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [HighlightedIndex, setHighlightedIndex] = useState(0);
   const containerRef = useRef<HTMLDivElement>();
