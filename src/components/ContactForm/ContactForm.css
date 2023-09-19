@@ -108,6 +108,17 @@
   border: 1px solid black;
 }
 
+.form__label {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__select {
+}
+
+.form__option {
+}
+
 .form__dropdown {
   background-color: white;
   display: flex;

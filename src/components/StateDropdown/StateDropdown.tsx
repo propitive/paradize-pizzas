@@ -32,6 +32,7 @@ function StateDropdown() {
         className="state-dropdown__button"
         onClick={(e) => {
           e.stopPropagation();
+          e.preventDefault();
           setIsDropdownDisplayed((prevState) => !prevState);
         }}
       >
@@ -96,6 +97,7 @@ function StateDropdown() {
                 checked={selectedPizzas[pizza.name]}
                 id={`input-${pizza.name}`}
                 type="checkbox"
+                name="pizza"
               />
               <label htmlFor={`input-${pizza.name}`}>{pizza.name}</label>
             </fieldset>
