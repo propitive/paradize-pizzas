@@ -1,0 +1,30 @@
+.state-dropdown {
+  position: relative;
+  border: none;
+}
+
+.state-dropdown__button {
+  background-color: white;
+  height: 30px;
+  width: 200px;
+  color: black;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.panel {
+  position: absolute;
+  background-color: white;
+  padding: 10px;
+  color: black;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.state-dropdown__fieldset {
+  display: flex;
+  align-items: center;
+  border: none;
+}

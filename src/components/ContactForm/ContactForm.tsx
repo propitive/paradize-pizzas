@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { FC, InputHTMLAttributes, useRef } from "react";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import Header from "../Header/Header";
@@ -14,6 +14,8 @@ import {
 import iconPhone from "../../images/icons/iconPhone.png";
 import { SelectOption } from "../MultipleSelect/MultipleSelect.tsx";
 import MultipleSelect from "../MultipleSelect/MultipleSelect.tsx";
+import MultiSelect from "../MultiSelect/MultiSelect.tsx";
+import StateDropdown from "../StateDropdown/StateDropdown.tsx";
 
 function ContactForm({ handleVisibleReset }) {
   const [pizzaValue, setPizzaValue] = useState<SelectOption[]>([]);
@@ -35,6 +37,7 @@ function ContactForm({ handleVisibleReset }) {
         "service_ygalzf6",
         "template_suuq3lm",
         form.current,
+        // e.target,
         "jGNwN29o5MpAtqpNz"
       )
       .then(
@@ -85,57 +88,62 @@ function ContactForm({ handleVisibleReset }) {
           <input className="form__input" name="location" required />
           <span className="form__input-span">Location</span>
         </div>
-        <div>
-          <h3 className="form__input-label">Oven Baked Pizzas</h3>
+        {/* <div>
+          <label>Oven Baked Pizzas</label>
+          <select name="pizzas" id="pizzas" multiple>
+            <option value="Piscotta + Bacon">Piscotta + Bacon</option>
+            <option value="Pesto">Pesto</option>
+            <option value="Margherita">Margherita</option>
+            <option value="Meat Lovers">Meat Lovers</option>
+          </select>
+        </div> */}
+        <StateDropdown />
+        <h3 className="form__input-label">Oven Baked Pizzas</h3>
+        <select name="pizzas">
           <MultipleSelect
             multiple
             options={pizzaOptions}
             value={pizzaValue}
             onChange={(o) => setPizzaValue(o)}
-            name="pizzas"
           />
-        </div>
-        <div>
+        </select>
+        {/* <div>
           <h3 className="form__input-label">Appetizers</h3>
           <MultipleSelect
             multiple
             options={appetizerOptions}
             value={appetizerValue}
             onChange={(o) => setAppetizerValue(o)}
-            name="appetizers"
           />
-        </div>
-        <div>
+        </div> */}
+        {/* <div>
           <h3 className="form__input-label">Salads</h3>
           <MultipleSelect
             multiple
             options={saladOptions}
             value={saladValue}
             onChange={(o) => setSaladValue(o)}
-            name="salads"
           />
-        </div>
-        <div>
+        </div> */}
+        {/* <div>
           <h3 className="form__input-label">Desserts</h3>
           <MultipleSelect
             multiple
             options={dessertOptions}
             value={dessertValue}
             onChange={(o) => setDessertValue(o)}
-            name="desserts"
           />
-        </div>
-        <div>
+        </div> */}
+        {/* <div>
           <h3 className="form__input-label">Pastas</h3>
           <MultipleSelect
             multiple
             options={pastaOptions}
             value={pastaValue}
             onChange={(o) => setPastaValue(o)}
-            name="pastas"
           />
-        </div>
-        <div>
+        </div> */}
+        {/* <div>
           <h3 className="form__input-label">
             Will you want a charcuterie board?
           </h3>
@@ -143,18 +151,16 @@ function ContactForm({ handleVisibleReset }) {
             options={dichotomousOptions}
             value={charcuterieValue}
             onChange={(o) => setCharcuterieValue(o)}
-            name="charcuterie"
           />
-        </div>
-        <div>
+        </div> */}
+        {/* <div>
           <h3 className="form__input-label">Will you want a glazing table?</h3>
           <MultipleSelect
             options={dichotomousOptions}
             value={glazingValue}
             onChange={(o) => setGlazingValue(o)}
-            name="glazing"
           />
-        </div>
+        </div> */}
         <button className="form__button">
           <div className="form__button-original">Submit</div>
           <div className="form__button-letters">

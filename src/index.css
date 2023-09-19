@@ -11,6 +11,7 @@
 @import url("/src/components/MenuPizza/MenuPizza.css");
 @import url("/src/components/MultipleSelect/MultipleSelect.css");
 @import url("/src/components/MultistepForm/MultistepForm.css");
+@import url("/src/components/StateDropdown/StateDropdown.css");
 @import url("/src/components/VideoBackground/VideoBackground.css");
 
 body {
