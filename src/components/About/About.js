@@ -23,7 +23,7 @@ function About() {
         <section className="about__container">
           <img className="about__image" src={tioSebasCooking} />
           <div className="about__text">
-            <h2 className="about__subheading">Paradize Pizzas</h2>
+            <h2 className="about__subheading">About Paradize Pizzas</h2>
             <p className="about__paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -34,7 +34,7 @@ function About() {
             </p>
           </div>
         </section>
-        <section className="about__container">
+        {/* <section className="about__container">
           <div className="about__text">
             <h2 className="about__subheading">Paradize Pizzas</h2>
             <p className="about__paragraph">
@@ -47,7 +47,7 @@ function About() {
             </p>
           </div>
           <img className="about__image" src={tioSebasCooking} />
-        </section>
+        </section> */}
       </div>
       <Footer />
     </>
