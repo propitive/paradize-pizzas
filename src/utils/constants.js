@@ -334,7 +334,7 @@ export const pizzaOptions = [
   { label: "Prosciutto + Honey", value: "Prosciutto + Honey" },
   { label: "Hawaiian", value: "Hawaiian" },
   { label: "Five Cheese", value: "Five Cheese" },
-  { label: "pepperoni + Black Olives", value: "pepperoni + Black Olives" },
+  { label: "Pepperoni + Black Olives", value: "Pepperoni + Black Olives" },
 ];
 
 export const appetizerOptions = [

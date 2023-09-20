@@ -40,9 +40,17 @@ function Header({ handleVisibleReset }) {
               ABOUT
             </li>
           </Link>
-          <li className="header__list-item" onClick={() => handleVisibleReset}>
-            CONTACT US
-          </li>
+          <Link
+            to="/contact-form"
+            style={{ textDecoration: "none", alignSelf: "center" }}
+          >
+            <li
+              className="header__list-item"
+              onClick={() => handleVisibleReset}
+            >
+              CONTACT US
+            </li>
+          </Link>
           <li className="header__list-item" onClick={() => handleVisibleReset}>
             GALLERY
           </li>
