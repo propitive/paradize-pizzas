@@ -368,3 +368,38 @@ export const dichotomousOptions = [
   { label: "Yes", value: "Yes" },
   { label: "No", value: "No" },
 ];
+
+//////////////// GALLERY ////////////////
+
+export const galleryCards = [
+  {
+    id: 1,
+    image: jalapenoPizza,
+    title: "Chicken Alfredo",
+  },
+  {
+    id: 2,
+    image: jalapenoPizza,
+    title: "Chicken Alfredo",
+  },
+  {
+    id: 3,
+    image: jalapenoPizza,
+    title: "Chicken Alfredo",
+  },
+  {
+    id: 4,
+    image: jalapenoPizza,
+    title: "Chicken Alfredo",
+  },
+  {
+    id: 5,
+    image: jalapenoPizza,
+    title: "Chicken Alfredo",
+  },
+  {
+    id: 6,
+    image: jalapenoPizza,
+    title: "Chicken Alfredo",
+  },
+];
