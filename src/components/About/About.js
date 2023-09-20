@@ -6,11 +6,8 @@ function About() {
   return (
     <>
       <Header />
-      <div className="about__header">
-        <h1 className="about__title">
-          We bring you the authentic, delicious taste of freshly made brick oven
-          pizzas.
-        </h1>
+      {/* <div className="about__header">
+        <h1 className="about__title">Authentic. Delicious. Fresh.</h1>
         <p className="about__subtitle">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -18,7 +15,7 @@ function About() {
           aliquip ex ea commodo consequat.
         </p>
         <div className="about__overlay"></div>
-      </div>
+      </div> */}
       <div className="about__subsections">
         <section className="about__container">
           <img className="about__image" src={tioSebasCooking} />
