@@ -3,8 +3,7 @@
   max-width: calc(100% - 400px);
   box-sizing: border-box;
   position: relative;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 40px auto 80px;
   font-family: "Inter", Arial, sans-serif;
 }
 
@@ -30,6 +29,7 @@
     transition: all 0.2s ease-out;
     box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
     top: -4px;
+    border-radius: 10px;
   }
 }
 
@@ -63,7 +63,7 @@
 
 @media screen and (max-width: 2000px) {
   .gallery {
-    max-width: 880px;
+    max-width: 1180px;
     padding: 0;
   }
 }

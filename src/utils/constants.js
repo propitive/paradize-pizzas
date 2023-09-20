@@ -402,4 +402,14 @@ export const galleryCards = [
     image: jalapenoPizza,
     title: "Chicken Alfredo",
   },
+  {
+    id: 7,
+    image: jalapenoPizza,
+    title: "Chicken Alfredo",
+  },
+  {
+    id: 8,
+    image: jalapenoPizza,
+    title: "Chicken Alfredo",
+  },
 ];
