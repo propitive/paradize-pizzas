@@ -53,7 +53,7 @@
   padding: 0;
   box-sizing: border-box;
   gap: 30px;
-  max-width: 600px;
+  max-width: 372px;
 }
 
 .form__header {
@@ -111,42 +111,6 @@
 .form__label {
   display: flex;
   flex-direction: column;
-}
-
-.form__select {
-}
-
-.form__option {
-}
-
-.form__dropdown {
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  border: 1px solid gray;
-}
-
-.form__dropdown:empty {
-  border: none;
-}
-
-.form__dropdown-row {
-  cursor: pointer;
-  text-align: start;
-  margin: 2px 0;
-}
-
-.form__input-label {
-  margin: 0;
-  padding: 0;
-}
-
-.form__submit {
-  height: 40px;
-  width: 168px;
-  align-self: center;
-  padding: 0;
-  background: transparent;
 }
 
 .form__button,
@@ -257,4 +221,28 @@
 
 .form__button:hover span:nth-child(6) {
   transition-delay: 0.5s;
+}
+
+.react-select__container {
+  background: transparent;
+  border: 1px black solid;
+}
+
+.react-select__control {
+  background: transparent;
+  border-radius: 0;
+}
+
+.css-13cymwt-control {
+  background: transparent;
+  border-radius: 0;
+}
+
+.react-select__value-container {
+  font-size: large;
+}
+
+.react-select-control {
+  border-radius: 0;
+  background: transparent;
 }

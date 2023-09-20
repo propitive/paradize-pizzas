@@ -1,9 +1,21 @@
 import React, { useRef, useEffect } from "react";
 import { useState } from "react";
+import Select from "react-select";
+import makeAnimated from "react-select/animated";
 import emailjs from "@emailjs/browser";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import iconPhone from "../../images/icons/iconPhone.png";
+import {
+  pizzaOptions,
+  appetizerOptions,
+  saladOptions,
+  dessertOptions,
+  pastaOptions,
+  dichotomousOptions,
+} from "../../utils/constants";
+
+const animatedComponents = makeAnimated();
 
 function ContactForm({ handleVisibleReset }) {
   const form = useRef();
@@ -68,20 +80,136 @@ function ContactForm({ handleVisibleReset }) {
         </div>
         <div>
           <label className="form__label">Oven Baked Pizzas</label>
-          <select className="form__select" name="pizzas" id="pizzas" multiple>
-            <option className="form__option" value="Piscotta + Bacon">
-              Piscotta + Bacon
-            </option>
-            <option className="form__option" value="Pesto">
-              Pesto
-            </option>
-            <option className="form__option" value="Margherita">
-              Margherita
-            </option>
-            <option className="form__option" value="Meat Lovers">
-              Meat Lovers
-            </option>
-          </select>
+          <Select
+            options={pizzaOptions}
+            isMulti
+            closeMenuOnSelect={false}
+            components={animatedComponents}
+            name="pizzas"
+            className="react-select__container"
+            classNamePrefix="react-select"
+            styles={{
+              control: (baseStyles) => ({
+                ...baseStyles,
+                background: "transparent",
+                borderRadius: 0,
+              }),
+            }}
+          />
+        </div>
+        <div>
+          <label className="form__label">Appetizers</label>
+          <Select
+            options={appetizerOptions}
+            isMulti
+            closeMenuOnSelect={false}
+            components={animatedComponents}
+            name="appetizers"
+            className="react-select__container"
+            classNamePrefix="react-select"
+            styles={{
+              control: (baseStyles) => ({
+                ...baseStyles,
+                background: "transparent",
+                borderRadius: 0,
+              }),
+            }}
+          />
+        </div>
+        <div>
+          <label className="form__label">Salads</label>
+          <Select
+            options={saladOptions}
+            isMulti
+            closeMenuOnSelect={false}
+            components={animatedComponents}
+            name="salads"
+            className="react-select__container"
+            classNamePrefix="react-select"
+            styles={{
+              control: (baseStyles) => ({
+                ...baseStyles,
+                background: "transparent",
+                borderRadius: 0,
+              }),
+            }}
+          />
+        </div>
+        <div>
+          <label className="form__label">Desserts</label>
+          <Select
+            options={dessertOptions}
+            isMulti
+            closeMenuOnSelect={false}
+            components={animatedComponents}
+            name="desserts"
+            className="react-select__container"
+            classNamePrefix="react-select"
+            styles={{
+              control: (baseStyles) => ({
+                ...baseStyles,
+                background: "transparent",
+                borderRadius: 0,
+              }),
+            }}
+          />
+        </div>
+        <div>
+          <label className="form__label">Pastas</label>
+          <Select
+            options={pastaOptions}
+            isMulti
+            closeMenuOnSelect={false}
+            components={animatedComponents}
+            name="pastas"
+            className="react-select__container"
+            classNamePrefix="react-select"
+            styles={{
+              control: (baseStyles) => ({
+                ...baseStyles,
+                background: "transparent",
+                borderRadius: 0,
+              }),
+            }}
+          />
+        </div>
+        <div>
+          <label className="form__label">
+            Will you want a charcuterie board?
+          </label>
+          <Select
+            options={dichotomousOptions}
+            closeMenuOnSelect={true}
+            components={animatedComponents}
+            name="charcuterie"
+            className="react-select__container"
+            classNamePrefix="react-select"
+            styles={{
+              control: (baseStyles) => ({
+                ...baseStyles,
+                background: "transparent",
+                borderRadius: 0,
+              }),
+            }}
+          />
+        </div>
+        <div>
+          <label className="form__label">Will you want a glazing table?</label>
+          <Select
+            options={dichotomousOptions}
+            closeMenuOnSelect={true}
+            components={animatedComponents}
+            name="glazing"
+            className="react-select__container"
+            classNamePrefix="react-select"
+            styles={{
+              control: (baseStyles) => ({
+                ...baseStyles,
+                background: "transparent",
+                borderRadius: 0,
+              }),
+            }}
+          />
         </div>
         <button className="form__button">
           <div className="form__button-original">Submit</div>
