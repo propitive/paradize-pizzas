@@ -114,7 +114,7 @@
   flex-direction: column;
 }
 
-.form__button,
+/* .form__button,
 .form__button *,
 .form__button :after,
 .form__button :before,
@@ -223,7 +223,7 @@
 .form__button:hover span:nth-child(6) {
   transition-delay: 0.5s;
 }
-
+ */
 .react-select__container {
   background: transparent;
   border: 1px black solid;
@@ -246,4 +246,50 @@
 .react-select-control {
   border-radius: 0;
   background: transparent;
+}
+
+.form__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+  height: 60px;
+  background-color: rgb(181, 143, 94);
+  outline: 3px rgb(181, 143, 94) solid;
+  outline-offset: -3px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.form__button-svg {
+  height: 40px;
+}
+
+.form__button-text {
+  margin: 0;
+  font-size: 20px;
+}
+
+.form__button .form__button-text {
+  color: white;
+  font-weight: 700;
+  transition: 400ms;
+}
+
+.form__button .form__button-svg path {
+  transition: 400ms;
+}
+
+.form__button:hover {
+  background-color: transparent;
+}
+
+.form__button:hover .form__button-text {
+  color: rgb(181, 143, 94);
+}
+
+.form__button:hover .form__button-svg path {
+  fill: rgb(181, 143, 94);
 }

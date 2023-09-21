@@ -10,11 +10,21 @@ import MenuSalad from "../MenuSalad/MenuSalad";
 import MenuDessert from "../MenuDessert/MenuDessert";
 import About from "../About/About";
 import MenuPasta from "../MenuPasta/MenuPasta";
-import ContactForm from "../ContactForm/ContactForm.tsx";
 import Gallery from "../Gallery/Gallery";
+import ContactForm from "../ContactForm/ContactForm";
+import ModalContactForm from "../ModalContactForm/ModalContactForm";
 
 function App() {
   const [visible, setVisible] = useState(6);
+  const [isContactFormModalOpen, setIsContactFormModalOpen] = useState(false);
+
+  const handleOpenModal = () => {
+    setIsContactFormModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsContactFormModalOpen(false);
+  };
 
   const handleShowMoreItems = (array) => {
     setVisible(array.length);
@@ -55,7 +65,7 @@ function App() {
           <About />
         </Route>
         <Route path="/contact-form">
-          <ContactForm />
+          <ContactForm handleOpenModal={handleOpenModal} />
         </Route>
         <Route path="/gallery">
           <Gallery />
@@ -64,6 +74,12 @@ function App() {
           <Main />
         </Route>
       </Switch>
+      {isContactFormModalOpen && (
+        <ModalContactForm
+          handleCloseModal={handleCloseModal}
+          isOpen={isContactFormModalOpen}
+        />
+      )}
     </>
   );
 }
