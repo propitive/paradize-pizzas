@@ -88,7 +88,7 @@ function ContactForm({ handleOpenModal, handleVisibleReset }) {
           <input
             className="form__input"
             name="attendance"
-            type="text"
+            type="number"
             required
           />
           <span className="form__input-span">Expected Attendance</span>
