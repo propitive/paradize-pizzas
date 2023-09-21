@@ -79,7 +79,7 @@ function ContactForm({ handleOpenModal, handleVisibleReset }) {
           <input
             className="form__input"
             name="user-email"
-            type="email"
+            type="text"
             required
           />
           <span className="form__input-span">Email</span>
@@ -88,8 +88,7 @@ function ContactForm({ handleOpenModal, handleVisibleReset }) {
           <input
             className="form__input"
             name="attendance"
-            type="number"
-            min="25"
+            type="text"
             required
           />
           <span className="form__input-span">Expected Attendance</span>
