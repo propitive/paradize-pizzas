@@ -18,16 +18,23 @@ import {
 const animatedComponents = makeAnimated();
 
 function ContactForm({ handleVisibleReset }) {
-  const [isFormSubmitted, setIsFormSubmitted] = useState(false);
-  const [isPizzaValue, setIsPizzaValue] = useState();
   const pizza = useRef();
-  console.log(pizza);
-  console.log(pizza.current);
+  const appetizer = useRef();
+  const salad = useRef();
+  const dessert = useRef();
+  const pasta = useRef();
+  const charcuterie = useRef();
+  const dichotomous = useRef();
 
   const handleInputClear = () => {
     pizza.current.clearValue();
+    appetizer.current.clearValue();
+    salad.current.clearValue();
+    dessert.current.clearValue();
+    pasta.current.clearValue();
+    charcuterie.current.clearValue();
+    dichotomous.current.clearValue();
   };
-  console.log(isFormSubmitted);
 
   const form = useRef();
   const sendEmail = (e) => {
@@ -127,6 +134,7 @@ function ContactForm({ handleVisibleReset }) {
                 borderRadius: 0,
               }),
             }}
+            ref={appetizer}
           />
         </div>
         <div>
@@ -146,6 +154,7 @@ function ContactForm({ handleVisibleReset }) {
                 borderRadius: 0,
               }),
             }}
+            ref={salad}
           />
         </div>
         <div>
@@ -165,6 +174,7 @@ function ContactForm({ handleVisibleReset }) {
                 borderRadius: 0,
               }),
             }}
+            ref={dessert}
           />
         </div>
         <div>
@@ -184,6 +194,7 @@ function ContactForm({ handleVisibleReset }) {
                 borderRadius: 0,
               }),
             }}
+            ref={pasta}
           />
         </div>
         <div>
@@ -204,6 +215,7 @@ function ContactForm({ handleVisibleReset }) {
                 borderRadius: 0,
               }),
             }}
+            ref={charcuterie}
           />
         </div>
         <div>
@@ -222,6 +234,7 @@ function ContactForm({ handleVisibleReset }) {
                 borderRadius: 0,
               }),
             }}
+            ref={dichotomous}
           />
         </div>
         <button className="form__button">
