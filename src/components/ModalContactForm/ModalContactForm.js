@@ -6,7 +6,7 @@ function ModalContactForm({ handleCloseModal, isOpen }) {
       isOpen={isOpen}
       handleCloseModal={handleCloseModal}
       title={"Coming right up!"}
-      buttonText={"Gallery"}
+      buttonText={"SEE GALLERY"}
       link={"/gallery"}
     >
       <p className="modal-submit__paragraph">

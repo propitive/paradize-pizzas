@@ -80,25 +80,6 @@
   transition: 0.5s;
 }
 
-.form__input:-webkit-autofill {
-  -webkit-text-fill-color: (black);
-  -webkit-box-shadow: 0 0 0px 1000px (white) inset;
-}
-
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-textarea:-webkit-autofill,
-textarea:-webkit-autofill:hover,
-textarea:-webkit-autofill:focus,
-select:-webkit-autofill,
-select:-webkit-autofill:hover,
-select:-webkit-autofill:focus {
-  /* border: 1px solid green; */
-  -webkit-text-fill-color: black;
-  -webkit-box-shadow: 0 0 0px 1000px #f5f0f0 inset;
-  /* transition: background-color 5000s ease-in-out 0s; */
-}
 .form__input-span {
   position: absolute;
   top: 0;
@@ -276,7 +257,7 @@ select:-webkit-autofill:focus {
   background-color: rgb(181, 143, 94);
   outline: 3px rgb(181, 143, 94) solid;
   outline-offset: -3px;
-  border-radius: 5px;
+  border-radius: 30px;
   border: none;
   cursor: pointer;
   transition: 400ms;
@@ -311,4 +292,27 @@ select:-webkit-autofill:focus {
 
 .form__button:hover .form__button-svg path {
   fill: rgb(181, 143, 94);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: black;
+  -webkit-box-shadow: 0 0 0px 1000px #f5f0f0 inset;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
 }
