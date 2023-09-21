@@ -2,7 +2,10 @@ import { Link } from "react-router-dom";
 
 function BookOnlineButton({ className }) {
   return (
-    <Link to="/contact-form" style={{ textDecoration: "none" }}>
+    <Link
+      to="/contact-form"
+      style={{ textDecoration: "none", width: "min-content" }}
+    >
       <button className={"book-online-button " + className}>
         GET A QUOTE
         <svg

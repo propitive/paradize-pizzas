@@ -18,6 +18,17 @@ import {
 const animatedComponents = makeAnimated();
 
 function ContactForm({ handleVisibleReset }) {
+  const [isFormSubmitted, setIsFormSubmitted] = useState(false);
+  const [isPizzaValue, setIsPizzaValue] = useState();
+  const pizza = useRef();
+  console.log(pizza);
+  console.log(pizza.current);
+
+  const handleInputClear = () => {
+    pizza.current.clearValue();
+  };
+  console.log(isFormSubmitted);
+
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
@@ -33,6 +44,7 @@ function ContactForm({ handleVisibleReset }) {
       .then(
         (result) => {
           console.log(result.text);
+          handleInputClear();
         },
         (error) => {
           console.log(error.text);
@@ -95,6 +107,7 @@ function ContactForm({ handleVisibleReset }) {
                 borderRadius: 0,
               }),
             }}
+            ref={pizza}
           />
         </div>
         <div>
