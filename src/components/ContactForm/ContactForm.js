@@ -98,7 +98,7 @@ function ContactForm({ handleOpenModal, handleVisibleReset }) {
           <span className="form__input-span">Location</span>
         </div>
         <div>
-          <label className="form__label">Oven Baked Pizzas</label>
+          <label className="form__label">Special Requests</label>
           <Select
             options={pizzaOptions}
             isMulti

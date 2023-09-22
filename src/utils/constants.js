@@ -33,8 +33,8 @@ export const menuOfPizzas = [
     name: "Ricotta + Bacon",
     description:
       "Ricotta cheese, garlic, bacon, fresh mozzarella, and white truffle oil.",
-    isPopular: false,
-    isSpecialRequest: false,
+    isPopular: true,
+    isSpecialRequest: true,
   },
   {
     id: 2,
@@ -319,22 +319,12 @@ export const menuNavItems = [
 //////////////// OPTIONS ////////////////
 
 export const pizzaOptions = [
-  { label: "Ricotta + Bacon", value: "Ricotta + Bacon" },
-  { label: "Pesto", value: "Pesto" },
-  { label: "Margherita", value: "Margherita" },
-  { label: "Meat Lovers", value: "Meat Lovers" },
-  { label: "Veggie", value: "Veggie" },
-  { label: "Pepperoni", value: "Pepperoni" },
-  { label: "Pepperoni + Mushrooms", value: "Pepperoni + Mushrooms" },
-  { label: "Pepperoni + Jalapenos", value: "Pepperoni + Jalapenos" },
-  { label: "Chef's Special", value: "Chef's Special" },
-  { label: "Classic Cheese", value: "Classic Cheese" },
-  { label: "BBQ Chicken", value: "BBQ Chicken" },
-  { label: "Italian Sausage", value: "Italian Sausage" },
-  { label: "Prosciutto + Honey", value: "Prosciutto + Honey" },
-  { label: "Hawaiian", value: "Hawaiian" },
-  { label: "Five Cheese", value: "Five Cheese" },
-  { label: "Pepperoni + Black Olives", value: "Pepperoni + Black Olives" },
+  { label: "BBQ Chicken", value: "BBQ Chicken" }, //////////////
+  { label: "Italian Sausage", value: "Italian Sausage" }, /////////////////
+  { label: "Prosciutto + Honey", value: "Prosciutto + Honey" }, /////////////
+  { label: "Hawaiian", value: "Hawaiian" }, /////////////
+  { label: "Five Cheese", value: "Five Cheese" }, /////////////////
+  { label: "Pepperoni + Black Olives", value: "Pepperoni + Black Olives" }, ////////////////
 ];
 
 export const appetizerOptions = [
