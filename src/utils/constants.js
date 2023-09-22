@@ -319,12 +319,12 @@ export const menuNavItems = [
 //////////////// OPTIONS ////////////////
 
 export const pizzaOptions = [
-  { label: "BBQ Chicken", value: "BBQ Chicken" }, //////////////
-  { label: "Italian Sausage", value: "Italian Sausage" }, /////////////////
-  { label: "Prosciutto + Honey", value: "Prosciutto + Honey" }, /////////////
-  { label: "Hawaiian", value: "Hawaiian" }, /////////////
-  { label: "Five Cheese", value: "Five Cheese" }, /////////////////
-  { label: "Pepperoni + Black Olives", value: "Pepperoni + Black Olives" }, ////////////////
+  { label: "BBQ Chicken", value: "BBQ Chicken" },
+  { label: "Italian Sausage", value: "Italian Sausage" },
+  { label: "Prosciutto + Honey", value: "Prosciutto + Honey" },
+  { label: "Hawaiian", value: "Hawaiian" },
+  { label: "Five Cheese", value: "Five Cheese" },
+  { label: "Pepperoni + Black Olives", value: "Pepperoni + Black Olives" },
 ];
 
 export const appetizerOptions = [
