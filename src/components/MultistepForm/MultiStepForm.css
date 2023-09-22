@@ -1,0 +1,42 @@
+.multistep__container {
+  position: relative;
+  background-color: white;
+  border: 1px solid black;
+  padding: 2rem;
+  margin: 1rem;
+  border-radius: 0.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.multistep__form {
+}
+
+.multistep__step {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+}
+
+.multistep__buttons {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+}
+
+.form__container {
+}
+
+.page-one {
+}
+
+.page-two {
+}
+
+.page-three {
+}
+
+.hidden {
+  display: none;
+  pointer-events: none;
+}

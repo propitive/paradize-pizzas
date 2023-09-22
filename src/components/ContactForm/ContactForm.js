@@ -14,6 +14,7 @@ import {
   pastaOptions,
   dichotomousOptions,
 } from "../../utils/constants";
+import MultistepForm from "../MultistepForm/MultistepForm";
 
 const animatedComponents = makeAnimated();
 
@@ -262,6 +263,7 @@ function ContactForm({ handleOpenModal, handleVisibleReset }) {
         <hr className="contact-form__seperator" />
         <h2 className="contact-form__seperator-text">OR</h2>
       </div>
+      <MultistepForm />
       <div className="contact-form__number-container">
         <img
           className="contact-form__number-image"
