@@ -29,7 +29,7 @@
 }
 
 .contact-form__seperator {
-  margin: 0 auto 70px;
+  margin: 70px auto 70px;
 }
 
 .contact-form__seperator-text {
@@ -114,17 +114,17 @@
   flex-direction: column;
 }
 
-/* .form__button,
-.form__button *,
-.form__button :after,
-.form__button :before,
-.form__button:after,
-.form__button:before {
+/* .form__submit,
+.form__submit *,
+.form__submit :after,
+.form__submit :before,
+.form__submit:after,
+.form__submit:before {
   border: 0 solid;
   box-sizing: border-box;
 }
 
-.form__button {
+.form__submit {
   -webkit-tap-highlight-color: transparent;
   -webkit-appearance: button;
   background-color: #000;
@@ -141,24 +141,24 @@
   padding: 0;
 }
 
-.form__button:disabled {
+.form__submit:disabled {
   cursor: default;
 }
 
-.form__button:-moz-focusring {
+.form__submit:-moz-focusring {
   outline: auto;
 }
 
-.form__button svg {
+.form__submit svg {
   display: block;
   vertical-align: middle;
 }
 
-.form__button [hidden] {
+.form__submit [hidden] {
   display: none;
 }
 
-.form__button {
+.form__submit {
   border: 1px solid;
   border-radius: 999px;
   box-sizing: border-box;
@@ -171,7 +171,7 @@
   margin: 20px 0 0;
 }
 
-.form__button .form__button-original {
+.form__submit .form__submit-original {
   background: rgb(181, 143, 94);
   color: #000;
   display: grid;
@@ -181,46 +181,46 @@
   transition: transform 0.2s cubic-bezier(0.87, 0, 0.13, 1);
 }
 
-.form__button:hover .form__button-original {
+.form__submit:hover .form__submit-original {
   transform: translateY(100%);
 }
 
-.form__button .form__button-letters {
+.form__submit .form__submit-letters {
   display: inline-flex;
 }
 
-.form__button span {
+.form__submit span {
   opacity: 0;
   transform: translateY(-15px);
   transition: transform 0.2s cubic-bezier(0.87, 0, 0.13, 1), opacity 0.2s;
 }
 
-.form__button span:nth-child(2n) {
+.form__submit span:nth-child(2n) {
   transform: translateY(15px);
 }
 
-.form__button:hover span {
+.form__submit:hover span {
   opacity: 1;
   transform: translateY(0);
 }
 
-.form__button:hover span:nth-child(2) {
+.form__submit:hover span:nth-child(2) {
   transition-delay: 0.1s;
 }
 
-.form__button:hover span:nth-child(3) {
+.form__submit:hover span:nth-child(3) {
   transition-delay: 0.2s;
 }
 
-.form__button:hover span:nth-child(4) {
+.form__submit:hover span:nth-child(4) {
   transition-delay: 0.3s;
 }
 
-.form__button:hover span:nth-child(5) {
+.form__submit:hover span:nth-child(5) {
   transition-delay: 0.4s;
 }
 
-.form__button:hover span:nth-child(6) {
+.form__submit:hover span:nth-child(6) {
   transition-delay: 0.5s;
 }
  */
@@ -248,7 +248,7 @@
   background: transparent;
 }
 
-.form__button {
+.form__submit {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -263,34 +263,34 @@
   transition: 400ms;
 }
 
-.form__button-svg {
+.form__submit-svg {
   height: 40px;
 }
 
-.form__button-text {
+.form__submit-text {
   margin: 0;
   font-size: 20px;
 }
 
-.form__button .form__button-text {
+.form__submit .form__submit-text {
   color: white;
   font-weight: 700;
   transition: 400ms;
 }
 
-.form__button .form__button-svg path {
+.form__submit .form__submit-svg path {
   transition: 400ms;
 }
 
-.form__button:hover {
+.form__submit:hover {
   background-color: transparent;
 }
 
-.form__button:hover .form__button-text {
+.form__submit:hover .form__submit-text {
   color: rgb(181, 143, 94);
 }
 
-.form__button:hover .form__button-svg path {
+.form__submit:hover .form__submit-svg path {
   fill: rgb(181, 143, 94);
 }
 

@@ -66,7 +66,7 @@ function ContactForm({ handleOpenModal, handleVisibleReset }) {
     <>
       <Header handleVisibleReset={handleVisibleReset} />
       <h1 className="contact-form__header">Contact Us</h1>
-      <form className="form" ref={form} onSubmit={sendEmail}>
+      {/* <form className="form" ref={form} onSubmit={sendEmail}>
         <div className="form__input-box">
           <input
             className="form__input"
@@ -238,17 +238,6 @@ function ContactForm({ handleOpenModal, handleVisibleReset }) {
             ref={dichotomous}
           />
         </div>
-        {/* <button className="form__button">
-          <div className="form__button-original">Submit</div>
-          <div className="form__button-letters">
-            <span>S</span>
-            <span>U</span>
-            <span>B</span>
-            <span>M</span>
-            <span>I</span>
-            <span>T</span>
-          </div>
-        </button> */}
         <button className="form__button">
           <svg className="form__button-svg" viewBox="0 0 20 20" fill="none">
             <path
@@ -258,12 +247,12 @@ function ContactForm({ handleOpenModal, handleVisibleReset }) {
           </svg>
           <p className="form__button-text">SUBMIT</p>
         </button>
-      </form>
+      </form> */}
+      <MultistepForm />
       <div className="contact-form__seperator-container">
         <hr className="contact-form__seperator" />
         <h2 className="contact-form__seperator-text">OR</h2>
       </div>
-      <MultistepForm />
       <div className="contact-form__number-container">
         <img
           className="contact-form__number-image"
