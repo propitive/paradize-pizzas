@@ -1,12 +1,30 @@
 .footer {
-  max-width: calc(100% - 80px);
-  border-top: 1px solid #1f1717;
-  border-bottom: 1px solid #1f1717;
-  margin: 0 auto 50px;
-  padding-top: 12px;
-  padding-bottom: 12px;
   display: flex;
+  justify-content: space-between;
+  margin: 0;
+  border: none;
+  background-color: #1f1717;
+  padding: 40px 200px 100px;
+  position: relative;
   flex-direction: row;
+}
+
+.footer__column {
+  color: #f5f0f0;
+}
+
+.footer__text {
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.footer__author {
+  position: absolute;
+  color: #f5f0f0;
+  bottom: 40px;
+}
+
+.footer__icons {
 }
 
 .footer__facebook {
