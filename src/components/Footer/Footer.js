@@ -1,7 +1,13 @@
+import { useState } from "react";
 import facebookIcon from "../../images/icons/iconFacebook.svg";
+import facebookIconHovered from "../../images/icons/iconFacebookHovered.svg";
 import emailIcon from "../../images/icons/iconEmail.svg";
+import emailIconHovered from "../../images/icons/iconMailHovered.svg";
 
 function Footer() {
+  const [isFacebookHovered, setIsFacebookHovered] = useState(false);
+  const [isMailHovered, setIsMailHovered] = useState(false);
+
   return (
     <footer className="footer">
       <div className="footer__container">
@@ -19,8 +25,10 @@ function Footer() {
             >
               <img
                 className="footer__facebook"
-                src={facebookIcon}
+                src={isFacebookHovered ? facebookIconHovered : facebookIcon}
                 alt="Facebook Icon"
+                onMouseEnter={() => setIsFacebookHovered(true)}
+                onMouseLeave={() => setIsFacebookHovered(false)}
               ></img>
             </a>
             <a
@@ -31,8 +39,10 @@ function Footer() {
             >
               <img
                 className="footer__email"
-                src={emailIcon}
+                src={isMailHovered ? emailIconHovered : emailIcon}
                 alt="Email Icon"
+                onMouseEnter={() => setIsMailHovered(true)}
+                onMouseLeave={() => setIsMailHovered(false)}
               ></img>
             </a>
           </div>

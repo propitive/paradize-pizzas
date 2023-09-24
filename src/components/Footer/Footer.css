@@ -30,12 +30,18 @@
   cursor: pointer;
   font-size: 20px;
   margin: 0;
+  transition: color 0.15s ease-in;
+}
+
+.footer__text:hover {
+  color: rgb(181, 143, 94);
 }
 
 .footer__author {
   position: absolute;
   color: #f5f0f0;
   bottom: 40px;
+  pointer-events: none;
 }
 
 .footer__icons {
