@@ -248,7 +248,7 @@ function ContactForm({ handleOpenModal, handleVisibleReset }) {
           <p className="form__button-text">SUBMIT</p>
         </button>
       </form> */}
-      <MultistepForm />
+      <MultistepForm handleOpenModal={handleOpenModal} />
       <div className="contact-form__seperator-container">
         <hr className="contact-form__seperator" />
         <h2 className="contact-form__seperator-text">OR</h2>

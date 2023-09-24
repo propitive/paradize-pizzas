@@ -16,7 +16,7 @@ import {
 
 const animatedComponents = makeAnimated();
 
-function MultistepForm({ handleOpenModal, handleVisibleReset }) {
+function MultistepForm({ handleOpenModal }) {
   const [isPage, setIsPage] = useState(1);
 
   const pizza = useRef();
@@ -38,17 +38,29 @@ function MultistepForm({ handleOpenModal, handleVisibleReset }) {
   };
 
   const form = useRef();
-  const onSubmit = (e) => {
+  const handleNextClick = (e) => {
     e.preventDefault();
+    e.stopPropagation();
+    handleStepForward();
   };
 
-  const handleNextClick = () => {
+  const handleBackClick = (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    handleStepBackward();
+  };
+
+  const handleStepForward = () => {
     if (isPage === 3) return undefined;
     return setIsPage(isPage + 1);
   };
 
-  const handleBackClick = () => {
+  const handleStepBackward = () => {
     return setIsPage(isPage - 1);
+  };
+
+  const handleSubmit = () => {
+    setIsPage(1);
   };
 
   const sendEmail = (e) => {
@@ -66,6 +78,7 @@ function MultistepForm({ handleOpenModal, handleVisibleReset }) {
         (result) => {
           console.log(result.text);
           handleInputClear();
+          handleSubmit();
           handleOpenModal();
         },
         (error) => {
@@ -81,7 +94,7 @@ function MultistepForm({ handleOpenModal, handleVisibleReset }) {
 
   return (
     <div className="form__container">
-      <form className="form__form" ref={form} onSubmit={onSubmit}>
+      <form className="form__form" ref={form} onSubmit={sendEmail}>
         <div className={pageOneClassName}>
           <div>
             <label className="form__label">Special Requests</label>
@@ -248,12 +261,16 @@ function MultistepForm({ handleOpenModal, handleVisibleReset }) {
         </div>
         <div className={isPage !== 1 ? "form__buttons" : "form__buttons-first"}>
           {isPage !== 1 && (
-            <button className="form__button" onClick={handleBackClick}>
+            <button
+              className="form__button"
+              type="button"
+              onClick={handleBackClick}
+            >
               <p className="form__button-text">BACK</p>
             </button>
           )}
           {isPage === 3 ? (
-            <button className="form__submit">
+            <button className="form__submit" type="submit">
               <svg className="form__submit-svg" viewBox="0 0 20 20" fill="none">
                 <path
                   fill="white"
@@ -264,7 +281,7 @@ function MultistepForm({ handleOpenModal, handleVisibleReset }) {
             </button>
           ) : (
             <button
-              type="button"
+              type="submit"
               className="form__button"
               onClick={handleNextClick}
             >
