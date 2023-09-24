@@ -92,8 +92,18 @@ function MultistepForm({ handleOpenModal }) {
   const pageTwoClassName = isPage === 2 ? "page-two" : "page-two hidden";
   const pageThreeClassName = isPage === 3 ? "page-three" : "page-three hidden";
 
+  const indicatorTwo =
+    isPage >= 2 ? "form__indicator-active" : "form__indicator";
+  const indicatorThree =
+    isPage === 3 ? "form__indicator-active" : "form__indicator";
+
   return (
     <div className="form__container">
+      <div className="form__indicator-container">
+        <button className="form__indicator-active">1</button>
+        <button className={indicatorTwo}>2</button>
+        <button className={indicatorThree}>3</button>
+      </div>
       <form className="form__form" ref={form} onSubmit={sendEmail}>
         <div className={pageOneClassName}>
           <div>

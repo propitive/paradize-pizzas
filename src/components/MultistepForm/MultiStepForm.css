@@ -25,6 +25,42 @@
 } */
 
 .form__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form__indicator-container {
+  display: flex;
+  width: 386px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-direction: row;
+}
+
+.form__indicator {
+  background: url(../../images/blackCircle.svg) center no-repeat;
+  border: none;
+  background-color: transparent;
+  color: #1f1717;
+  padding: 0;
+  height: 30px;
+  width: 30px;
+  font-size: 20px;
+}
+
+.form__indicator-active {
+  background: url(../../images/goldCircle.svg) center no-repeat;
+  height: 30px;
+  width: 30px;
+  border: none;
+  background-color: rgb(181, 143, 94);
+  border-radius: 50%;
+  color: #f5f0f0;
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
 }
 
 .form__form {

@@ -65,7 +65,7 @@ function ContactForm({ handleOpenModal, handleVisibleReset }) {
   return (
     <>
       <Header handleVisibleReset={handleVisibleReset} />
-      <h1 className="contact-form__header">Contact Us</h1>
+      <h1 className="contact-form__header">Request a Quote</h1>
       {/* <form className="form" ref={form} onSubmit={sendEmail}>
         <div className="form__input-box">
           <input
