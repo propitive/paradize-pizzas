@@ -4,13 +4,14 @@
   margin: 0 auto 150px 375px;
   display: flex;
   flex-direction: column;
+  font-family: "Inclusive Sans", sans-serif, Arial;
 }
 
 .menu-item__title {
   margin: 40px auto 50px 0;
-  font-family: "Playfair Display", serif, arial;
   font-size: 50px;
   color: #1f1717;
+  font-family: "Roboto Condensed", sans-serif, Arial;
 }
 
 .menu-item__subtitle {
@@ -76,6 +77,8 @@
 .menu-item__name {
   margin: 0;
   color: #1f1717;
+  font-family: "Roboto Condensed", sans-serif, Arial;
+  letter-spacing: 1px;
 }
 
 .menu-item__description {

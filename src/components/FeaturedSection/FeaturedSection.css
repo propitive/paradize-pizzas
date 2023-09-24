@@ -55,6 +55,7 @@
   letter-spacing: -2px;
   line-height: 55px;
   margin: 0 auto 40px 0;
+  font-family: "Inclusive Sans", sans-serif, Arial;
 }
 
 .featured__paragraph {
@@ -62,6 +63,7 @@
   line-height: 45px;
   font-size: 25px;
   margin: 0 0 auto 0;
+  font-family: "Inclusive Sans", sans-serif, Arial;
 }
 
 .featured__button {

@@ -73,6 +73,7 @@
   text-decoration: none;
   display: inline-block;
   color: black;
+  font-family: "Inclusive Sans", sans-serif, Arial;
 }
 
 .explore__title:hover {

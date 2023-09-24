@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@1&family=Playfair+Display:wght@700&display=swap");
+
 @import url("/src/components/About/About.css");
 @import url("/src/components/App/App.css");
 @import url("/src/components/BookOnlineButton/BookOnlineButton.css");
@@ -23,6 +25,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #f5f0f0;
+  font-family: "Inclusive Sans", sans-serif, Arial;
 }
 
 code {
