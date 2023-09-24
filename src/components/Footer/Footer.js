@@ -105,7 +105,17 @@ function Footer() {
             <p className="footer__text">Contact</p>
           </Link>
         </div>
-        <p className="footer__author">Created by Jose Maldonado</p>
+        <p className="footer__author">
+          Created by{" "}
+          <a
+            href="https://www.linkedin.com/in/jose-m-maldonado/"
+            target="_blank"
+            rel="noreferrer"
+            className="footer__author-a"
+          >
+            Jose Maldonado
+          </a>
+        </p>
       </div>
     </footer>
   );

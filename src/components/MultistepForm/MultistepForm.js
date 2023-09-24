@@ -253,19 +253,34 @@ function MultistepForm({ handleOpenModal }) {
         </div>
         <div className={pageThreeClassName}>
           <div className="form__input-box">
-            <input className="form__input" name="user-name" type="text" />
+            <input
+              className="form__input"
+              name="user-name"
+              type="text"
+              required
+            />
             <span className="form__input-span">Full Name</span>
           </div>
           <div className="form__input-box">
-            <input className="form__input" name="user-email" type="text" />
+            <input
+              className="form__input"
+              name="user-email"
+              type="text"
+              required
+            />
             <span className="form__input-span">Email</span>
           </div>
           <div className="form__input-box">
-            <input className="form__input" name="attendance" type="number" />
+            <input
+              className="form__input"
+              name="attendance"
+              type="number"
+              required
+            />
             <span className="form__input-span">Expected Attendance</span>
           </div>
           <div className="form__input-box">
-            <input className="form__input" name="location" />
+            <input className="form__input" name="location" required />
             <span className="form__input-span">Location</span>
           </div>
         </div>

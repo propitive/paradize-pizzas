@@ -41,7 +41,12 @@
   position: absolute;
   color: #f5f0f0;
   bottom: 40px;
-  pointer-events: none;
+}
+
+.footer__author-a {
+  text-decoration: none;
+  color: #f5f0f0;
+  cursor: pointer;
 }
 
 .footer__icons {
