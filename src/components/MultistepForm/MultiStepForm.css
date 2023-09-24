@@ -120,14 +120,14 @@
   justify-content: flex-end;
 }
 
-.form__button {
+/* .form__button {
   height: 40px;
   background: rgb(181, 143, 94);
   width: 100px;
 }
 .form__button:hover {
   background: rgb(181, 143, 94, 0.8);
-}
+} */
 
 .form__button {
   display: flex;

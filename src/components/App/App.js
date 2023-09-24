@@ -16,7 +16,7 @@ import ModalContactForm from "../ModalContactForm/ModalContactForm";
 
 function App() {
   const [visible, setVisible] = useState(6);
-  const [isContactFormModalOpen, setIsContactFormModalOpen] = useState(false);
+  const [isContactFormModalOpen, setIsContactFormModalOpen] = useState(true);
 
   const handleOpenModal = () => {
     setIsContactFormModalOpen(true);

@@ -36,7 +36,7 @@ function ModalTemplate({
         {children}
         <Link to={link || "/"} style={{ textDecoration: "none" }}>
           <button className="modal__button" onClick={() => handleCloseModal()}>
-            {buttonText || "Submit"}
+            <p className="modal__button-text">{buttonText || "Submit"}</p>
           </button>
         </Link>
         <button

@@ -1,3 +1,6 @@
 .modal-submit__paragraph {
+  font-family: "Inclusive Sans", sans-serif, Arial;
   margin: 0 0 40px;
+  font-size: 20px;
+  line-height: 30px;
 }
