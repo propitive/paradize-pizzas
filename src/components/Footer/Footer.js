@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import facebookIcon from "../../images/icons/iconFacebook.svg";
 import facebookIconHovered from "../../images/icons/iconFacebookHovered.svg";
 import emailIcon from "../../images/icons/iconEmail.svg";
@@ -12,10 +13,27 @@ function Footer() {
     <footer className="footer">
       <div className="footer__container">
         <div className="footer__column">
-          <p className="footer__text">Home</p>
-          <p className="footer__text">About</p>
-          <p className="footer__text">Contact Us</p>
-          <p className="footer__text">Gallery</p>
+          <Link to="/" style={{ textDecoration: "none", color: "#f5f0f0" }}>
+            <p className="footer__text">Home</p>
+          </Link>
+          <Link
+            to="/about"
+            style={{ textDecoration: "none", color: "#f5f0f0" }}
+          >
+            <p className="footer__text">About</p>
+          </Link>
+          <Link
+            to="/contact-form"
+            style={{ textDecoration: "none", color: "#f5f0f0" }}
+          >
+            <p className="footer__text">Contact Us</p>
+          </Link>
+          <Link
+            to="/gallery"
+            style={{ textDecoration: "none", color: "#f5f0f0" }}
+          >
+            <p className="footer__text">Gallery</p>
+          </Link>
           <div className="footer__icons">
             <a
               href="https://github.com/propitive"
@@ -48,14 +66,44 @@ function Footer() {
           </div>
         </div>
         <div className="footer__column">
-          <p className="footer__text">Pizzas</p>
-          <p className="footer__text">Appetizers</p>
-          <p className="footer__text">Salads</p>
-          <p className="footer__text">Desserts</p>
-          <p className="footer__text">Pastas</p>
+          <Link
+            to="/menu/pizza"
+            style={{ textDecoration: "none", color: "#f5f0f0" }}
+          >
+            <p className="footer__text">Pizzas</p>
+          </Link>
+          <Link
+            to="/menu/appetizer"
+            style={{ textDecoration: "none", color: "#f5f0f0" }}
+          >
+            <p className="footer__text">Appetizers</p>
+          </Link>
+          <Link
+            to="/menu/salad"
+            style={{ textDecoration: "none", color: "#f5f0f0" }}
+          >
+            <p className="footer__text">Salads</p>
+          </Link>
+          <Link
+            to="/menu/dessert"
+            style={{ textDecoration: "none", color: "#f5f0f0" }}
+          >
+            <p className="footer__text">Desserts</p>
+          </Link>
+          <Link
+            to="/menu/pasta"
+            style={{ textDecoration: "none", color: "#f5f0f0" }}
+          >
+            <p className="footer__text">Pastas</p>
+          </Link>
         </div>
         <div className="footer__column">
-          <p className="footer__text">Contact</p>
+          <Link
+            to="/contact-form"
+            style={{ textDecoration: "none", color: "#f5f0f0" }}
+          >
+            <p className="footer__text">Contact</p>
+          </Link>
         </div>
         <p className="footer__author">Created by Jose Maldonado</p>
       </div>
