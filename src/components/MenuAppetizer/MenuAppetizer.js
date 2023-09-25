@@ -20,6 +20,7 @@ function MenuAppetizer() {
               <MenuItem
                 liClassName=""
                 key={appetizer.id}
+                keyValue={appetizer.id}
                 image={appetizer.image}
                 isPopular={appetizer.isPopular}
                 name={appetizer.name}

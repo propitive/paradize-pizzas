@@ -20,6 +20,7 @@ function MenuDessert() {
               <MenuItem
                 liClassName=""
                 key={dessert.id}
+                keyValue={dessert.id}
                 image={dessert.image}
                 isPopular={dessert.isPopular}
                 name={dessert.name}

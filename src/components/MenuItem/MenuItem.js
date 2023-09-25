@@ -1,6 +1,6 @@
 function MenuItem({
   liClassName,
-  key,
+  keyValue,
   image,
   isPopular,
   isSpecialRequest,
@@ -8,7 +8,7 @@ function MenuItem({
   description,
 }) {
   return (
-    <li className={"menu-item__li " + liClassName} key={key}>
+    <li className={"menu-item__li " + liClassName} key={keyValue}>
       <img className="menu-item__image" src={image} />
       <div className="menu-item__text">
         <div className="menu-item__buttons">

@@ -20,6 +20,7 @@ function MenuSalad() {
               <MenuItem
                 liClassName=""
                 key={salad.id}
+                keyValue={salad.id}
                 image={salad.image}
                 isPopular={salad.isPopular}
                 name={salad.name}

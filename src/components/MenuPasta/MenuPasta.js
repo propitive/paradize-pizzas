@@ -20,6 +20,7 @@ function MenuPasta() {
               <MenuItem
                 liClassName=""
                 key={pasta.id}
+                keyValue={pasta.id}
                 image={pasta.image}
                 isPopular={pasta.isPopular}
                 name={pasta.name}

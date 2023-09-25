@@ -27,6 +27,7 @@ function MenuPizza({ handleShowMoreItems, handleVisibleReset, visible }) {
               <MenuItem
                 liClassName=""
                 key={pizza.id}
+                keyValue={pizza.id}
                 image={pizza.image}
                 isPopular={pizza.isPopular}
                 isSpecialRequest={pizza.isSpecialRequest}
