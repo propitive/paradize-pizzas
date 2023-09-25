@@ -12,8 +12,9 @@ function ExploreOurMenu() {
             <Link
               to={item.path}
               style={{ textDecoration: "none", alignSelf: "center" }}
+              key={i}
             >
-              <div className="explore__item" key={i}>
+              <div className="explore__item">
                 <div className="explore__image-wrapper">
                   <img className="explore__image" src={item.image} />
                 </div>
