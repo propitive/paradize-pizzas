@@ -63,12 +63,12 @@ function Header({ handleVisibleReset }) {
             </li>
           </Link>
         </ul>
-        <Link
+        {/* <Link
           to="/contact-form"
           style={{ textDecoration: "none", alignSelf: "center" }}
-        >
-          <BookOnlineButton className="header__button" />
-        </Link>
+        > */}
+        <BookOnlineButton className="header__button" />
+        {/* </Link> */}
       </header>
     </>
   );
