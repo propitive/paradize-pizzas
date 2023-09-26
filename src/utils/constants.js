@@ -6,6 +6,8 @@ import salad from "../images/featured/salad.jpg";
 import snackBar from "../images/featured/snackBar.PNG";
 import tioSebasCooking from "../images/featured/tioSebasCooking.jpg";
 
+import * as FaIcons from "react-icons/fa";
+
 //////////////// PHOTOS ////////////////
 export const featuredPhotos = [
   jalapenoPizza,
@@ -401,5 +403,50 @@ export const galleryCards = [
     id: 8,
     image: jalapenoPizza,
     title: "Chicken Alfredo",
+  },
+];
+
+//////////////// SIDEBAR ////////////////
+
+export const SidebarData = [
+  {
+    title: "Pizzas",
+    path: "/menu/pizza",
+    cName: "nav-text",
+  },
+  {
+    title: "Appetizers",
+    path: "/menu/appetizer",
+    cName: "nav-text",
+  },
+  {
+    title: "Salads",
+    path: "/menu/salad",
+    cName: "nav-text",
+  },
+  {
+    title: "Desserts",
+    path: "/menu/dessert",
+    cName: "nav-text",
+  },
+  {
+    title: "Pastas",
+    path: "/menu/pasta",
+    cName: "nav-text",
+  },
+  {
+    title: "About",
+    path: "/about",
+    cName: "nav-text",
+  },
+  {
+    title: "Contact Us",
+    path: "/contact-form",
+    cName: "nav-text",
+  },
+  {
+    title: "Gallery",
+    path: "/gallery",
+    cName: "nav-text",
   },
 ];

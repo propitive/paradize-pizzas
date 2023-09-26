@@ -57,6 +57,7 @@
   display: flex;
   flex-direction: row;
   gap: 10px;
+  font-family: "Inclusive Sans", sans-serif, Arial;
 }
 
 .menu-item__popular {
