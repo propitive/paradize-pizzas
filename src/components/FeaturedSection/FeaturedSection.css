@@ -7,6 +7,7 @@
   cursor: grab;
   overflow: hidden;
   border-bottom: solid #1f1717;
+  border-top: solid #1f1717;
   width: 85%;
   margin: 0px auto 0px;
 }
@@ -72,4 +73,25 @@
   height: 75px;
   padding: 0;
   cursor: pointer;
+}
+
+@media screen and (max-width: 1300px) {
+  .featured {
+    flex-direction: column-reverse;
+  }
+  .featured__text {
+    margin: 40px 80px 40px;
+    padding: 0;
+    width: 80%; /* correct this to 100% */
+  }
+  .featured__paragraph {
+    margin: 0 auto 30px;
+  }
+  .featured__carousel__container {
+    margin: 0 auto 40px;
+    width: 100%;
+  }
+  .featured__carousel {
+    width: 95%;
+  }
 }
