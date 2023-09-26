@@ -191,6 +191,9 @@ span {
 }
 
 @media screen and (max-width: 1100px) {
+  .header {
+    height: 90px;
+  }
   .header__container {
     display: none;
     visibility: hidden;
@@ -200,5 +203,9 @@ span {
     display: block;
     visibility: visible;
     pointer-events: all;
+    height: 90px;
+  }
+  .header__logo {
+    height: 70px;
   }
 }

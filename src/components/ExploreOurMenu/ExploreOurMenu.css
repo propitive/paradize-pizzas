@@ -78,3 +78,34 @@
   border-bottom: 3px solid rgb(181, 143, 94);
   transition: all 0.5s ease;
 }
+
+@media screen and (max-width: 1300px) {
+  .explore {
+    padding: 0 20px 100px;
+  }
+  .explore__image-wrapper {
+    width: 170px;
+    height: 170px;
+  }
+  .explore__image {
+    width: 170px;
+    height: 170px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .explore__items {
+    gap: 10px;
+  }
+  .explore__image-wrapper {
+    width: 130px;
+    height: 130px;
+  }
+  .explore__image {
+    width: 130px;
+    height: 130px;
+  }
+  .explore__title {
+    font-size: 14px;
+  }
+}

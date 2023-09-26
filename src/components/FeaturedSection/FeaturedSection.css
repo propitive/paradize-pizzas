@@ -80,11 +80,16 @@
     flex-direction: column-reverse;
   }
   .featured__text {
-    margin: 40px 80px 40px;
+    margin: 30px auto 40px;
     padding: 0;
     width: 80%; /* correct this to 100% */
   }
+  .featured__header {
+    font-size: 35px;
+    margin: 0 auto 10px 0;
+  }
   .featured__paragraph {
+    font-size: 20px;
     margin: 0 auto 30px;
   }
   .featured__carousel__container {
@@ -93,5 +98,9 @@
   }
   .featured__carousel {
     width: 95%;
+  }
+  .featured__carousel__image-div {
+    height: 400px;
+    min-width: 300px;
   }
 }
