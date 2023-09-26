@@ -104,3 +104,9 @@
     min-width: 300px;
   }
 }
+
+@media screen and (max-width: 700px) {
+  .featured__text {
+    align-items: center;
+  }
+}

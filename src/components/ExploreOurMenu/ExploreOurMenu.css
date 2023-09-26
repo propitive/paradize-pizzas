@@ -95,7 +95,7 @@
 
 @media screen and (max-width: 500px) {
   .explore__items {
-    gap: 10px;
+    gap: 40px;
   }
   .explore__image-wrapper {
     width: 130px;

@@ -76,3 +76,27 @@
   /* max-width: calc(100% - 100px); */
   text-align: start;
 }
+
+@media screen and (max-width: 1100px) {
+  .about__container {
+    flex-direction: column;
+  }
+  .about__image {
+    height: 500px;
+    width: 100%;
+    margin: 20px auto 0px;
+  }
+  .about__text {
+    max-width: 100%;
+    margin: 0 0 0;
+  }
+  .about__subheading {
+    margin: 20px auto 0;
+  }
+  .about__paragraph {
+    margin: 10px 0 80px;
+    line-height: 26px;
+    letter-spacing: 0.3px;
+    font-size: 20px;
+  }
+}
