@@ -75,6 +75,16 @@ function Header({ handleVisibleReset }) {
         </div>
         <div className="menu__container">
           <div className="navbar">
+            <Link
+              to="/"
+              style={{ textDecoration: "none", alignSelf: "center" }}
+            >
+              <img
+                className="header__logo"
+                src={logo}
+                onClick={() => handleVisibleReset}
+              />
+            </Link>
             <Link to="#" className="menu-bars">
               <FaIcons.FaBars
                 style={{
