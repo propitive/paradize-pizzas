@@ -175,3 +175,15 @@
 .form__button:hover .form__button-svg path {
   fill: rgb(181, 143, 94);
 }
+
+@media screen and (max-width: 500px) {
+  .form__form {
+    max-width: 380px;
+  }
+  .form__input-box {
+    width: 380px;
+  }
+  .form__input {
+    width: 304px;
+  }
+}

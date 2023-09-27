@@ -321,3 +321,9 @@ input::-webkit-inner-spin-button {
 input[type="number"] {
   -moz-appearance: textfield;
 }
+
+@media screen and (max-width: 500px) {
+  .contact-form__header {
+    font-size: 50px;
+  }
+}
