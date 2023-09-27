@@ -114,6 +114,7 @@ function Header({ handleVisibleReset }) {
                   </li>
                 );
               })}
+              <BookOnlineButton className=" nav-menu__button" />
             </ul>
           </nav>
         </div>
