@@ -215,3 +215,15 @@ span {
     height: 70px;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .nav-text {
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .nav-text {
+    height: 40px;
+  }
+}

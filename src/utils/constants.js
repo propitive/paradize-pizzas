@@ -201,6 +201,33 @@ export const menuOfAppetizers = [
     isPopular: true,
     isSpecialRequest: false,
   },
+  {
+    id: 5,
+    image: jalapenoPizza,
+    name: "Jalapeno Poppers",
+    description:
+      "Smoked bacon, sausage, pepperoni, tomato sauce, and fresh mozzarella.",
+    isPopular: false,
+    isSpecialRequest: false,
+  },
+  {
+    id: 6,
+    image: jalapenoPizza,
+    name: "Tiny BLTs",
+    description:
+      "Smoked bacon, sausage, pepperoni, tomato sauce, and fresh mozzarella.",
+    isPopular: false,
+    isSpecialRequest: false,
+  },
+  {
+    id: 7,
+    image: jalapenoPizza,
+    name: "Shrimp Skewers",
+    description:
+      "Smoked bacon, sausage, pepperoni, tomato sauce, and fresh mozzarella.",
+    isPopular: false,
+    isSpecialRequest: false,
+  },
 ];
 
 export const menuOfSalads = [
@@ -276,7 +303,7 @@ export const menuOfPastas = [
   {
     id: 4,
     image: jalapenoPizza,
-    name: "Red Sauce Meatballs",
+    name: "Spaghetti with Meatballs",
     description:
       "Pest sauce, fresh mozzarella, caramelized onions, and blue cheese.",
     isPopular: false,
@@ -334,6 +361,9 @@ export const appetizerOptions = [
   { label: "Chicken Bacon Wrap", value: "Chicken Bacon Wrap" },
   { label: "Tomato Bruschetta", value: "Tomato Bruschetta" },
   { label: "Mushroom Cristinis", value: "Mushroom Cristinis" },
+  { label: "Jalapeno Poppers", value: "Jalapeno Poppers" },
+  { label: "Tiny BLTs", value: "Tiny BLTs" },
+  { label: "Shrimp Skewers", value: "Shrimp Skewers" },
 ];
 
 export const saladOptions = [
@@ -353,7 +383,7 @@ export const pastaOptions = [
   { label: "Chicken Alfredo", value: "Chicken Alfredo" },
   { label: "Shrimp Alfredo", value: "Shrimp Alfredo" },
   { label: "Roasted Chicken Penne", value: "Roasted Chicken Penne" },
-  { label: "Red Sauce Meatballs", value: "Red Sauce Meatballs" },
+  { label: "Spaghetti with Meatballs", value: "Spaghetti with Meatballs" },
 ];
 
 export const dichotomousOptions = [
