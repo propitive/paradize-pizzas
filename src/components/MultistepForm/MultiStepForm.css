@@ -32,7 +32,7 @@
 
 .form__indicator-container {
   display: flex;
-  width: 386px;
+  width: 340px;
   align-items: center;
   justify-content: center;
   gap: 10px;
@@ -185,5 +185,17 @@
   }
   .form__input {
     width: 304px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .form__form {
+    max-width: 350px;
+  }
+  .form__input-box {
+    width: 348px;
+  }
+  .form__input {
+    width: 274px;
   }
 }
