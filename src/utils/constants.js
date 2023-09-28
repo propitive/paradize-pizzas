@@ -170,8 +170,7 @@ export const menuOfAppetizers = [
     id: 1,
     image: jalapenoPizza,
     name: "Sausage Lolipop",
-    description:
-      "Ricotta cheese, garlic, bacon, fresh mozzarella, and white truffle oil.",
+    description: "",
     isPopular: false,
     isSpecialRequest: false,
   },
@@ -179,8 +178,7 @@ export const menuOfAppetizers = [
     id: 2,
     image: jalapenoPizza,
     name: "Chicken Bacon Wrap",
-    description:
-      "Pest sauce, fresh mozzarella, caramelized onions, and blue cheese.",
+    description: "",
     isPopular: false,
     isSpecialRequest: false,
   },
@@ -188,7 +186,7 @@ export const menuOfAppetizers = [
     id: 3,
     image: jalapenoPizza,
     name: "Tomato Bruschetta",
-    description: "Tomato sauce, fresh mozzarella, tomato, and basil.",
+    description: "",
     isPopular: false,
     isSpecialRequest: false,
   },
@@ -196,8 +194,7 @@ export const menuOfAppetizers = [
     id: 4,
     image: jalapenoPizza,
     name: "Mushroom Cristinis",
-    description:
-      "Smoked bacon, sausage, pepperoni, tomato sauce, and fresh mozzarella.",
+    description: "",
     isPopular: true,
     isSpecialRequest: false,
   },
@@ -205,8 +202,7 @@ export const menuOfAppetizers = [
     id: 5,
     image: jalapenoPizza,
     name: "Jalapeno Poppers",
-    description:
-      "Smoked bacon, sausage, pepperoni, tomato sauce, and fresh mozzarella.",
+    description: "",
     isPopular: false,
     isSpecialRequest: false,
   },
@@ -214,8 +210,7 @@ export const menuOfAppetizers = [
     id: 6,
     image: jalapenoPizza,
     name: "Tiny BLTs",
-    description:
-      "Smoked bacon, sausage, pepperoni, tomato sauce, and fresh mozzarella.",
+    description: "",
     isPopular: false,
     isSpecialRequest: false,
   },
@@ -223,8 +218,7 @@ export const menuOfAppetizers = [
     id: 7,
     image: jalapenoPizza,
     name: "Shrimp Skewers",
-    description:
-      "Smoked bacon, sausage, pepperoni, tomato sauce, and fresh mozzarella.",
+    description: "",
     isPopular: false,
     isSpecialRequest: false,
   },
