@@ -24,11 +24,19 @@ import apperiterTomatoBruschetta from "../images/menuAppetizers/tomatoBruschetta
 
 //// MENU SALADS ////
 
-//// MENU APPETIZERS ////
-//// MENU APPETIZERS ////
-//// MENU APPETIZERS ////
-//// MENU APPETIZERS ////
-//// MENU APPETIZERS ////
+//// EXPLORE OUR MENU ////
+
+import exploreAppetizer from "../images/exploreOurMenu/appetizer.jpg";
+import exploreDessert from "../images/exploreOurMenu/dessert.jpg";
+import explorePasta from "../images/exploreOurMenu/pasta.jpg";
+import explorePizza from "../images/exploreOurMenu/pizza.jpg";
+import exploreSalad from "../images/exploreOurMenu/salad.jpg";
+
+//// FEATURED ////
+
+//// ABOUT ////
+
+//// GALLERY ////
 
 //////////////// PHOTOS ////////////////
 export const featuredPhotos = [
@@ -42,11 +50,11 @@ export const featuredPhotos = [
 ];
 
 export const explorePhotos = [
-  { image: jalapenoPizza, title: "Brick Oven Pizzas", path: "/menu/pizza" },
-  { image: jalapenoPoppers, title: "Appetizers", path: "/menu/appetizer" },
-  { image: pizzaAtNight, title: "Salads", path: "/menu/salad" },
-  { image: pizzaSign, title: "Desserts", path: "/menu/dessert" },
-  { image: snackBar, title: "Pastas", path: "/menu/pasta" },
+  { image: explorePizza, title: "Brick Oven Pizzas", path: "/menu/pizza" },
+  { image: exploreAppetizer, title: "Appetizers", path: "/menu/appetizer" },
+  { image: exploreSalad, title: "Salads", path: "/menu/salad" },
+  { image: exploreDessert, title: "Desserts", path: "/menu/dessert" },
+  { image: explorePasta, title: "Pastas", path: "/menu/pasta" },
 ];
 
 //////////////// MENUS ////////////////
