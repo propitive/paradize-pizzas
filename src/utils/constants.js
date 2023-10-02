@@ -6,7 +6,29 @@ import salad from "../images/featured/salad.jpg";
 import snackBar from "../images/featured/snackBar.PNG";
 import tioSebasCooking from "../images/featured/tioSebasCooking.jpg";
 
-import * as FaIcons from "react-icons/fa";
+//// MENU APPETIZERS ////
+
+import apperiterChickenBaconWraps from "../images/menuAppetizers/chickenBaconWraps.jpg";
+import apperiterJalapenoPoppers from "../images/menuAppetizers/jalapenoPoppers.jpg";
+import apperiterMushroomCrositi from "../images/menuAppetizers/mushroomCrositi.jpg";
+import apperiterSausageLollipops from "../images/menuAppetizers/sausageLollipops.jpg";
+import apperiterShrimpSkewers from "../images/menuAppetizers/shrimpSkewers.jpg";
+import apperiterTinyBlt from "../images/menuAppetizers/tinyBlt.jpg";
+import apperiterTomatoBruschetta from "../images/menuAppetizers/tomatoBruschetta.jpg";
+
+//// MENU DESSERTS ////
+
+//// MENU PASTAS ////
+
+//// MENU PIZZAS ////
+
+//// MENU SALADS ////
+
+//// MENU APPETIZERS ////
+//// MENU APPETIZERS ////
+//// MENU APPETIZERS ////
+//// MENU APPETIZERS ////
+//// MENU APPETIZERS ////
 
 //////////////// PHOTOS ////////////////
 export const featuredPhotos = [
@@ -51,7 +73,8 @@ export const menuOfPizzas = [
     id: 15,
     image: jalapenoPizza,
     name: "BBQ Chicken",
-    description: "Fresh mozzarella, tomato sauce, and parmesan cheese.",
+    description:
+      "Red onions, bacon, grilled chicken, barbecue sauce, and Mexican blend cheese.",
     isPopular: false,
     isSpecialRequest: true,
   },
@@ -102,7 +125,8 @@ export const menuOfPizzas = [
     id: 13,
     image: jalapenoPizza,
     name: "Five Cheese",
-    description: "Fresh mozzarella, tomato sauce, and parmesan cheese.",
+    description:
+      "Fresh Mozzarella, blue cheese, ricotta, goat cheese, and parmesan cheese.",
     isPopular: false,
     isSpecialRequest: true,
   },
@@ -110,7 +134,7 @@ export const menuOfPizzas = [
     id: 14,
     image: jalapenoPizza,
     name: "Italian Sausage",
-    description: "Fresh mozzarella, tomato sauce, and parmesan cheese.",
+    description: "Fresh cheese, pepperoni, and Italian sausage",
     isPopular: false,
     isSpecialRequest: true,
   },
@@ -135,7 +159,7 @@ export const menuOfPizzas = [
     id: 16,
     image: jalapenoPizza,
     name: "Hawaiian",
-    description: "Fresh mozzarella, tomato sauce, and parmesan cheese.",
+    description: "Canadian bacon, red onions, pineapple, and bacon.",
     isPopular: false,
     isSpecialRequest: true,
   },
@@ -150,8 +174,8 @@ export const menuOfPizzas = [
   {
     id: 12,
     image: jalapenoPizza,
-    name: "Prosciutto",
-    description: "Fresh mozzarella, tomato sauce, and parmesan cheese.",
+    name: "Honey Prosciutto",
+    description: "Fresh Mozzarella, honey, prosciutto, fresh baby arugula.",
     isPopular: false,
     isSpecialRequest: true,
   },
@@ -159,7 +183,7 @@ export const menuOfPizzas = [
     id: 11,
     image: jalapenoPizza,
     name: "Pepperoni + Black Olives",
-    description: "Fresh mozzarella, tomato sauce, and parmesan cheese.",
+    description: "Fresh cheese, Pepperoni and olives.",
     isPopular: false,
     isSpecialRequest: true,
   },
@@ -168,7 +192,7 @@ export const menuOfPizzas = [
 export const menuOfAppetizers = [
   {
     id: 1,
-    image: jalapenoPizza,
+    image: apperiterSausageLollipops,
     name: "Sausage Lolipop",
     description: "",
     isPopular: false,
@@ -176,7 +200,7 @@ export const menuOfAppetizers = [
   },
   {
     id: 2,
-    image: jalapenoPizza,
+    image: apperiterChickenBaconWraps,
     name: "Chicken Bacon Wrap",
     description: "",
     isPopular: false,
@@ -184,7 +208,7 @@ export const menuOfAppetizers = [
   },
   {
     id: 3,
-    image: jalapenoPizza,
+    image: apperiterTomatoBruschetta,
     name: "Tomato Bruschetta",
     description: "",
     isPopular: false,
@@ -192,7 +216,7 @@ export const menuOfAppetizers = [
   },
   {
     id: 4,
-    image: jalapenoPizza,
+    image: apperiterMushroomCrositi,
     name: "Mushroom Cristinis",
     description: "",
     isPopular: true,
@@ -200,7 +224,7 @@ export const menuOfAppetizers = [
   },
   {
     id: 5,
-    image: jalapenoPizza,
+    image: apperiterJalapenoPoppers,
     name: "Jalapeno Poppers",
     description: "",
     isPopular: false,
@@ -208,7 +232,7 @@ export const menuOfAppetizers = [
   },
   {
     id: 6,
-    image: jalapenoPizza,
+    image: apperiterTinyBlt,
     name: "Tiny BLTs",
     description: "",
     isPopular: false,
@@ -216,7 +240,7 @@ export const menuOfAppetizers = [
   },
   {
     id: 7,
-    image: jalapenoPizza,
+    image: apperiterShrimpSkewers,
     name: "Shrimp Skewers",
     description: "",
     isPopular: false,
@@ -228,7 +252,7 @@ export const menuOfSalads = [
   {
     id: 1,
     image: jalapenoPizza,
-    name: "Ceaser Salad",
+    name: "Caeser Salad",
     description:
       "Ricotta cheese, garlic, bacon, fresh mozzarella, and white truffle oil.",
     isPopular: false,
@@ -271,8 +295,7 @@ export const menuOfPastas = [
     id: 1,
     image: jalapenoPizza,
     name: "Chicken Alfredo",
-    description:
-      "Ricotta cheese, garlic, bacon, fresh mozzarella, and white truffle oil.",
+    description: "",
     isPopular: false,
     isSpecialRequest: false,
   },
@@ -280,8 +303,7 @@ export const menuOfPastas = [
     id: 2,
     image: jalapenoPizza,
     name: "Shrimp Alfredo",
-    description:
-      "Pest sauce, fresh mozzarella, caramelized onions, and blue cheese.",
+    description: "",
     isPopular: false,
     isSpecialRequest: false,
   },
@@ -289,8 +311,7 @@ export const menuOfPastas = [
     id: 3,
     image: jalapenoPizza,
     name: "Roasted Chicken Penne",
-    description:
-      "Pest sauce, fresh mozzarella, caramelized onions, and blue cheese.",
+    description: "",
     isPopular: false,
     isSpecialRequest: false,
   },
@@ -298,8 +319,7 @@ export const menuOfPastas = [
     id: 4,
     image: jalapenoPizza,
     name: "Spaghetti with Meatballs",
-    description:
-      "Pest sauce, fresh mozzarella, caramelized onions, and blue cheese.",
+    description: "",
     isPopular: false,
     isSpecialRequest: false,
   },
