@@ -11,7 +11,7 @@ function MenuSalad() {
       <div className="menu-item">
         <h1 className="menu-item__title">Salads</h1>
         <h2 className="menu-item__subtitle">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Life is better with a little crunch and a lot of greens.
         </h2>
         <BookOnlineButton className="menu-item__button" />
         <ul className="menu-item__ul">

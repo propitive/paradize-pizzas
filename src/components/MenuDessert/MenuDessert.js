@@ -11,7 +11,7 @@ function MenuDessert() {
       <div className="menu-item">
         <h1 className="menu-item__title">Desserts</h1>
         <h2 className="menu-item__subtitle">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          There's always room for dessert!
         </h2>
         <BookOnlineButton className="menu-item__button" />
         <ul className="menu-item__ul">
