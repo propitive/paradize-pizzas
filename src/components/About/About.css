@@ -43,14 +43,12 @@
 .about__container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   margin: 0;
 }
 
 .about__image {
-  /* width: 600px; */
   margin: 70px auto 70px;
-  /* height: 350px; */
   width: 50%;
   height: 800px;
   border-radius: 2%;
