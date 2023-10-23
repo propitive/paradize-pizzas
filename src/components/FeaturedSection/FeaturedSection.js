@@ -44,12 +44,15 @@ function FeaturedSection() {
           Changing the way we think about brick oven pizzas
         </h3>
         <p className="featured__paragraph">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur.
+          At Paradize Pizzas, we're not just about pizza; we're about crafting
+          mouthwatering masterpieces that are nothing short of extraordinary.
+          Imagine a perfect symphony of flavors, a harmony of fresh,
+          locally-sourced ingredients, and an oven that turns every pizza into a
+          work of art. From classic Margheritas to bold BBQ chicken creations,
+          we've perfected the art of pizza-making, and we're here to share our
+          passion with you. Join us as we redefine your pizza experience, one
+          slice at a time. It's not just pizza; it's a slice of pure indulgence,
+          and it's all waiting for you.
         </p>
         <BookOnlineButton className="featured__button" />
       </div>

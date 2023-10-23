@@ -240,10 +240,14 @@
     font-size: 11px;
   }
   .menu-item__image {
-    width: 240px;
+    /* width: 240px; */
+    width: 128px;
   }
   .menu-item__advisory {
     margin: 0 20px 80px 0;
+  }
+  .menu-item__text {
+    width: 180px;
   }
 }
 

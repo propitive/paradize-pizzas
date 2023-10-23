@@ -67,7 +67,6 @@ import exploreSalad from "../images/exploreOurMenu/salad.jpg";
 //// GALLERY ////
 
 import galleryCharcuterieWithGrapes from "../images/gallery/charcuterieWithGrapes.PNG";
-import galleryCharcuterieWithStrawberries from "../images/gallery/charcuterieWithStrawberries.PNG";
 import galleryJalapenoPoppers from "../images/gallery/jalapenoPoppers.PNG";
 import galleryPennePasta from "../images/gallery/pennePasta.PNG";
 import gallerySebasAndMarcos from "../images/gallery/sebasAndMarcos.PNG";
