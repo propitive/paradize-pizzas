@@ -18,11 +18,41 @@ import apperiterTomatoBruschetta from "../images/menuAppetizers/tomatoBruschetta
 
 //// MENU DESSERTS ////
 
+import dessertChocolateNutella from "../images/menuDesserts/chocolateNutella.jpg";
+import dessertPeachPizza from "../images/menuDesserts/peachPizza.jpg";
+
 //// MENU PASTAS ////
+
+import pastaChickenAlfredo from "../images/menuPastas/chickenAlfredo.jpg";
+import pastaRoastedChickenPenne from "../images/menuPastas/roastedChickenPenne.jpg";
+import pastaShrimpAlfredo from "../images/menuPastas/shrimpAlfredo.jpg";
+import pastaSpaghetti from "../images/menuPastas/spaghetti.jpg";
 
 //// MENU PIZZAS ////
 
+import pizzaBaconRicotta from "../images/menuPizzas/baconRicotta.jpg";
+import pizzaBbqChicken from "../images/menuPizzas/bbqChicken.jpg";
+import pizzaCheese from "../images/menuPizzas/cheese.jpg";
+import pizzaChefsSpecial from "../images/menuPizzas/chefsSpecial.jpg";
+import pizzaFiveCheese from "../images/menuPizzas/fiveCheese.jpg";
+import pizzaHawaiian from "../images/menuPizzas/hawaiian.jpg";
+import pizzaItalianSausage from "../images/menuPizzas/italianSausage.jpg";
+import pizzaMargherita from "../images/menuPizzas/margherita.jpg";
+import pizzaMeatsPizza from "../images/menuPizzas/meatsPizza.jpg";
+import pizzaPepperoni from "../images/menuPizzas/pepperoni.jpg";
+import pizzaPepperoniBlackOlives from "../images/menuPizzas/pepperoniBlackOlives.jpg";
+import pizzaPepperoniJalapenos from "../images/menuPizzas/pepperoniJalapenos.jpg";
+import pizzaPepperoniMushrooms from "../images/menuPizzas/pepperoniMushrooms.jpg";
+import pizzaPesto from "../images/menuPizzas/pesto.jpg";
+import pizzaProsciuttoHoney from "../images/menuPizzas/prosciuttoHoney.jpg";
+import pizzaVeggie from "../images/menuPizzas/veggie.jpg";
+
 //// MENU SALADS ////
+
+import saladCeaser from "../images/menuSalads/caesar.jpg";
+import saladHouse from "../images/menuSalads/house.jpg";
+
+//// FEATURED ////
 
 //// EXPLORE OUR MENU ////
 
@@ -32,11 +62,19 @@ import explorePasta from "../images/exploreOurMenu/pasta.jpg";
 import explorePizza from "../images/exploreOurMenu/pizza.jpg";
 import exploreSalad from "../images/exploreOurMenu/salad.jpg";
 
-//// FEATURED ////
-
 //// ABOUT ////
 
 //// GALLERY ////
+
+import galleryCharcuterieWithGrapes from "../images/gallery/charcuterieWithGrapes.PNG";
+import galleryCharcuterieWithStrawberries from "../images/gallery/charcuterieWithStrawberries.PNG";
+import galleryJalapenoPoppers from "../images/gallery/jalapenoPoppers.PNG";
+import galleryPennePasta from "../images/gallery/pennePasta.PNG";
+import gallerySebasAndMarcos from "../images/gallery/sebasAndMarcos.PNG";
+import galleryServingTable from "../images/gallery/servingTable.PNG";
+import gallerySkewers from "../images/gallery/skewers.PNG";
+import gallerySpaghettiInOven from "../images/gallery/spaghettiInOven.PNG";
+import galleryTomatoBruschetta from "../images/gallery/tomatoBruschetta.PNG";
 
 //////////////// PHOTOS ////////////////
 export const featuredPhotos = [
@@ -61,7 +99,7 @@ export const explorePhotos = [
 export const menuOfPizzas = [
   {
     id: 1,
-    image: jalapenoPizza,
+    image: pizzaBaconRicotta,
     name: "Ricotta + Bacon",
     description:
       "Ricotta cheese, garlic, bacon, fresh mozzarella, and white truffle oil.",
@@ -70,7 +108,7 @@ export const menuOfPizzas = [
   },
   {
     id: 2,
-    image: jalapenoPizza,
+    image: pizzaPesto,
     name: "Pesto",
     description:
       "Pest sauce, fresh mozzarella, caramelized onions, and blue cheese.",
@@ -79,7 +117,7 @@ export const menuOfPizzas = [
   },
   {
     id: 15,
-    image: jalapenoPizza,
+    image: pizzaBbqChicken,
     name: "BBQ Chicken",
     description:
       "Red onions, bacon, grilled chicken, barbecue sauce, and Mexican blend cheese.",
@@ -88,7 +126,7 @@ export const menuOfPizzas = [
   },
   {
     id: 3,
-    image: jalapenoPizza,
+    image: pizzaMargherita,
     name: "Margherita",
     description: "Tomato sauce, fresh mozzarella, tomato, and basil.",
     isPopular: true,
@@ -96,7 +134,7 @@ export const menuOfPizzas = [
   },
   {
     id: 4,
-    image: jalapenoPizza,
+    image: pizzaMeatsPizza,
     name: "Meat Lovers",
     description:
       "Smoked bacon, sausage, pepperoni, tomato sauce, and fresh mozzarella.",
@@ -105,7 +143,7 @@ export const menuOfPizzas = [
   },
   {
     id: 5,
-    image: jalapenoPizza,
+    image: pizzaVeggie,
     name: "Veggie",
     description:
       "Tomato sauce, tomatoes, sauteed mushroom, caramelized onions, and arugula.",
@@ -114,7 +152,7 @@ export const menuOfPizzas = [
   },
   {
     id: 6,
-    image: jalapenoPizza,
+    image: pizzaPepperoni,
     name: "Pepperoni",
     description: "Fresh mozzarella, pepperoni, and tomato sauce.",
     isPopular: true,
@@ -122,7 +160,7 @@ export const menuOfPizzas = [
   },
   {
     id: 7,
-    image: jalapenoPizza,
+    image: pizzaPepperoniMushrooms,
     name: "Pepperoni + Mushrooms",
     description:
       "Fresh mozzarella, pepperoni, sauteed mushrooms, and tomato sauce.",
@@ -131,7 +169,7 @@ export const menuOfPizzas = [
   },
   {
     id: 13,
-    image: jalapenoPizza,
+    image: pizzaFiveCheese,
     name: "Five Cheese",
     description:
       "Fresh Mozzarella, blue cheese, ricotta, goat cheese, and parmesan cheese.",
@@ -140,7 +178,7 @@ export const menuOfPizzas = [
   },
   {
     id: 14,
-    image: jalapenoPizza,
+    image: pizzaItalianSausage,
     name: "Italian Sausage",
     description: "Fresh cheese, pepperoni, and Italian sausage",
     isPopular: false,
@@ -148,7 +186,7 @@ export const menuOfPizzas = [
   },
   {
     id: 8,
-    image: jalapenoPizza,
+    image: pizzaPepperoniJalapenos,
     name: "Pepperoni + Jalapenos",
     description: "Fresh mozzarella, pepperoni, and jalapenos.",
     isPopular: false,
@@ -156,7 +194,7 @@ export const menuOfPizzas = [
   },
   {
     id: 9,
-    image: jalapenoPizza,
+    image: pizzaChefsSpecial,
     name: "Chef's Special",
     description:
       "Tomato sauce, fresh mozzarella, sauteed mushrooms, goat cheese, pepperoni, jalapenos bacon, and caramelized onions.",
@@ -165,7 +203,7 @@ export const menuOfPizzas = [
   },
   {
     id: 16,
-    image: jalapenoPizza,
+    image: pizzaHawaiian,
     name: "Hawaiian",
     description: "Canadian bacon, red onions, pineapple, and bacon.",
     isPopular: false,
@@ -173,7 +211,7 @@ export const menuOfPizzas = [
   },
   {
     id: 10,
-    image: jalapenoPizza,
+    image: pizzaCheese,
     name: "Classic Cheese",
     description: "Fresh mozzarella, tomato sauce, and parmesan cheese.",
     isPopular: false,
@@ -181,7 +219,7 @@ export const menuOfPizzas = [
   },
   {
     id: 12,
-    image: jalapenoPizza,
+    image: pizzaProsciuttoHoney,
     name: "Honey Prosciutto",
     description: "Fresh Mozzarella, honey, prosciutto, fresh baby arugula.",
     isPopular: false,
@@ -189,7 +227,7 @@ export const menuOfPizzas = [
   },
   {
     id: 11,
-    image: jalapenoPizza,
+    image: pizzaPepperoniBlackOlives,
     name: "Pepperoni + Black Olives",
     description: "Fresh cheese, Pepperoni and olives.",
     isPopular: false,
@@ -259,7 +297,7 @@ export const menuOfAppetizers = [
 export const menuOfSalads = [
   {
     id: 1,
-    image: jalapenoPizza,
+    image: saladCeaser,
     name: "Caeser Salad",
     description:
       "Ricotta cheese, garlic, bacon, fresh mozzarella, and white truffle oil.",
@@ -268,7 +306,7 @@ export const menuOfSalads = [
   },
   {
     id: 2,
-    image: jalapenoPizza,
+    image: saladHouse,
     name: "House Salad",
     description:
       "Pest sauce, fresh mozzarella, caramelized onions, and blue cheese.",
@@ -280,7 +318,7 @@ export const menuOfSalads = [
 export const menuOfDesserts = [
   {
     id: 1,
-    image: jalapenoPizza,
+    image: dessertChocolateNutella,
     name: "Nutella + Marshmallow Cream Pizza",
     description:
       "Ricotta cheese, garlic, bacon, fresh mozzarella, and white truffle oil.",
@@ -289,7 +327,7 @@ export const menuOfDesserts = [
   },
   {
     id: 2,
-    image: jalapenoPizza,
+    image: dessertPeachPizza,
     name: "Peach Pizza",
     description:
       "Pest sauce, fresh mozzarella, caramelized onions, and blue cheese.",
@@ -301,7 +339,7 @@ export const menuOfDesserts = [
 export const menuOfPastas = [
   {
     id: 1,
-    image: jalapenoPizza,
+    image: pastaChickenAlfredo,
     name: "Chicken Alfredo",
     description: "",
     isPopular: false,
@@ -309,7 +347,7 @@ export const menuOfPastas = [
   },
   {
     id: 2,
-    image: jalapenoPizza,
+    image: pastaShrimpAlfredo,
     name: "Shrimp Alfredo",
     description: "",
     isPopular: false,
@@ -317,7 +355,7 @@ export const menuOfPastas = [
   },
   {
     id: 3,
-    image: jalapenoPizza,
+    image: pastaRoastedChickenPenne,
     name: "Roasted Chicken Penne",
     description: "",
     isPopular: false,
@@ -325,7 +363,7 @@ export const menuOfPastas = [
   },
   {
     id: 4,
-    image: jalapenoPizza,
+    image: pastaSpaghetti,
     name: "Spaghetti with Meatballs",
     description: "",
     isPopular: false,
@@ -418,43 +456,43 @@ export const dichotomousOptions = [
 export const galleryCards = [
   {
     id: 1,
-    image: jalapenoPizza,
-    title: "Chicken Alfredo",
+    image: galleryCharcuterieWithGrapes,
+    title: "Charcuterie Board",
   },
   {
     id: 2,
-    image: jalapenoPizza,
-    title: "Chicken Alfredo",
+    image: galleryJalapenoPoppers,
+    title: "Jalapeno Poppers",
   },
   {
     id: 3,
-    image: jalapenoPizza,
-    title: "Chicken Alfredo",
+    image: galleryPennePasta,
+    title: "Penne Pasta",
   },
   {
     id: 4,
-    image: jalapenoPizza,
-    title: "Chicken Alfredo",
+    image: gallerySebasAndMarcos,
+    title: "Crew Members",
   },
   {
     id: 5,
-    image: jalapenoPizza,
-    title: "Chicken Alfredo",
+    image: galleryServingTable,
+    title: "Serving Table",
   },
   {
     id: 6,
-    image: jalapenoPizza,
-    title: "Chicken Alfredo",
+    image: gallerySkewers,
+    title: "Skewers",
   },
   {
     id: 7,
-    image: jalapenoPizza,
-    title: "Chicken Alfredo",
+    image: galleryTomatoBruschetta,
+    title: "Tomato Bruschetta",
   },
   {
     id: 8,
-    image: jalapenoPizza,
-    title: "Chicken Alfredo",
+    image: gallerySpaghettiInOven,
+    title: "Spaghetti",
   },
 ];
 
