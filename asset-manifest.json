@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/paradize-pizzas/static/css/main.0592e309.css",
-    "main.js": "/paradize-pizzas/static/js/main.a4ce4d21.js",
+    "main.css": "/paradize-pizzas/static/css/main.852183f0.css",
+    "main.js": "/paradize-pizzas/static/js/main.09278d31.js",
     "static/js/787.4ae435c7.chunk.js": "/paradize-pizzas/static/js/787.4ae435c7.chunk.js",
     "static/media/production_id_3752507 (1080p) (1).mp4": "/paradize-pizzas/static/media/production_id_3752507 (1080p) (1).7306b7e2b9345b4e4b49.mp4",
     "static/media/sebasAndMarcos.PNG": "/paradize-pizzas/static/media/sebasAndMarcos.b5b6d821a940834c0d4e.PNG",
@@ -63,12 +63,12 @@
     "static/media/iconFacebook.svg": "/paradize-pizzas/static/media/iconFacebook.11464fff300f596d45fe465af8f80b0e.svg",
     "static/media/goldCircle.svg": "/paradize-pizzas/static/media/goldCircle.8e0f89ad1dd102d7ac8b.svg",
     "static/media/blackCircle.svg": "/paradize-pizzas/static/media/blackCircle.5492c1a34b857e3bbace.svg",
-    "main.0592e309.css.map": "/paradize-pizzas/static/css/main.0592e309.css.map",
-    "main.a4ce4d21.js.map": "/paradize-pizzas/static/js/main.a4ce4d21.js.map",
+    "main.852183f0.css.map": "/paradize-pizzas/static/css/main.852183f0.css.map",
+    "main.09278d31.js.map": "/paradize-pizzas/static/js/main.09278d31.js.map",
     "787.4ae435c7.chunk.js.map": "/paradize-pizzas/static/js/787.4ae435c7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0592e309.css",
-    "static/js/main.a4ce4d21.js"
+    "static/css/main.852183f0.css",
+    "static/js/main.09278d31.js"
   ]
 }
