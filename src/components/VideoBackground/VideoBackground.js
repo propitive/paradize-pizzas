@@ -10,7 +10,7 @@ function VideoBackground() {
         loop
         muted
       />
-      <div className="video-background__video-blocker"></div>
+      {/* <div className="video-background__video-blocker"></div> */}
     </div>
   );
 }
