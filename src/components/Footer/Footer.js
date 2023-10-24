@@ -36,7 +36,7 @@ function Footer() {
           </Link>
           <div className="footer__icons">
             <a
-              href="https://github.com/propitive"
+              href="https://www.facebook.com/profile.php?id=100088328243988"
               target="_blank"
               rel="noreferrer"
               className="footer__facebook"
@@ -50,7 +50,7 @@ function Footer() {
               ></img>
             </a>
             <a
-              href="https://github.com/propitive"
+              href="mailto:lauramoorman22@gmail.com"
               target="_blank"
               rel="noreferrer"
               className="footer__email"
