@@ -223,9 +223,6 @@
   .menu-item__title {
     margin: 20px auto 10px 0;
   }
-  /* .menu-item__subtitle {
-    margin: 0 140px 30px 0;
-  } */
   .menu-tem__ul {
     margin: 20px auto 0 0;
   }
@@ -240,7 +237,6 @@
     font-size: 11px;
   }
   .menu-item__image {
-    /* width: 240px; */
     width: 128px;
   }
   .menu-item__advisory {

@@ -7,7 +7,6 @@ function Gallery() {
     <>
       <Header />
       <section className="gallery">
-        {/* <h1 className="gallery__header">Bringing all the oven baked freshness</h1> */}
         <ul className="gallery__container">
           {galleryCards.map((card) => {
             return (

@@ -43,7 +43,6 @@
 .about__container {
   display: flex;
   flex-direction: row;
-  /* justify-content: space-between; */
   margin: 0;
 }
 
@@ -69,9 +68,7 @@
 }
 
 .about__paragraph {
-  /* text-align: center; */
   margin: 40px 0 0 40px;
-  /* max-width: calc(100% - 100px); */
   text-align: start;
 }
 

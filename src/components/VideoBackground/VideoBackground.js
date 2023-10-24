@@ -1,4 +1,5 @@
 import pizzaVideo from "../../images/production_id_3752507 (1080p) (1).mp4";
+import pizzaPicture from "../../images/featured/stillPizzaShot.png";
 
 function VideoBackground() {
   return (
@@ -10,7 +11,7 @@ function VideoBackground() {
         loop
         muted
       />
-      {/* <div className="video-background__video-blocker"></div> */}
+      <img className="video-background__picture" src={pizzaPicture} />
     </div>
   );
 }
