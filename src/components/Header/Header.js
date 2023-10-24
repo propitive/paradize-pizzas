@@ -15,7 +15,13 @@ function Header({ handleVisibleReset }) {
     : "header__list-item-menu";
   const showSidebar = () => setSidebar(!sidebar);
 
-  console.log(sidebar);
+  const handleCloseOnOverlayClick = (event) => {
+    console.log(event.target);
+    console.log(event.currentTarget);
+    if (event.target === event.currentTarget) {
+      showSidebar();
+    }
+  };
 
   return (
     <>
@@ -95,6 +101,12 @@ function Header({ handleVisibleReset }) {
             </Link>
           </div>
           <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
+            <div
+              className={`nav-menu__backdrop ${
+                sidebar ? "nav-menu__backdrop__open" : ""
+              }`}
+              onClick={handleCloseOnOverlayClick}
+            ></div>
             <ul className="nav-menu-items">
               <li className="navbar-toggle">
                 <Link to="#" className="menu-bars" onClick={showSidebar}>
