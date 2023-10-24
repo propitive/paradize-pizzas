@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.ba08312e.css",
-    "main.js": "/static/js/main.5361ab7c.js",
+    "main.css": "/static/css/main.39d0d2dd.css",
+    "main.js": "/static/js/main.0d5e69a5.js",
     "static/js/787.4ae435c7.chunk.js": "/static/js/787.4ae435c7.chunk.js",
     "static/media/production_id_3752507 (1080p) (1).mp4": "/static/media/production_id_3752507 (1080p) (1).7306b7e2b9345b4e4b49.mp4",
     "static/media/sebasAndMarcos.PNG": "/static/media/sebasAndMarcos.b5b6d821a940834c0d4e.PNG",
@@ -13,6 +13,7 @@
     "static/media/charcuterieWithGrapes.PNG": "/static/media/charcuterieWithGrapes.cfde0d1321377faffe7f.PNG",
     "static/media/spaghettiInOven.PNG": "/static/media/spaghettiInOven.e4c6d07446a69451be22.PNG",
     "static/media/servingTable.PNG": "/static/media/servingTable.c2746738f960556ae50a.PNG",
+    "static/media/stillPizzaShot.png": "/static/media/stillPizzaShot.6a8158c15488043b38d4.png",
     "static/media/paradizePizzasLogo.svg": "/static/media/paradizePizzasLogo.3a9cd73e56586b077f85b3db3506ed59.svg",
     "static/media/italianSausage.jpg": "/static/media/italianSausage.4aa6086625889c79099f.jpg",
     "static/media/baconRicotta.jpg": "/static/media/baconRicotta.2700d2f4635afc37fa12.jpg",
@@ -63,12 +64,12 @@
     "static/media/iconFacebook.svg": "/static/media/iconFacebook.11464fff300f596d45fe465af8f80b0e.svg",
     "static/media/goldCircle.svg": "/static/media/goldCircle.8e0f89ad1dd102d7ac8b.svg",
     "static/media/blackCircle.svg": "/static/media/blackCircle.5492c1a34b857e3bbace.svg",
-    "main.ba08312e.css.map": "/static/css/main.ba08312e.css.map",
-    "main.5361ab7c.js.map": "/static/js/main.5361ab7c.js.map",
+    "main.39d0d2dd.css.map": "/static/css/main.39d0d2dd.css.map",
+    "main.0d5e69a5.js.map": "/static/js/main.0d5e69a5.js.map",
     "787.4ae435c7.chunk.js.map": "/static/js/787.4ae435c7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ba08312e.css",
-    "static/js/main.5361ab7c.js"
+    "static/css/main.39d0d2dd.css",
+    "static/js/main.0d5e69a5.js"
   ]
 }
