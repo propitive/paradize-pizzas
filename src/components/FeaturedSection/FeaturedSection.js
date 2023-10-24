@@ -46,13 +46,9 @@ function FeaturedSection() {
         <p className="featured__paragraph">
           At Paradize Pizzas, we're not just about pizza; we're about crafting
           mouthwatering masterpieces that are nothing short of extraordinary.
-          Imagine a perfect symphony of flavors, a harmony of fresh,
-          locally-sourced ingredients, and an oven that turns every pizza into a
-          work of art. From classic Margheritas to bold BBQ chicken creations,
-          we've perfected the art of pizza-making, and we're here to share our
-          passion with you. Join us as we redefine your pizza experience, one
-          slice at a time. It's not just pizza; it's a slice of pure indulgence,
-          and it's all waiting for you.
+          From classic Margheritas to bold BBQ chicken creations, we've
+          perfected the art of pizza-making, and we're here to share our passion
+          with you.
         </p>
         <BookOnlineButton className="featured__button" />
       </div>

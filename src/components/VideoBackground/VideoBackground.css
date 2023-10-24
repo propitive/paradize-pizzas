@@ -13,6 +13,9 @@
   .video-background {
     height: 400px;
   }
+  .video-background__video {
+    pointer-events: none;
+  }
 }
 
 /* @media screen and (max-width: 500px) {
