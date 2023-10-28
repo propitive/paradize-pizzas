@@ -319,8 +319,7 @@ export const menuOfDesserts = [
     id: 1,
     image: dessertChocolateNutella,
     name: "Nutella + Marshmallow Cream Pizza",
-    description:
-      "Ricotta cheese, garlic, bacon, fresh mozzarella, and white truffle oil.",
+    description: "Nutella, marshmallow creme, and Irish butter.",
     isPopular: false,
     isSpecialRequest: false,
   },
@@ -328,8 +327,7 @@ export const menuOfDesserts = [
     id: 2,
     image: dessertPeachPizza,
     name: "Peach Pizza",
-    description:
-      "Pest sauce, fresh mozzarella, caramelized onions, and blue cheese.",
+    description: "Peach, brown sugar, caramel, and powdered sugar.",
     isPopular: false,
     isSpecialRequest: false,
   },
