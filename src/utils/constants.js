@@ -1,10 +1,10 @@
-import jalapenoPizza from "../images/featured/jalapenoPizza.jpg";
 import jalapenoPoppers from "../images/featured/jalapenoPoppers.PNG";
-import pizzaAtNight from "../images/featured/pizzaAtNight.jpg";
-import pizzaSign from "../images/featured/pizzaSign.jpg";
 import salad from "../images/featured/salad.jpg";
 import snackBar from "../images/featured/snackBar.PNG";
-import tioSebasCooking from "../images/featured/tioSebasCooking.jpg";
+import featuredPizzaTable from "../images/featured/pizzaTable.jpg";
+import featuredRedApps from "../images/featured/redApps.jpg";
+import featuredThreePizzas from "../images/featured/threePizzasInPicture.jpg";
+import featuredOvenAtNight from "../images/featured/ovenAtNight.PNG";
 
 //// MENU APPETIZERS ////
 
@@ -77,13 +77,13 @@ import galleryTomatoBruschetta from "../images/gallery/tomatoBruschetta.PNG";
 
 //////////////// PHOTOS ////////////////
 export const featuredPhotos = [
-  jalapenoPizza,
+  featuredThreePizzas,
   jalapenoPoppers,
-  pizzaAtNight,
-  pizzaSign,
+  featuredRedApps,
+  featuredPizzaTable,
   salad,
   snackBar,
-  tioSebasCooking,
+  featuredOvenAtNight,
 ];
 
 export const explorePhotos = [
