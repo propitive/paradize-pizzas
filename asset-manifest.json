@@ -1,10 +1,12 @@
 {
   "files": {
     "main.css": "/static/css/main.3ddef2dc.css",
-    "main.js": "/static/js/main.5bf89bdb.js",
+    "main.js": "/static/js/main.b2fc5c75.js",
     "static/js/787.4ae435c7.chunk.js": "/static/js/787.4ae435c7.chunk.js",
     "static/media/production_id_3752507 (1080p) (1).mp4": "/static/media/production_id_3752507 (1080p) (1).7306b7e2b9345b4e4b49.mp4",
+    "static/media/threePizzasInPicture.jpg": "/static/media/threePizzasInPicture.b0068e53e86c687ca1f1.jpg",
     "static/media/sebasAndMarcos.PNG": "/static/media/sebasAndMarcos.b5b6d821a940834c0d4e.PNG",
+    "static/media/ovenAtNight.PNG": "/static/media/ovenAtNight.11425eaba3bbbd3a3273.PNG",
     "static/media/skewers.PNG": "/static/media/skewers.6868700b305fd00c6bf2.PNG",
     "static/media/jalapenoPoppers.PNG": "/static/media/jalapenoPoppers.519a7ccfe94dffded123.PNG",
     "static/media/pennePasta.PNG": "/static/media/pennePasta.a38ee1d4cf0e3acf4905.PNG",
@@ -37,15 +39,11 @@
     "static/media/tioSebasCooking.jpg": "/static/media/tioSebasCooking.da98a22b28ad12704b6f.jpg",
     "static/media/mushroomCrositi.jpg": "/static/media/mushroomCrositi.c39975685e61d9d539ac.jpg",
     "static/media/prosciuttoHoney.jpg": "/static/media/prosciuttoHoney.1ed5c7730c805cdd6166.jpg",
-    "static/media/longWeddingSetup.jpg": "/static/media/longWeddingSetup.43288fc555f1156a1d5c.jpg",
     "static/media/sausageLollipops.jpg": "/static/media/sausageLollipops.a7318917a2cb435604ed.jpg",
     "static/media/shrimpSkewers.jpg": "/static/media/shrimpSkewers.e03d59058a71bd47cb84.jpg",
     "static/media/pepperoniMushrooms.jpg": "/static/media/pepperoniMushrooms.a37f1677fa52ae26aaab.jpg",
-    "static/media/pizzaSign.jpg": "/static/media/pizzaSign.077eb49ab67b543befb9.jpg",
-    "static/media/jalapenoPizza.jpg": "/static/media/jalapenoPizza.740b13fe416964fb5464.jpg",
     "static/media/margherita.jpg": "/static/media/margherita.6c8df10e36474dc2f313.jpg",
     "static/media/peachPizza.jpg": "/static/media/peachPizza.8e5d77a2cc383780d854.jpg",
-    "static/media/pizzaAtNight.jpg": "/static/media/pizzaAtNight.f929e11b24807539a5f9.jpg",
     "static/media/veggie.jpg": "/static/media/veggie.b88b36651b5d42fb8c71.jpg",
     "static/media/dessert.jpg": "/static/media/dessert.4550d5b531ed505da0f2.jpg",
     "static/media/pesto.jpg": "/static/media/pesto.addee5199a3bd1e5d0be.jpg",
@@ -68,11 +66,11 @@
     "static/media/goldCircle.svg": "/static/media/goldCircle.8e0f89ad1dd102d7ac8b.svg",
     "static/media/blackCircle.svg": "/static/media/blackCircle.5492c1a34b857e3bbace.svg",
     "main.3ddef2dc.css.map": "/static/css/main.3ddef2dc.css.map",
-    "main.5bf89bdb.js.map": "/static/js/main.5bf89bdb.js.map",
+    "main.b2fc5c75.js.map": "/static/js/main.b2fc5c75.js.map",
     "787.4ae435c7.chunk.js.map": "/static/js/787.4ae435c7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3ddef2dc.css",
-    "static/js/main.5bf89bdb.js"
+    "static/js/main.b2fc5c75.js"
   ]
 }
