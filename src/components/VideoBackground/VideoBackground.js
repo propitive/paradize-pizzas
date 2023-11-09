@@ -10,6 +10,7 @@ function VideoBackground() {
         autoPlay
         loop
         muted
+        playsInline
         controlslist="nofullscreen nodownload noremoteplayback noplaybackrate foobar"
       />
       <img className="video-background__picture" src={pizzaPicture} />

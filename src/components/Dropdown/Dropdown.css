@@ -4,7 +4,8 @@
   list-style: none;
   text-align: start;
   padding: 0;
-  top: 105px;
+  top: 112px;
+  z-index: 3;
 }
 
 .services-submenu.clicked {
