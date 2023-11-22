@@ -75,6 +75,14 @@ import gallerySkewers from "../images/gallery/skewers.PNG";
 import gallerySpaghettiInOven from "../images/gallery/spaghettiInOven.PNG";
 import galleryTomatoBruschetta from "../images/gallery/tomatoBruschetta.PNG";
 
+//// ABOUT INFO CARDS ////
+
+import aboutChecklist from "../images/icons/about/aboutChecklist.png";
+import aboutHandshake from "../images/icons/about/aboutHandshake.png";
+import aboutMagnifier from "../images/icons/about/aboutMagnifier.png";
+import aboutHourglass from "../images/icons/about/aboutHourglass.png";
+import aboutChef from "../images/icons/about/aboutChef.png";
+
 //////////////// PHOTOS ////////////////
 export const featuredPhotos = [
   featuredThreePizzas,
@@ -535,5 +543,33 @@ export const SidebarData = [
     title: "Gallery",
     path: "/gallery",
     cName: "nav-text",
+  },
+];
+
+export const aboutInfoCards = [
+  {
+    icon: aboutChecklist,
+    paragraph:
+      "Each project is approached with an exacting eye, ensuring measurements are precise, materials are of the highest quality, and every element is seamlessly integrated.",
+  },
+  {
+    icon: aboutHandshake,
+    paragraph:
+      "Our commitment to exceptional customer service begins with transparent and open communication throughout every phase of the process. From the initial consultation to the final installation, we prioritize your vision, actively listening to your needs and preferences.",
+  },
+  {
+    icon: aboutHourglass,
+    paragraph:
+      "We offer not only top-notch installation but also expert design assistance, guiding you through a journey of tailored choices in styles, materials, and layouts. ",
+  },
+  {
+    icon: aboutMagnifier,
+    paragraph:
+      "From the initial consultation to the final installation, we adhere to strict timelines, providing you with a seamless and efficient experience; ensuring punctual project delivery without compromising the precision and excellence that define us.",
+  },
+  {
+    icon: aboutChef,
+    paragraph:
+      "Our transparent pricing model ensures that you are well-informed at every stage of the process. By meticulously managing costs without compromising quality, we guarantee not only affordability but also unparalleled value for money. ",
   },
 ];
