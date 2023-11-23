@@ -305,7 +305,7 @@ export const menuOfSalads = [
   {
     id: 1,
     image: saladCeaser,
-    name: "Caeser Salad",
+    name: "Caesar Salad",
     description:
       "Ricotta cheese, garlic, bacon, fresh mozzarella, and white truffle oil.",
     isPopular: false,
