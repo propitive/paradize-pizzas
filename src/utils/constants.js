@@ -550,26 +550,21 @@ export const aboutInfoCards = [
   {
     icon: aboutChecklist,
     paragraph:
-      "Each project is approached with an exacting eye, ensuring measurements are precise, materials are of the highest quality, and every element is seamlessly integrated.",
+      "We use high-quality, fresh ingredients. This includes fresh vegetables, premium meats, and high-quality cheeses. The dough and sauce are also made with care and attention to detail.",
   },
   {
     icon: aboutHandshake,
     paragraph:
-      "Our commitment to exceptional customer service begins with transparent and open communication throughout every phase of the process. From the initial consultation to the final installation, we prioritize your vision, actively listening to your needs and preferences.",
+      "Our commitment to exceptional customer service begins with transparent and open communication throughout every phase of the process. From the initial consultation to the day of your event, we prioritize your vision, actively listening to your needs and preferences.",
   },
   {
     icon: aboutHourglass,
     paragraph:
-      "We offer not only top-notch installation but also expert design assistance, guiding you through a journey of tailored choices in styles, materials, and layouts. ",
-  },
-  {
-    icon: aboutMagnifier,
-    paragraph:
-      "From the initial consultation to the final installation, we adhere to strict timelines, providing you with a seamless and efficient experience; ensuring punctual project delivery without compromising the precision and excellence that define us.",
+      "We understand the importance of your time, and our dedicated team ensures punctual arrival without compromising the precision and excellence that define us. We adhere to strict timelines, providing you with a seamless and easy experience. ",
   },
   {
     icon: aboutChef,
     paragraph:
-      "Our transparent pricing model ensures that you are well-informed at every stage of the process. By meticulously managing costs without compromising quality, we guarantee not only affordability but also unparalleled value for money. ",
+      "With several years of invaluable experience in the industry, our seasoned team brings a wealth of knowledge to every pizza. Using specialized cooking techniques with our traditional brick ovens contributes to the unique and delicious flavor found in every bite.",
   },
 ];
