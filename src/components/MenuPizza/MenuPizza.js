@@ -17,9 +17,7 @@ function MenuPizza({ handleShowMoreItems, handleVisibleReset, visible }) {
       <Header />
       <div className="menu-item">
         <h1 className="menu-item__title">Oven Baked Pizzas</h1>
-        <h2 className="menu-item__subtitle">
-          Life, love, and pizza – three things that should be savored.
-        </h2>
+        <h2 className="menu-item__subtitle">In crust we trust.</h2>
         <BookOnlineButton className="menu-item__button" />
         <ul className="menu-item__ul">
           {menuOfPizzas.slice(0, visible).map((pizza) => {
