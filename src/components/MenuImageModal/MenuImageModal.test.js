@@ -7,10 +7,10 @@ beforeAll(() => {
   HTMLDialogElement.prototype.close = function () { this.removeAttribute("open"); };
 });
 
-test.each(["pizza", "appetizer", "salad", "dessert", "pasta"])(
-  "%s menu photos open in a dismissible modal with the correct image and name",
+test.each(["pizza", "appetizer", "salad", "dessert", "pasta", "gallery"])(
+  "%s photos open in a dismissible modal with the correct image and name",
   (category) => {
-    render(<MemoryRouter initialEntries={[`/menu/${category}`]}><App /></MemoryRouter>);
+    render(<MemoryRouter initialEntries={[category === "gallery" ? "/gallery" : `/menu/${category}`]}><App /></MemoryRouter>);
     const trigger = screen.getAllByRole("button", { name: /^View .+ photo$/ })[0];
     const thumbnail = within(trigger).getByRole("img");
     trigger.focus();

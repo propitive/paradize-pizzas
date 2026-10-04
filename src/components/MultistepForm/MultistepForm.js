@@ -86,7 +86,7 @@ function Field({ name, label, hint, value, onChange, ...inputProps }) {
   );
 }
 
-function MultistepForm({ onSendingChange = () => {}, onClose, isActive = true }) {
+function MultistepForm({ onSendingChange = () => {}, onSentChange, onViewGallery, onClose, isActive = true }) {
   const [step, setStep] = useState(0);
   const [quote, setQuote] = useState(createEmptyQuote);
   const [sending, setSending] = useState(false);
@@ -95,6 +95,17 @@ function MultistepForm({ onSendingChange = () => {}, onClose, isActive = true })
   const formRef = useRef(null);
   const headingRef = useRef(null);
   const sendingRef = useRef(false);
+
+  useEffect(() => { onSentChange?.(sent); }, [sent, onSentChange]);
+
+  useEffect(() => {
+    if (!isActive && sent) {
+      setQuote(createEmptyQuote());
+      setStep(0);
+      setSent(false);
+      setError("");
+    }
+  }, [isActive, sent]);
 
   useEffect(() => {
     const heading = headingRef.current;
@@ -149,20 +160,13 @@ function MultistepForm({ onSendingChange = () => {}, onClose, isActive = true })
     }
   };
 
-  const startAgain = () => {
-    setQuote(createEmptyQuote());
-    setStep(0);
-    setSent(false);
-    setError("");
-  };
-
   if (sent) return (
     <div className="quote-success" role="status">
-      <h3 ref={headingRef} tabIndex={-1}>Your quote request has been sent!</h3>
-      <p>Thank you for thinking of Paradize Pizzas. We’ll reach out to discuss your event.</p>
+      <h3 ref={headingRef} tabIndex={-1} className="quote-visually-hidden">Your quote request has been sent!</h3>
+      <p>Thank you for thinking of Paradize Pizzas. We’ll reach out to discuss your event. In the meantime, feel free to explore our gallery!</p>
       <div className="quote-actions">
-        <button type="button" className="quote-button quote-button--secondary" onClick={startAgain}>Start a new request</button>
-        {onClose && <button type="button" className="quote-button" onClick={onClose}>Done</button>}
+        {onClose && <button type="button" className="quote-button quote-button--secondary" onClick={onClose}>Done</button>}
+        <button type="button" className="quote-button" onClick={onViewGallery}>View Gallery</button>
       </div>
     </div>
   );

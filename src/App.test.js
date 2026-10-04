@@ -1,5 +1,6 @@
 import { act, fireEvent, render, screen } from "@testing-library/react";
-import { MemoryRouter } from "react-router-dom";
+import { MemoryRouter, Router } from "react-router-dom";
+import { createMemoryHistory } from "history";
 import App from "./components/App/App";
 import emailjs from "@emailjs/browser";
 
@@ -9,9 +10,11 @@ beforeEach(() => emailjs.send.mockReset());
 // JSDOM has no native dialog implementation. Emulate its open/close state;
 // browser focus trapping and responsive layout still need a manual preview.
 beforeAll(() => {
+  jest.spyOn(window, "scrollTo").mockImplementation(() => {});
   HTMLDialogElement.prototype.showModal = function () { this.setAttribute("open", ""); };
   HTMLDialogElement.prototype.close = function () { this.removeAttribute("open"); };
 });
+afterAll(() => window.scrollTo.mockRestore());
 
 function openForm() {
   const trigger = screen.getAllByRole("button", { name: "GET A QUOTE" })[0];
@@ -51,7 +54,8 @@ test("the dialog cancel event closes the modal (native Escape path)", () => {
 test("keeps the modal open while sending and permits closing after success", async () => {
   let resolveSend;
   emailjs.send.mockImplementationOnce(() => new Promise((resolve) => { resolveSend = resolve; }));
-  render(<MemoryRouter initialEntries={["/contact-form"]}><App /></MemoryRouter>);
+  const history = createMemoryHistory({ initialEntries: ["/contact-form"] });
+  render(<Router history={history}><App /></Router>);
   openForm();
   const fill = (label, value) => fireEvent.change(screen.getByLabelText(label), { target: { value } });
   fill("Event Date or Timeframe", "November");
@@ -69,6 +73,24 @@ test("keeps the modal open while sending and permits closing after success", asy
   act(() => dialog.dispatchEvent(new Event("cancel", { cancelable: true })));
   expect(dialog).toHaveAttribute("open");
   await act(async () => resolveSend({ status: 200 }));
+  expect(screen.getByRole("heading", { name: "Your Quote Request Has Been Sent!" })).toBeInTheDocument();
+  expect(screen.getByText(/feel free to explore our gallery/)).toBeInTheDocument();
   fireEvent.click(screen.getByRole("button", { name: "Done" }));
+  expect(dialog).not.toHaveAttribute("open");
+  openForm();
+  expect(screen.getByLabelText("Event Date or Timeframe")).toHaveValue("");
+  fireEvent.change(screen.getByLabelText("Event Date or Timeframe"), { target: { value: "December" } });
+  fireEvent.change(screen.getByLabelText("Expected Guest Count"), { target: { value: "50" } });
+  fireEvent.change(screen.getByLabelText("Event City or Area"), { target: { value: "Dallas" } });
+  fireEvent.click(screen.getByLabelText("No"));
+  fireEvent.click(screen.getByRole("button", { name: "Next" }));
+  fireEvent.click(screen.getByRole("button", { name: "Next" }));
+  fill("First Name", "Test"); fill("Last Name", "Customer");
+  fill("Email", "test@example.com"); fill("Phone Number", "4695550100");
+  emailjs.send.mockResolvedValue({ status: 200 });
+  fireEvent.click(screen.getByRole("button", { name: "Send quote request" }));
+  await screen.findByRole("heading", { name: "Your Quote Request Has Been Sent!" });
+  fireEvent.click(screen.getByRole("button", { name: "View Gallery" }));
+  expect(history.location.pathname).toBe("/gallery");
   expect(dialog).not.toHaveAttribute("open");
 });

@@ -59,7 +59,7 @@ test("venue Yes requires its address and both navigation directions preserve ans
 
 test("sends a no-venue quote without stale address values and allows a fresh request after success", async () => {
   emailjs.send.mockResolvedValue({ status: 200 });
-  render(<MultistepForm />);
+  const { rerender } = render(<MultistepForm />);
   eventDetails("Yes");
   fill("Street Address", "Old venue");
   fill("State", "TX");
@@ -78,7 +78,8 @@ test("sends a no-venue quote without stale address values and allows a fresh req
     has_venue: false, venue_reserved: "No", street_address: "", state: "", zip_code: "",
     location: "Dallas (venue not reserved yet)", pizzas: "Not specified",
   });
-  fireEvent.click(screen.getByRole("button", { name: "Start a new request" }));
+  rerender(<MultistepForm isActive={false} />);
+  rerender(<MultistepForm isActive />);
   expect(screen.getByLabelText("Event City or Area")).toHaveValue("");
 });
 

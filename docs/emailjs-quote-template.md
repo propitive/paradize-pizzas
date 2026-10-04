@@ -28,7 +28,8 @@ also has a button that opens the same form.
 
 Try the X, clicking outside the modal, and Escape. Closing and reopening
 preserves the draft while the page stays loaded. Refreshing the page clears
-the draft. After a successful send, Start a new request clears it explicitly.
+the draft. After a successful send, closing the confirmation clears the form
+for a fresh request. Done closes it; View Gallery closes it and opens the gallery.
 The modal cannot be dismissed while the email request is pending.
 
 For mobile review, use your browser's device preview at 375px or 390px wide.

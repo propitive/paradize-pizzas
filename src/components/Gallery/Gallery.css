@@ -39,6 +39,22 @@
   border-radius: 10px 10px 0 0;
 }
 
+.gallery__photo-button {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  border: 0;
+  border-radius: 10px;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: zoom-in;
+}
+.gallery__photo-button:focus-visible { outline: 3px solid #b58f5e; outline-offset: 4px; }
+.gallery__photo-button .gallery__description { box-sizing: border-box; width: 100%; }
+.gallery__photo-button span { margin-left: 0; }
+
 .gallery__description {
   display: flex;
   justify-content: space-between;

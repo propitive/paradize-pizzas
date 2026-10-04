@@ -1,5 +1,6 @@
 import { createContext, useContext, useLayoutEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
+import { useHistory } from "react-router-dom";
 import MultistepForm from "../MultistepForm/MultistepForm";
 import "./QuoteModal.css";
 
@@ -22,8 +23,10 @@ export function QuoteProvider({ children }) {
 }
 
 function QuoteModal({ isOpen, triggerRef, onClose }) {
+  const history = useHistory();
   const dialogRef = useRef(null);
   const [sending, setSending] = useState(false);
+  const [sent, setSent] = useState(false);
 
   useLayoutEffect(() => {
     const dialog = dialogRef.current;
@@ -51,9 +54,10 @@ function QuoteModal({ isOpen, triggerRef, onClose }) {
         <button type="button" className="quote-dialog__close" aria-label="Close quote form"
           disabled={sending} onClick={close}>×</button>
         <header className="quote-dialog__header">
-          <h2 id="quote-title">Let’s Talk Toppings &amp; Timelines</h2>
+          <h2 id="quote-title">{sent ? "Your Quote Request Has Been Sent!" : "Let’s Talk Toppings & Timelines"}</h2>
         </header>
-        <MultistepForm isActive={isOpen} onClose={close} onSendingChange={setSending} />
+        <MultistepForm isActive={isOpen} onClose={close} onSendingChange={setSending}
+          onSentChange={setSent} onViewGallery={() => { close(); history.push("/gallery"); }} />
       </div>
     </dialog>, document.body
   );
