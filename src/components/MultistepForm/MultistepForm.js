@@ -163,7 +163,8 @@ function MultistepForm({ onSendingChange = () => {}, onSentChange, onViewGallery
   if (sent) return (
     <div className="quote-success" role="status">
       <h3 ref={headingRef} tabIndex={-1} className="quote-visually-hidden">Your quote request has been sent!</h3>
-      <p>Thank you for thinking of Paradize Pizzas. We’ll reach out to discuss your event. In the meantime, feel free to explore our gallery!</p>
+      <p>Thanks for thinking of Paradize Pizzas! We’ll reach out to discuss your event.</p>
+      <p className="quote-success__invitation">Explore our gallery for a little inspiration.</p>
       <div className="quote-actions">
         {onClose && <button type="button" className="quote-button quote-button--secondary" onClick={onClose}>Done</button>}
         <button type="button" className="quote-button" onClick={onViewGallery}>View Gallery</button>

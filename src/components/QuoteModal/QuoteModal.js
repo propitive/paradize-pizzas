@@ -47,14 +47,17 @@ function QuoteModal({ isOpen, triggerRef, onClose }) {
 
   const close = () => { if (!sending) onClose(); };
   return createPortal(
-    <dialog ref={dialogRef} className="quote-dialog" aria-labelledby="quote-title"
+    <dialog ref={dialogRef} className={`quote-dialog${sent ? " quote-dialog--success" : ""}`} aria-labelledby="quote-title"
       onCancel={(event) => { event.preventDefault(); close(); }}
       onClick={(event) => { if (event.target === event.currentTarget) close(); }}>
       <div className="quote-dialog__content">
         <button type="button" className="quote-dialog__close" aria-label="Close quote form"
           disabled={sending} onClick={close}>×</button>
         <header className="quote-dialog__header">
-          <h2 id="quote-title">{sent ? "Your Quote Request Has Been Sent!" : "Let’s Talk Toppings & Timelines"}</h2>
+          {sent && <span className="quote-dialog__success-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="m5 12 4 4L19 6" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
+          </span>}
+          <h2 id="quote-title">{sent ? "Your Quote Request Is Sent!" : "Let’s Talk Toppings & Timelines"}</h2>
         </header>
         <MultistepForm isActive={isOpen} onClose={close} onSendingChange={setSending}
           onSentChange={setSent} onViewGallery={() => { close(); history.push("/gallery"); }} />

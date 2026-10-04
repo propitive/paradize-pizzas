@@ -48,40 +48,26 @@ Suggested subject:
 Quote request — {{user-name}} — {{event_date}}
 ```
 
-Replace the email body with the following. Paste this in the template's
-HTML/code editor so the conditional tags and paragraph formatting are kept.
+The styled body is in [emailjs-quote-template.html](emailjs-quote-template.html).
+Open that file in your code editor and copy its entire contents into the
+template's HTML/code editor. Copy the source code, rather than the rendered
+preview. Keep the existing recipient, sender, subject, and Reply To settings.
+Save the template when the body has been replaced.
+
+The design uses a gold accent, a shaded event-details box, three section
+headings with emojis, and smaller gray labels above the answers. It keeps
+all current fields and the same venue conditions. Inline styles and a
+single-column table layout provide a practical email-client baseline;
+confirm the final appearance in your recipient's actual inbox.
+
+Sample previews (fake customer details; no email is sent):
+
+- [Venue reserved: Yes](emailjs-preview-venue-yes.html)
+- [Venue reserved: No](emailjs-preview-venue-no.html)
+
+To regenerate the previews, run `node scripts/preview-quote-email.cjs`.
+The generator checks both conditional branches and unresolved placeholders.
 All customer values use double braces, which EmailJS escapes as text.
-
-```html
-<h2>New Paradize Pizzas quote request</h2>
-
-<h3>Event essentials</h3>
-<p><strong>Event date or timeframe:</strong> {{event_date}}</p>
-<p><strong>Expected guest count:</strong> {{attendance}}</p>
-<p><strong>Event city or area:</strong> {{city}}</p>
-<p><strong>Venue reserved:</strong> {{venue_reserved}}</p>
-
-{{#has_venue}}
-<h3>Reserved venue address</h3>
-<p>{{street_address}}<br>{{city}}, {{state}} {{zip_code}}</p>
-{{/has_venue}}
-{{^has_venue}}
-<p>The customer has not reserved a venue yet. The city or area above is their expected event location.</p>
-{{/has_venue}}
-
-<h3>Client information</h3>
-<p><strong>Full name:</strong> {{user-name}}</p>
-<p><strong>Email:</strong> {{user-email}}</p>
-<p><strong>Phone number:</strong> {{phone}}</p>
-
-<h3>Food preferences (optional)</h3>
-<p><strong>Appetizers:</strong> {{appetizers}}</p>
-<p><strong>Salads:</strong> {{salads}}</p>
-<p><strong>Desserts:</strong> {{desserts}}</p>
-<p><strong>Pastas:</strong> {{pastas}}</p>
-<p><strong>Charcuterie board:</strong> {{charcuterie}}</p>
-<p><strong>Glazing table:</strong> {{glazing}}</p>
-```
 
 Set **Reply To** to `{{user-email}}` if you want replies to reach the customer.
 Keep the sender tied to your connected Gmail account. Save the template.

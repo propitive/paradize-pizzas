@@ -47,7 +47,10 @@
 .quote-footer { margin-top: 18px; text-align: center; }
 .quote-footer a { color: #674b2b; }
 .quote-error { padding: 12px; border: 1px solid #b24635; background: #fff2ef; color: #8a2e20; border-radius: 8px; }
-.quote-success { line-height: 1.6; padding: 20px 0; }
+.quote-success { line-height: 1.65; padding: 0; text-align: center; font-size: 15px; color: #62594f; }
+.quote-success > p { margin: 0 auto; max-width: 410px; }
+.quote-success > .quote-success__invitation { margin-top: 12px; font-size: 14px; color: #766d64; }
+.quote-success .quote-actions { justify-content: center; gap: 12px; }
 .quote-success h3 { margin-top: 0; }
 .quote-visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
 .quote-form h3.quote-visually-hidden { margin: -1px; }

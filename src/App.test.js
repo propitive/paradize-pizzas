@@ -73,8 +73,8 @@ test("keeps the modal open while sending and permits closing after success", asy
   act(() => dialog.dispatchEvent(new Event("cancel", { cancelable: true })));
   expect(dialog).toHaveAttribute("open");
   await act(async () => resolveSend({ status: 200 }));
-  expect(screen.getByRole("heading", { name: "Your Quote Request Has Been Sent!" })).toBeInTheDocument();
-  expect(screen.getByText(/feel free to explore our gallery/)).toBeInTheDocument();
+  expect(screen.getByRole("heading", { name: "Your Quote Request Is Sent!" })).toBeInTheDocument();
+  expect(screen.getByText("Explore our gallery for a little inspiration.")).toBeInTheDocument();
   fireEvent.click(screen.getByRole("button", { name: "Done" }));
   expect(dialog).not.toHaveAttribute("open");
   openForm();
@@ -89,7 +89,7 @@ test("keeps the modal open while sending and permits closing after success", asy
   fill("Email", "test@example.com"); fill("Phone Number", "4695550100");
   emailjs.send.mockResolvedValue({ status: 200 });
   fireEvent.click(screen.getByRole("button", { name: "Send quote request" }));
-  await screen.findByRole("heading", { name: "Your Quote Request Has Been Sent!" });
+  await screen.findByRole("heading", { name: "Your Quote Request Is Sent!" });
   fireEvent.click(screen.getByRole("button", { name: "View Gallery" }));
   expect(history.location.pathname).toBe("/gallery");
   expect(dialog).not.toHaveAttribute("open");
