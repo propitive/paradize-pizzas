@@ -41,7 +41,7 @@ function About() {
               </p>
             </div>
             <div className="about__showcase-item">
-              <h3 className="about__showcase-item__title">20+</h3>
+              <h3 className="about__showcase-item__title">200+</h3>
               <p className="about__showcase-item__subtitle">Events Catered</p>
             </div>
             <div className="about__showcase-item">
