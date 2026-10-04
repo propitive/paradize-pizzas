@@ -44,8 +44,21 @@
   height: 130px;
   width: 268px;
   border-radius: 5%;
-  margin: 0 15px 0 0;
+  display: block;
+  margin: 0;
 }
+
+.menu-item__image-button {
+  padding: 0;
+  margin: 0 15px 0 0;
+  border: 0;
+  border-radius: 5%;
+  background: transparent;
+  flex-shrink: 0;
+  align-self: flex-start;
+  cursor: zoom-in;
+}
+.menu-item__image-button:focus-visible { outline: 3px solid #b58f5e; outline-offset: 4px; }
 
 .menu-item__text {
   width: 386px;
@@ -94,7 +107,7 @@
   height: 57px;
   padding: 0;
   cursor: pointer;
-  align-self: center;
+  align-self: flex-start;
   margin: 0;
 }
 

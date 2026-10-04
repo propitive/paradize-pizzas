@@ -179,9 +179,9 @@ function MultistepForm({ onSendingChange = () => {}, onClose, isActive = true })
       <fieldset className="quote-fields" disabled={sending}>
         <legend className="quote-visually-hidden">{steps[step]}</legend>
         {step === 0 && <>
-          {field("eventDate", "Event date or timeframe", "If you don’t have a specific event date, just give us a general timeframe.", { placeholder: "e.g. October 24, 2026 or a Saturday in November" })}
-          {field("attendance", "Expected guest count", "If you don’t know specifics, that’s fine. Just give us a general number.", { type: "number", min: 1, step: 1, inputMode: "numeric", placeholder: "e.g. 100" })}
-          {field("city", "Event city or area", "A city or general area is fine if you haven’t chosen a venue yet.", { autoComplete: "address-level2", placeholder: "e.g. Dallas" })}
+          {field("eventDate", "Event Date or Timeframe", "If you don’t have a specific event date, just give us a general timeframe.", { placeholder: "e.g. October 24, 2026 or a Saturday in November" })}
+          {field("attendance", "Expected Guest Count", "If you don’t know specifics, that’s fine. Just give us a general number.", { type: "number", min: 1, step: 1, inputMode: "numeric", placeholder: "e.g. 100" })}
+          {field("city", "Event City or Area", "A city or general area is fine if you haven’t chosen a venue yet.", { autoComplete: "address-level2", placeholder: "e.g. Dallas" })}
           <fieldset className="quote-radio-group">
             <legend>Do you have a venue reserved already?</legend>
             {dichotomousOptions.map(({ value }) => (
@@ -195,10 +195,10 @@ function MultistepForm({ onSendingChange = () => {}, onClose, isActive = true })
           </fieldset>
           {quote.venueReserved === "Yes" && <div className="quote-address">
             <p className="quote-hint">We need the venue address to confirm availability and provide an accurate quote.</p>
-            {field("street", "Street address", null, { autoComplete: "street-address", placeholder: "123 Main St." })}
+            {field("street", "Street Address", null, { autoComplete: "street-address", placeholder: "123 Main St." })}
             <div className="quote-grid">
               {field("state", "State", null, { autoComplete: "address-level1", placeholder: "TX" })}
-              {field("zip", "ZIP code", null, { autoComplete: "postal-code", placeholder: "75128", maxLength: 20 })}
+              {field("zip", "ZIP Code", null, { autoComplete: "postal-code", placeholder: "75128", maxLength: 20 })}
             </div>
           </div>}
         </>}
@@ -219,7 +219,7 @@ function MultistepForm({ onSendingChange = () => {}, onClose, isActive = true })
             ))}
           </div>
           <div className="quote-grid">
-            {[["charcuterie", "Charcuterie board"], ["glazing", "Glazing table"]].map(([name, label]) => (
+            {[["charcuterie", "Charcuterie Board"], ["glazing", "Glazing Table"]].map(([name, label]) => (
               <div className="quote-field" key={name}>
                 <label htmlFor={`quote-${name}`}>
                   {label} <span className="quote-optional">(optional add-on)</span>
@@ -235,10 +235,10 @@ function MultistepForm({ onSendingChange = () => {}, onClose, isActive = true })
         </>}
         {step === 2 && <>
           <div className="quote-grid">
-            {field("firstName", "First name", null, { autoComplete: "given-name" })}
-            {field("lastName", "Last name", null, { autoComplete: "family-name" })}
+            {field("firstName", "First Name", null, { autoComplete: "given-name" })}
+            {field("lastName", "Last Name", null, { autoComplete: "family-name" })}
             {field("email", "Email", null, { type: "email", autoComplete: "email", autoCapitalize: "none", spellCheck: false, placeholder: "name@example.com" })}
-            {field("phone", "Phone number", null, { type: "tel", inputMode: "numeric", autoComplete: "tel-national", maxLength: 40, placeholder: "(555) 555-5555" })}
+            {field("phone", "Phone Number", null, { type: "tel", inputMode: "numeric", autoComplete: "tel-national", maxLength: 40, placeholder: "(555) 555-5555" })}
           </div>
         </>}
       </fieldset>
