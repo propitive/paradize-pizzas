@@ -6,6 +6,13 @@
   font-family: "Roboto Condensed", sans-serif, Arial;
 }
 
+.contact-form__intro { text-align: center; padding: 0 20px; }
+.contact-form__quote-button { min-height: 50px; padding: 12px 24px; margin: 24px auto; cursor: pointer; }
+.contact-form__number { color: inherit; text-decoration: none; font-size: 24px; font-weight: bold; }
+@media (max-width: 600px) {
+  .contact-form__header { font-size: 42px; margin-top: 30px; }
+}
+
 .contact-form__number-container {
   display: flex;
   justify-content: center;

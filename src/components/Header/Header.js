@@ -126,7 +126,7 @@ function Header({ handleVisibleReset }) {
                   </li>
                 );
               })}
-              <BookOnlineButton className=" nav-menu__button" />
+              <BookOnlineButton className=" nav-menu__button" onClick={() => setSidebar(false)} />
             </ul>
           </nav>
         </div>

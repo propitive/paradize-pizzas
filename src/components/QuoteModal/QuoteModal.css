@@ -1,0 +1,40 @@
+.quote-dialog {
+  width: min(900px, calc(100% - 32px));
+  max-width: none;
+  max-height: calc(100vh - 32px);
+  max-height: calc(100dvh - 32px);
+  padding: 0;
+  border: 0;
+  border-radius: 18px;
+  background: #f5f0f0;
+  color: #211b18;
+  overflow: auto;
+  overscroll-behavior: contain;
+  box-shadow: 0 24px 80px #0005;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.quote-dialog::backdrop { background: #000b; }
+.quote-dialog__content { position: relative; padding: 38px 32px 24px; }
+.quote-dialog__header { text-align: center; margin-bottom: 16px; }
+.quote-dialog__header h2 { margin: 14px 24px 0; font-size: clamp(23px, 4vw, 30px); line-height: 1.2; }
+.quote-dialog__close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 44px;
+  height: 44px;
+  border: none;
+  background: transparent;
+  color: #211b18;
+  font-size: 30px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+.quote-dialog__close:hover { background: #e8dfd5; }
+.quote-dialog__close:focus-visible { outline: 2px solid #926d3d; }
+.quote-dialog__close:disabled { opacity: .45; cursor: wait; }
+@media (max-width: 600px) {
+  .quote-dialog { width: calc(100% - 16px); max-height: calc(100dvh - 16px); border-radius: 14px; }
+  .quote-dialog__content { padding: 38px 18px 20px; }
+  .quote-dialog__header h2 { margin-left: 0; margin-right: 0; }
+}

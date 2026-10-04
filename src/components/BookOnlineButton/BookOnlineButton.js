@@ -1,16 +1,10 @@
-import { Link } from "react-router-dom";
+import { useQuoteModal } from "../QuoteModal/QuoteModal";
 
-function BookOnlineButton({ className }) {
+function BookOnlineButton({ className = "", onClick }) {
+  const { openQuote } = useQuoteModal();
   return (
-    <Link
-      to="/contact-form"
-      style={{
-        textDecoration: "none",
-        width: "min-content",
-        height: "min-content",
-      }}
-    >
-      <button className={"book-online-button " + className}>
+      <button type="button" className={"book-online-button " + className}
+        onClick={(event) => { onClick?.(); openQuote(event.currentTarget); }}>
         GET A QUOTE
         <svg
           fill="currentColor"
@@ -24,7 +18,6 @@ function BookOnlineButton({ className }) {
           ></path>
         </svg>
       </button>
-    </Link>
   );
 }
 

@@ -1,4 +1,4 @@
-import { Route, Switch, useHistory } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import MenuPizza from "../MenuPizza/MenuPizza";
 
 import "./App.css";
@@ -12,19 +12,10 @@ import About from "../About/About";
 import MenuPasta from "../MenuPasta/MenuPasta";
 import Gallery from "../Gallery/Gallery";
 import ContactForm from "../ContactForm/ContactForm";
-import ModalContactForm from "../ModalContactForm/ModalContactForm";
+import { QuoteProvider } from "../QuoteModal/QuoteModal";
 
 function App() {
   const [visible, setVisible] = useState(6);
-  const [isContactFormModalOpen, setIsContactFormModalOpen] = useState(false);
-
-  const handleOpenModal = () => {
-    setIsContactFormModalOpen(true);
-  };
-
-  const handleCloseModal = () => {
-    setIsContactFormModalOpen(false);
-  };
 
   const handleShowMoreItems = (array) => {
     setVisible(array.length);
@@ -39,7 +30,7 @@ function App() {
   }, []);
 
   return (
-    <>
+    <QuoteProvider>
       <ScrollToTop />
       <Switch>
         <Route path="/menu/pizza">
@@ -65,7 +56,7 @@ function App() {
           <About />
         </Route>
         <Route path="/contact-form">
-          <ContactForm handleOpenModal={handleOpenModal} />
+          <ContactForm handleVisibleReset={handleVisibleReset} />
         </Route>
         <Route path="/gallery">
           <Gallery />
@@ -74,13 +65,7 @@ function App() {
           <Main />
         </Route>
       </Switch>
-      {isContactFormModalOpen && (
-        <ModalContactForm
-          handleCloseModal={handleCloseModal}
-          isOpen={isContactFormModalOpen}
-        />
-      )}
-    </>
+    </QuoteProvider>
   );
 }
 

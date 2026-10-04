@@ -21,6 +21,8 @@
   transition: all 0.3s ease-in-out;
 }
 
+.book-online-button:focus-visible { outline: 3px solid #926d3d; outline-offset: 4px; }
+
 .book-online-button:hover {
   transform: scale(1.05);
   border-color: #fff9;
