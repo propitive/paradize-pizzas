@@ -11,13 +11,18 @@
   pointer-events: none;
 }
 
-.video-background__picture {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: none;
-  visibility: hidden;
-  pointer-events: none;
+.video-background__play-button {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 12px 20px;
+  border: 1px solid #ffffff;
+  border-radius: 6px;
+  background: #211b18;
+  color: #ffffff;
+  font: inherit;
+  cursor: pointer;
 }
 
 .video-background__video::-webkit-media-controls {
@@ -51,15 +56,3 @@
   }
 }
 
-@media screen and (max-width: 500px) {
-  .video-background__video {
-    display: none;
-    visibility: hidden;
-    pointer-events: none;
-  }
-  .video-background__picture {
-    display: block;
-    visibility: visible;
-    pointer-events: all;
-  }
-}
