@@ -109,4 +109,16 @@
   .featured__text {
     align-items: center;
   }
+
+  .featured__header {
+    font-size: 28px;
+    line-height: 1.2;
+    letter-spacing: -1px;
+  }
+
+  .featured__paragraph {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 24px;
+  }
 }
